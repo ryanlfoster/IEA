@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-xs-12 related-content-header">
+    <h1>{{relatedContentList.configurations.resultContentLabel}}</h1>
+    </div>
+    <div class="col-xs-12">
+        {{#ifCond relatedContentList.resultCount "0"}}
+            <h3>{{relatedContentList.configurations.noResultCopy}}</h3>
+        {{else}}
+            {{#eachUpTo relatedContentList.contentResults relatedContentList.resultCount}}
+                <div class="content-list-wrapper row">
+
+                    {{#if imageDetail}}
+                    <figure class="col-md-3 col-sm-12">
+                    {{#if ctaUrl}}
+                        <a href="{{ctaUrl}}">
+                        {{adaptive imageDetail extension titleDetail titleDetail ""}}
+                        </a>
+                    {{else}}
+                        {{adaptive imageDetail extension titleDetail titleDetail ""}}
+                    {{/if}}
+                    </figure>
+                    {{/if}}
+
+                    <div class="col-md-9 col-sm-12">
+                    {{#if titleDetail}}
+                    {{#if ctaUrl}}
+                        <h2><a href="{{ctaUrl}}">{{titleDetail}}</a></h2>
+                    {{else}}
+                        <h2>{{titleDetail}}</h2>
+                    {{/if}}
+                    {{/if}}
+
+                    {{#if shortDescription}}
+                        <p>{{{shortDescription}}}</p>
+                    {{/if}}
+
+                    {{#if ctaUrl}}
+                        <a class="cta" href="{{ctaUrl}}">{{ctaText}}</a>
+                    {{/if}}
+                    </div>
+                </div>
+            {{/eachUpTo}}
+        {{/ifCond}}
+    </div>
+</div>

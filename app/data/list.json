@@ -1,0 +1,38 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "272",
+        "path": "/content/iea/en_us/_jcr_content/flexi_hero_par/list",
+        "clientSideRendering": false,
+        "linkType": "static",
+        "list": {
+            "subHeading": "sdg",
+            "isDescImgRequired": "true",
+            "linkList": [
+                {
+                    "windowType": "Yes",
+                    "linkUrl": "/content/iea/en_us.html",
+                    "imagePath": "http://www.placehold.it/100x100",
+                    "imageAltText": "alt text for image 1",
+                    "linkDesc": "",
+                    "linkName": "l1"
+                },
+                {
+                    "windowType": "Yes",
+                    "linkUrl": "/content/iea/en_us.html",
+                    "imagePath": "http://www.placehold.it/100x100",
+                    "imageAltText": "",
+                    "linkDesc": "",
+                    "linkName": "l2"
+                }
+            ],
+            "heading": "G l fixed"
+        },
+        "viewType": "defaultView",
+        "componentType": "list",
+        "isContainer": false
+    }
+}

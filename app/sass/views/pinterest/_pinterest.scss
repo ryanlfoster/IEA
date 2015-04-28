@@ -1,0 +1,57 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+
+@include theme('whitelabel') {
+
+    .pinterest {
+        .pinitfeeds {
+            color: $color-iea-black;
+            font-family: $font-sapient-centroslab-regular;
+            font-size: $font-size-small;
+        }
+
+        .item {
+            background-color: $color-iea-white;
+            border: 1px solid $color-iea-faded;
+        }
+
+        .pinterest-header {
+            background-color: $color-pinterest-header;
+            color: $color-iea-white;
+
+            a {
+                background-color: $color-pinterest-header;
+                color:  $color-iea-white;
+
+                &:hover {
+                    color:  $color-iea-white;
+                }
+            }
+
+            h1 {
+                font-family: $font-sapient-centroslab-medium;
+                font-size: $mobile-font-size-large;
+
+                @media (min-width: $bp-large) {
+                    font-size: $tablet-font-size-large;
+                }
+            }
+
+            p {
+                font-size: $mobile-font-size-small;
+
+                @media (min-width: $bp-large) {
+                    font-size: $tablet-font-size-small;
+                }
+
+                @media (min-width: $bp-extra-large) {
+                    font-size: $desktop-font-size-x-large;
+                    font-family: $font-sapient-centroslab-medium;
+                }
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+}

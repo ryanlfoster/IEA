@@ -1,0 +1,26 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "484",
+        "twitterFeed": {
+            "displayTweetReply": "true",
+            "subTitle": "Sub heading",
+            "randomNumber": "484",
+            "expandTweetImage": "true",
+            "iconImage": "/content/dam/iea/twitter.png",
+            "includedAccountName": "mayank_goswami4",
+            "twitterurl": "PMOIndia",
+            "viewType": "IncludedAccountName",
+            "header": "heading",
+            "followCTAText": "follow jp "
+        },
+        "clientSideRendering": false,
+        "path": "/content/iea/en_us/_jcr_content/flexi_par/twitterfeed",
+        "viewType": "IncludedAccountName",
+        "componentType": "twitterFeed",
+        "isContainer": false
+    }
+}

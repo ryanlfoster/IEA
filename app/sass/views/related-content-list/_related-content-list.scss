@@ -1,0 +1,53 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+
+/* For theme whitelabel */
+@include theme('whitelabel') {
+
+    .related-content-list {
+        font-size: $mobile-font-size-small;
+        color: $color-iea-black;
+
+        h1 {
+            font-size: $font-size-x-large;
+        }
+
+        h2 {
+            font-size: $mobile-font-size-large;
+            font-family: $font-sapient-centroslab-medium;
+            color: $color-iea-blue;
+        }
+
+        .content-list-wrapper {
+            border-bottom: 1px solid $color-iea-medium-grey;
+        }
+
+        .related-content-header {
+            border-bottom: 1px solid $color-iea-medium-grey;
+        }
+
+        @media (min-width: $bp-large) {
+            font-size: $tablet-font-size-medium;
+
+            h2 {
+                font-size: $tablet-font-size-large;
+            }
+        }
+
+        @media (min-width: $bp-extra-large) {
+            font-size: $desktop-font-size-large;
+
+            p {
+                font-size: $desktop-font-size-large;
+            }
+        }
+
+    }
+}
+
+/* For theme aurora */
+@include theme('aurora') {
+
+    .related-content-list {
+
+    }
+}

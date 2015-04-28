@@ -1,0 +1,252 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+@include theme('whitelabel') {
+
+    .tabbed-content {
+
+        .panel-group .panel {
+            border: 1px solid $color-iea-light-grey;
+
+        .panel-heading{
+            background: none $color-panel-tab;
+            border: 1px solid $color-panel-border;
+            color: $brand-primary;
+
+                .panel-title{
+
+                    a{
+                        font-family: $font-sapient-centroslab-medium;
+                        font-size: $font-size-large;
+                        @include background("tabbed-content/accrodion-arrow.png",$image-path,'no-repeat','right','center');
+                    }
+
+                    a.collapsed {
+                        color: $brand-primary;
+                    }
+                }
+            }
+
+            .panel-body{
+
+                h4{
+                    color: $brand-primary;
+
+                    a {
+                        color: $brand-primary;
+                    }
+                }
+            }
+
+            &.active{
+                .panel-heading{
+                    border-bottom: 0.125em solid $brand-primary;
+
+                    &:after{
+                        border-bottom: 0.5em solid $brand-primary;
+                    }
+                }
+
+                .panel-title a{
+                    color: $color-iea-black;
+                }
+
+                .panel-collapse{
+                    border-top: 3px solid $color-tab-border;
+                }
+            }
+        }
+    }
+
+    /* iPads (portrait and landscape) */
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+        .tabbed-content{
+
+            .nav-tabs{
+                background-color: $color-panel-tab;
+                border: 1px solid $color-iea-white;
+                outline: 1px solid $color-iea-light-grey;
+
+                li{
+                    border-right: 1px solid $color-iea-light-grey;
+
+                    &:after {
+                        border-right: 1px solid $color-iea-white;
+                    }
+
+                    a, a:hover, a:focus{
+                        color: $brand-primary;
+                        font: normal $tablet-font-size-medium $font-sapient-centroslab-medium;
+                    }
+                }
+
+                >li.active {
+                    a, a:hover, a:focus{
+                        color: #434343;
+                        font-family: $font-sapient-centroslab-medium;
+                    }
+
+                    a:after, a:before{
+                        border-bottom: 1px solid $color-tab-border;
+                    }
+
+                    a:before{
+                        border-bottom: 5px solid $brand-primary;
+                    }
+                }
+            }
+
+            .tab-content{
+
+                .tab-pane{
+
+                    p{
+                        font: normal 1.286em $font-family-base;
+
+                        a{
+                            color: #16bee2;
+                            &.btn-iea {
+                                color: $color-iea-white;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .panel-group .panel{
+                border: 1px solid $color-iea-light-grey;
+
+            .panel-heading{
+                background: none $color-panel-tab;
+                border: 1px solid $color-panel-border;
+                color: $brand-primary;
+                font: normal 2.857em $font-sapient-centroslab-medium;
+            }
+
+                .panel-collapse .panel-body{
+                    p{
+                        color: $color-iea-black;
+                        font: normal 2em $font-sapient-centroslab-medium;
+
+                        a{
+                            color: #16bee2;
+                        }
+                    }
+
+                    h3{
+                        color: $color-iea-black;
+                        font: normal 2.857em $font-sapient-centroslab-medium;
+                    }
+
+                    h4{
+                        color: $color-iea-black;
+                        font: normal 2.143em $font-sapient-centroslab-medium;
+                    }
+
+                }
+
+                &.active{
+                    .panel-heading{
+                        border-bottom: 0.125em solid $color-panel-border-bottom;
+
+                        &:after{
+                            border-bottom: 0.2em solid $color-panel-border-bottom;
+                        }
+
+                        a{
+                            color: $color-iea-black;
+                        }
+                    }
+
+                    .panel-collapse{
+                        border-top: 1px solid $color-tab-border;
+                    }
+                }
+            }
+        }
+    }
+
+    /* iPads (landscape) */
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) and (orientation: 'landscape') {
+        .tabbed-content{
+            .nav-tabs li{
+                padding: 0 2.2em;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+
+        .tabbed-content{
+
+            .nav-tabs{
+                background-color: $color-panel-tab;
+                border: 1px solid $color-iea-white;
+                outline: 1px solid $color-iea-light-grey;
+
+                li{
+                    border-right: 1px solid $color-iea-light-grey;
+
+                    &:after {
+                        border-right: 1px solid $color-iea-white;
+                    }
+                }
+
+                >li.active{
+                    a, a:hover, a:focus{
+                        color: #434343;
+                        font-family: $font-sapient-centroslab-medium;
+                    }
+
+                    a:after, a:before{
+                        border-bottom: 1px solid $color-tab-border;
+                    }
+
+                    a:before{
+                        border-bottom: 5px solid $brand-primary;
+                    }
+                }
+
+                >li{
+                    a, a:hover, a:focus{
+                        color: $brand-primary;
+                        font: normal 22px $font-sapient-centroslab-medium;
+                    }
+                }
+            }
+
+            .tab-content{
+
+                .tab-pane{
+                    p{
+                        color: $color-iea-black;
+                        font: normal 1.286em $font-family-base;
+
+                        a{
+                            color: #16bee2;
+                            &.btn-iea {
+                                color: $color-iea-white;
+                            }
+                        }
+                    }
+
+                    h3{
+                        color: $brand-primary;
+                        font: normal 1.714em $font-sapient-centroslab-medium;
+                    }
+
+                    h4{
+                        color: $color-iea-black;
+                        font: normal 1.571em $font-sapient-centroslab-medium;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+    .tabbed-content {
+
+    }
+}

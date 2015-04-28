@@ -1,0 +1,10 @@
+{
+    "data": {
+        "helloworld": {
+
+        },
+        "viewType": "defaultView",
+        "componentType": "helloworld",
+        "isContainer": false
+    }
+}

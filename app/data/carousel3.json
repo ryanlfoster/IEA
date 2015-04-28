@@ -1,0 +1,234 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "341",
+        "path": "/content/sakonnet/en_us/componenttesting/general/jcr:content/flexi_hero_par/carousel",
+        "clientSideRendering": false,
+        "carousel": {
+            "numlinks": "2",
+            "auto": false,
+            "slides": [
+                {
+                    "panel": {
+                        "image": {
+                            "isCroppingRequired": "false",
+                            "extension": "jpg",
+                            "windowType": "",
+                            "title": "sddf",
+                            "randomNumber": "111",
+                            "isNotAdaptiveImage": "false",
+                            "altImage": "",
+                            "componentParentType": "panel",
+                            "fileName": "",
+                            "linkURL": "false",
+                            "fileReference": "http://lorempixel.com/800/450/food/?"
+                        },
+                        "properties": {
+                            "displayUrl": "Know more",
+                            "headline": "Lorem Ipsum is simply dummy text of the printing.",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "Later sometime",
+                            "randomNumber": "111",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-left",
+                            "subHeadLine": "Why we need it ?",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "imagePanel",
+                        "isContainer": "false",
+                        "componentType": "image"
+                    },
+                    "componentParentType": "carousel"
+                },
+                {
+                    "panel": {
+                        "image": {
+                            "isCroppingRequired": "false",
+                            "extension": "jpg",
+                            "windowType": "",
+                            "title": "sddf",
+                            "randomNumber": "112",
+                            "isNotAdaptiveImage": "false",
+                            "altImage": "",
+                            "componentParentType": "panel",
+                            "fileName": "",
+                            "linkURL": "false",
+                            "fileReference": "http://lorempixel.com/800/450/food/?"
+                        },
+                        "properties": {
+                            "displayUrl": "priamary cta",
+                            "headline": "heading",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "secondary cta",
+                            "randomNumber": "112",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-right",
+                            "subHeadLine": "sub heading",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "imagePanel",
+                        "isContainer": "false",
+                        "componentType": "image"
+                    },
+                    "componentParentType": "carousel"
+                },
+                {
+                    "panel": {
+                        "image": {
+                            "isCroppingRequired": "false",
+                            "extension": "jpg",
+                            "windowType": "",
+                            "title": "sddf",
+                            "randomNumber": "113",
+                            "isNotAdaptiveImage": "false",
+                            "altImage": "",
+                            "componentParentType": "panel",
+                            "fileName": "",
+                            "linkURL": "false",
+                            "fileReference": "http://lorempixel.com/800/450/food/?"
+                        },
+                        "properties": {
+                            "displayUrl": "priamary cta",
+                            "headline": "heading",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "secondary cta",
+                            "randomNumber": "113",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-right",
+                            "subHeadLine": "sub heading",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "imagePanel",
+                        "isContainer": "false",
+                        "componentType": "image"
+                    },
+                    "componentParentType": "carousel"
+                },
+                {
+                    "panel": {
+                        "properties": {
+                            "displayUrl": "priamary cta",
+                            "headline": "heading",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "secondary cta",
+                            "randomNumber": "114",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-right",
+                            "subHeadLine": "sub heading",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "videoPanel",
+                        "isContainer": "false",
+                        "video": {
+                            "videoTitle": "Video Title",
+                            "videoLink": "Link Text",
+                            "videoDescription": "VideoHeadline",
+                            "videoSubHeadline": "Sub headline",
+                            "viewType": "html5",
+                            "isNotAdaptive": true,
+                            "displayOption": "embedded",
+                            "allowFullScreen": false,
+                            "audio": true,
+                            "loopPlayback": false,
+                            "showControls": false,
+                            "autoPlay": true,
+                            "videoURL": "images/video/tamil",
+                            "thumbnailUrl": "../../images/video/youtube.jpg",
+                            "alt": "Alt text for Thumbnail",
+                            "fallbackUrl": "images/video/youtube.jpg",
+                            "fallbackAlt": "Alt text for fallback"
+                        },
+                        "componentType": "video"
+                    },
+                    "componentParentType": "carousel"
+                },
+                {
+                    "panel": {
+                        "properties": {
+                            "displayUrl": "priamary cta",
+                            "headline": "heading",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "secondary cta",
+                            "randomNumber": "115",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-right",
+                            "subHeadLine": "sub heading",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "videoPanel",
+                        "isContainer": "false",
+                        "video": {
+                            "videoTitle": "Video Title",
+                            "videoLink": "Link Text",
+                            "viewType": "vimeo",
+                            "isNotAdaptive": "true",
+                            "displayOption": "Embedded",
+                            "allowFullScreen": "false",
+                            "videoDescription": "Video Headline",
+                            "randomNumber": "115",
+                            "showControls": "false",
+                            "videoId": "36816111",
+                            "thumbnailUrl": "http://placehold.it/1280x668&text=videoslide?",
+                            "autoPlay": "false",
+                            "videoSubHeadline": "Sub headline"
+                        },
+                        "componentType": "video"
+                    },
+                    "componentParentType": "carousel"
+                },
+                {
+                    "panel": {
+                        "properties": {
+                            "displayUrl": "priamary cta",
+                            "headline": "heading",
+                            "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                            "secondaryDisplayUrl": "secondary cta",
+                            "randomNumber": "116",
+                            "primaryBrowserSelection": "no",
+                            "secondaryBrowserSelection": "yes",
+                            "alignmentOfLinks": "bottom-right",
+                            "subHeadLine": "sub heading",
+                            "actionUrl": "/content/engagednow/en_us/contact-us.html"
+                        },
+                        "viewType": "videoPanel",
+                        "isContainer": "false",
+                        "video": {
+                            "videoTitle": "Video Title",
+                            "videoLink": "Link Text",
+                            "viewType": "youtube",
+                            "isNotAdaptive": "true",
+                            "displayOption": "Embedded",
+                            "allowFullScreen": "false",
+                            "videoDescription": "Video Headline",
+                            "randomNumber": "116",
+                            "showControls": "true",
+                            "videoId": "zzA4AFVb47U",
+                            "thumbnailUrl": "http://placehold.it/1280x668&text=videoslide?",
+                            "autoPlay": "false",
+                            "videoSubHeadline": "Sub headline"
+                        },
+                        "componentType": "video"
+                    },
+                    "componentParentType": "carousel"
+                }
+            ],
+            "randomNumber": "341",
+            "intervalsOfRotation": "10",
+            "slideType": [
+                "/content/sakonnet/en_us/componenttesting/panel1/jcr:content/flexi_hero_par/panel",
+                "/content/sakonnet/en_us/componenttesting/panel2/jcr:content/flexi_hero_par/panel"
+            ]
+        },
+        "viewType": "carouselStatic",
+        "componentType": "carousel",
+        "isContainer": true
+    }
+}

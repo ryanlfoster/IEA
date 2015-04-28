@@ -1,0 +1,13 @@
+<ul>
+    {{#each breadcrumb.items}}
+        <li {{#if @last}}class="active"{{/if}}>
+        {{#if pageName}}
+            {{#if pageURL}}
+            <a href="{{pageURL}}">{{{pageName}}}</a>
+            {{else}}
+                <a href="javascript:void(0)">{{pageName}}</a>
+            {{/if}}
+        {{/if}}
+        </li>
+    {{/each}}
+</ul>

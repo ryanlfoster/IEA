@@ -1,0 +1,266 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "911",
+        "path": "/content/iea/en_us/fly_out1/_jcr_content/flexi_hero_par/sectionnavigation",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "sectionNavigation": {
+            "title": "dhdfhd",
+            "items": [
+                {
+                    "selected": true,
+                    "linklabel": "klsgnlkfnks",
+                    "items": [
+                        {
+                            "linklabel": "home",
+                            "linkURL": "/content/iea/en_us/home.html"
+                        },
+                        {
+                            "linklabel": "panel",
+                            "linkURL": "/content/iea/en_us/panel.html"
+                        },
+                        {
+                            "linklabel": "Demo_Specific",
+                            "items": [
+                                {
+                                    "linklabel": "en_us",
+                                    "items": [
+                                        {
+                                            "linklabel": "Hermitage Fit and Flare",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/hermitage-fit---flare.html"
+                                        },
+                                        {
+                                            "linklabel": "Empire Waist Sundress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/empire-waist-sundress.html"
+                                        },
+                                        {
+                                            "linklabel": "Empire Waist Slip",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/empire-waist-slip.html"
+                                        },
+                                        {
+                                            "linklabel": "Hermitage Pencil Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/hermitage-pencil-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Cocktail Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/cocktail-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Strapless Cocktail Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/strapless-cocktail-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Sleeveless Slip Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/sleeveless-slip-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "A line Cotton Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/a-line-cotton-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Casual Strapless Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/casual-strapless-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Evening Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/evening-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Casual Knit Strapless Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/casual-knit-strapless-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Albini Empire Waist Knit Dress",
+                                            "linkURL": "/content/iea/en_us/demo_specific/en_us/albini-empire-waist-knit-dress.html"
+                                        }
+                                    ],
+                                    "linkURL": "/content/iea/en_us/demo_specific/en_us.html"
+                                }
+                            ],
+                            "linkURL": "/content/iea/en_us/demo_specific.html"
+                        },
+                        {
+                            "linklabel": "KT",
+                            "items": [
+                                {
+                                    "linklabel": "en_us",
+                                    "items": [
+                                        {
+                                            "linklabel": "Hermitage Fit and Flare",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/hermitage-fit---flare.html"
+                                        },
+                                        {
+                                            "linklabel": "Empire Waist Sundress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/empire-waist-sundress.html"
+                                        },
+                                        {
+                                            "linklabel": "Empire Waist Slip",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/empire-waist-slip.html"
+                                        },
+                                        {
+                                            "linklabel": "Hermitage Pencil Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/hermitage-pencil-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Cocktail Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/cocktail-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Strapless Cocktail Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/strapless-cocktail-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Sleeveless Slip Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/sleeveless-slip-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "A line Cotton Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/a-line-cotton-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Casual Strapless Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/casual-strapless-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Evening Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/evening-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Casual Knit Strapless Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/casual-knit-strapless-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Albini Empire Waist Knit Dress",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/albini-empire-waist-knit-dress.html"
+                                        },
+                                        {
+                                            "linklabel": "Rebranding",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/rebranding1.html"
+                                        },
+                                        {
+                                            "linklabel": "Panel_Image",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/panel_image.html"
+                                        },
+                                        {
+                                            "linklabel": "Rebranding",
+                                            "linkURL": "/content/iea/en_us/kt/en_us/rebranding.html"
+                                        }
+                                    ],
+                                    "linkURL": "/content/iea/en_us/kt/en_us.html"
+                                },
+                                {
+                                    "linklabel": "Rebranding",
+                                    "linkURL": "/content/iea/en_us/kt/rebranding.html"
+                                }
+                            ],
+                            "linkURL": "/content/iea/en_us/kt.html"
+                        },
+                        {
+                            "linklabel": "Migration",
+                            "items": [
+                                {
+                                    "linklabel": "Panel_Image",
+                                    "linkURL": "/content/iea/en_us/migration/panel_image.html"
+                                },
+                                {
+                                    "linklabel": "Panel_Brightcove",
+                                    "linkURL": "/content/iea/en_us/migration/panel_brightcove.html"
+                                },
+                                {
+                                    "linklabel": "Panel_Youtube",
+                                    "linkURL": "/content/iea/en_us/migration/panel_youtube.html"
+                                },
+                                {
+                                    "linklabel": "Panel_Vimeo",
+                                    "linkURL": "/content/iea/en_us/migration/panel_vimeo.html"
+                                },
+                                {
+                                    "linklabel": "6th Feb",
+                                    "items": [
+                                        {
+                                            "linklabel": "Panel_Image_1",
+                                            "linkURL": "/content/iea/en_us/migration/regression_6_feb/panel_image_1.html"
+                                        },
+                                        {
+                                            "linklabel": "Panel_Video_Youtube",
+                                            "linkURL": "/content/iea/en_us/migration/regression_6_feb/panel_video_youtube.html"
+                                        },
+                                        {
+                                            "linklabel": "Panel_Video_Brightcove",
+                                            "linkURL": "/content/iea/en_us/migration/regression_6_feb/panel_video_brightcove.html"
+                                        },
+                                        {
+                                            "linklabel": "Panel_Vimeo_Video",
+                                            "linkURL": "/content/iea/en_us/migration/regression_6_feb/panel_vimeo_video.html"
+                                        }
+                                    ],
+                                    "linkURL": "/content/iea/en_us/migration/regression_6_feb.html"
+                                },
+                                {
+                                    "linklabel": "Panel_123",
+                                    "linkURL": "/content/iea/en_us/migration/panel_123.html"
+                                },
+                                {
+                                    "linklabel": "Video",
+                                    "linkURL": "/content/iea/en_us/migration/video.html"
+                                }
+                            ],
+                            "linkURL": "/content/iea/en_us/migration.html"
+                        },
+                        {
+                            "selected": true,
+                            "linklabel": "Fly_out1",
+                            "linkURL": ""
+                        },
+                        {
+                            "linklabel": "IEA_Rebrand",
+                            "linkURL": "/content/iea/en_us/iea_rebrand.html"
+                        },
+                        {
+                            "linklabel": "Panel 1",
+                            "linkURL": "/content/iea/en_us/panel-1.html"
+                        },
+                        {
+                            "linklabel": "Panel2",
+                            "linkURL": "/content/iea/en_us/panel2.html"
+                        },
+                        {
+                            "linklabel": "24_feb",
+                            "items": [
+                                {
+                                    "linklabel": "panel_image",
+                                    "linkURL": "/content/iea/en_us/24_feb/panel_image.html"
+                                },
+                                {
+                                    "linklabel": "Panel_Video",
+                                    "linkURL": "/content/iea/en_us/24_feb/panel_video.html"
+                                },
+                                {
+                                    "linklabel": "new",
+                                    "linkURL": "/content/iea/en_us/24_feb/new.html"
+                                },
+                                {
+                                    "linklabel": "Flyout",
+                                    "linkURL": "/content/iea/en_us/24_feb/flyout.html"
+                                }
+                            ],
+                            "linkURL": "/content/iea/en_us/24_feb.html"
+                        },
+                        {
+                            "linklabel": "testSecNav",
+                            "linkURL": "/content/iea/en_us/testSecNav"
+                        }
+                    ],
+                    "linkURL": "/content/iea/en_us.html"
+                }
+            ],
+            "parentlabel": "iea"
+        },
+        "componentType": "sectionNavigation",
+        "isContainer": false
+    }
+}

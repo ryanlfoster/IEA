@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-{{randomNumber}}">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-{{randomNumber}}">
+            <ul class="nav navbar-nav">
+                {{#each navigation.navigationLabel}}
+                    {{#if flyOutMenu}}
+                        <li class="dropdown">
+                            {{#if navigationURL}}
+                            <a href="{{navigationURL}}" class="dropdown-toggle" data-toggle="dropdown">
+                                {{navigationLabel}}
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            {{else}}
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                {{navigationLabel}}
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            {{/if}}
+                            {{include this "flyOutMenu/defaultView.hbss" }}
+                        </li>
+                    {{else}}
+                        {{#if navigationLabel}}
+                            {{#if navigationURL}}
+                                <li>
+                                    <a href="{{navigationURL}}">{{navigationLabel}}</a>
+                                </li>
+                            {{else}}
+                                <li>
+                                    <a href="javascript:void(0)">{{navigationLabel}}</a>
+                                </li>
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+                {{/each}}
+
+            </ul>
+        </div>
+</nav>

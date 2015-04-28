@@ -1,0 +1,27 @@
+{
+    "data": {
+        "randomNumber": "595",
+        "path": "/content/engagednow/en_us/test1/jcr:content/flexi_par/video",
+        "viewType": "youtube",
+        "componentType": "video",
+        "video": {
+            "videoTitle": "Video Title",
+            "videoLink": "Link Text",
+            "viewType": "youtube",
+            "isNotAdaptive": "true",
+            "displayOption": "Overlay",
+            "allowFullScreen": "false",
+            "videoDescription": "Video Headline",
+            "randomNumber": "595",
+            "showControls": "false",
+            "videoId": "eN9XX-dd0LQ",
+            "thumbnailUrl": "../../images/video/youtube.jpg",
+            "autoPlay": "true",
+            "videoSubHeadline": "Sub headline"
+        }
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

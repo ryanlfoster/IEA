@@ -1,0 +1,28 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "998",
+        "clientSideRendering": false,
+        "path": "/content/iea/en_us/home/_jcr_content/flexi_par/socialshareprint",
+        "socialSharePrint": {
+            "sharectaicon": "images/social-share-print/print.png",
+            "shareUrl" : "http://google.com",
+            "shareTitle": "Share",
+            "addThisOptions": [
+                "pinterest_share",
+                "facebook",
+                "twitter",
+                "gmail"
+            ],
+            "randomNumber": "998",
+            "printctaicon": "images/social-share-print/print.png",
+            "printTitle": "Print"
+        },
+        "viewType": "defaultView",
+        "componentType": "socialSharePrint",
+        "isContainer": false
+    }
+}

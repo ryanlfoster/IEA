@@ -1,0 +1,27 @@
+{
+    "data": {
+        "randomNumber": "1024",
+        "path": "/content/engagednow/en_us/test1/jcr:content/flexi_par/video",
+        "viewType": "youtube",
+        "componentType": "video",
+        "video": {
+            "videoTitle": "Video Title",
+            "videoLink": "Link Text",
+            "viewType": "youtube",
+            "isNotAdaptive": "true",
+            "displayOption": "Embedded",
+            "allowFullScreen": "false",
+            "videoDescription": "Video Headline",
+            "randomNumber": "1024",
+            "showControls": "false",
+            "videoId": "eN9XX-dd0LQ",
+            "thumbnailUrl": "http://leanbackplayer.com/videos/poster/elephants_dream_640x360.jpg?",
+            "autoPlay": "true",
+            "videoSubHeadline": "Sub headline"
+        }
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

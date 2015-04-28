@@ -1,0 +1,27 @@
+{
+    "data": {
+        "randomNumber": "5955",
+        "path": "/content/engagednow/en_us/test1/jcr:content/flexi_par/video",
+        "viewType": "vimeo",
+        "componentType": "video",
+        "video": {
+            "videoTitle": "Video Title",
+            "videoLink": "Link Text",
+            "viewType": "vimeo",
+            "isNotAdaptive": "true",
+            "displayOption": "Embedded",
+            "allowFullScreen": "false",
+            "videoDescription": "Video Headline",
+            "randomNumber": "5955",
+            "showControls": "false",
+            "videoId": "36816111",
+            "thumbnailUrl": "../../images/video/youtube.jpg",
+            "autoPlay": "false",
+            "videoSubHeadline": "Sub headline"
+          }
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

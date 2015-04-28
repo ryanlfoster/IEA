@@ -1,0 +1,35 @@
+<div class="dropdown">
+	<div class="selector-header dropdown-toggle" data-toggle="dropdown">
+		<img class="display-flag" src="{{countryLanguageSelector.imagePath}}" alt="{{countryLanguageSelector.imageAltText}}"></img>
+		<span class="display-name">{{countryLanguageSelector.heading}}</span>
+		<span class="display-arrow"></span>
+	</div>
+	<div class="selector-body dropdown-menu">
+		<div class="global-title">{{countryLanguageSelector.title}}</div>
+		{{#each countryLanguageSelector.regions}}
+			<div class="region-group">
+				<div class="region-title {{#if @first}}expanded{{/if}}">
+					<a href="javascript:void(0)">{{region}}</a>
+				</div> 
+				<ul class="country-list {{#if @first}}in{{/if}}">
+					{{#each countries}}
+						<li class="country-item">
+							<a href="{{flagImage}}">
+								<img src="{{flagImage}}" alt="{{flagImageAlt}}">
+							</a>
+							<span class="country-title">{{countryName}}</span>
+							<ul class="language-list">
+							{{#each items}}
+								<li class="language-item">
+									<a {{#if selected}} class="selected-item" {{/if}} href="{{pageURL}}">{{language}}</a>
+								</li>
+							{{/each}}
+							</ul>
+							</a>
+						</li>
+					{{/each}}
+				</ul>
+			</div>
+		{{/each}}
+	</div>
+</div>

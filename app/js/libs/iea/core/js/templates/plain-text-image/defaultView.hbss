@@ -1,0 +1,18 @@
+<div class="thumbnail">
+    <div class = "plain-image">
+        {{#if plainTextImage.fileReference}}
+            {{adaptive plainTextImage.fileReference plainTextImage.extension plainTextImage.imageAlt plainTextImage.imageTitle plainTextImage.fileName}}
+        {{/if}}
+    </div>
+    <div class="caption">
+        <h3>{{plainTextImage.heading}}</h3>
+        <h4>{{plainTextImage.subheading}}</h4>
+        {{#if plainTextImage.ctacopy}}
+            {{#if plainTextImage.ctaurl}}
+                <a target= "{{#ifCond plainTextImage.windowType "Yes"}}_blank{{else}}_self{{/ifCond}}" class="btn btn-primary" href ="{{plainTextImage.ctaurl}}">{{plainTextImage.ctacopy}}</a>
+            {{else}}
+                <a disabled>{{plainTextImage.ctacopy}}</a>
+            {{/if}}
+        {{/if}}
+    </div>
+</div>

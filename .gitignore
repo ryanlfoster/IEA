@@ -1,0 +1,16 @@
+.tmp
+.sass-cache
+
+app/js/libs/vendor
+lib/js/libs/vendor
+lib/images
+
+dist
+test/temp
+node_modules
+Package_mapper_utility
+package_mapper.bat
+packageMapper.log
+package_mapper_tenant.bat
+output
+

@@ -1,0 +1,36 @@
+.search-input {
+
+}
+
+@include theme('whitelabel') {
+
+    .search-input {
+
+        .search-submit-btn, .search-textbox {
+            background-color: $color-search-btn;
+            color: $color-iea-light-grey;
+        }
+
+        .search-submit-btn {
+            border: 1px solid $color-btn-border;
+        }
+
+        .btn-iea {
+            &.btn[disabled] {
+                background-color: $color-iea-blue;
+                border-bottom: 1px solid $color-btn-border;
+            }
+        }
+
+        .glyphicon-search {
+            color: $color-iea-blue;
+        }
+    }
+}
+
+@include theme('aurora') {
+
+    .search-input {
+
+    }
+}

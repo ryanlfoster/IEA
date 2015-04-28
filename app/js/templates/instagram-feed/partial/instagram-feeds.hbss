@@ -1,0 +1,17 @@
+{{#each this.data}}
+<div class="feeds col-md-4 col-xs-12 col-lg-3">
+    <div class="thumbnail">
+        <a href="{{link}}" target="_blank">
+            <img src="{{images.low_resolution.url}}" alt="{{caption}}" />
+        </a>
+        {{#if ../isCaption}}
+        {{#if caption.text}}
+        <p>
+            {{caption.text}}
+        </p>
+        {{/if}}
+        {{/if}}
+        
+    </div>
+</div>
+{{/each}}

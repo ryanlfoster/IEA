@@ -1,0 +1,81 @@
+.section-navigation {
+
+
+    /* Generic icons for the component */
+    .sub-menu {
+        > a {
+            @include multi-box-shadow('none');
+            &:before {
+                font-family: 'icomoon';
+                @extend .icon-chevron-down;
+            }
+        }
+
+        &.expanded {
+            > a:before {
+                @extend .icon-chevron-up;
+            }
+        }
+    }
+
+
+
+    /* Theme specific changes */
+    @include theme('whitelabel') {
+
+        .title {
+            font-size: $font-size-large;
+
+        }
+
+    	.parent-label, .navbar-header {
+    		background-color: $color-iea-blue;
+    		color: $color-iea-white;
+            font-size: $font-size-medium;
+    	}
+
+        li {
+            a {
+                color: $color-iea-black;
+                font-size: $font-size-medium;
+                &:active, &:hover {
+                    color: $color-iea-blue;
+                }
+            }
+            &.expanded, &.active {
+                > a {
+                    color: $color-iea-blue;
+                }
+            }
+        }
+
+        .nav {
+            >li {
+                > a {
+                    background-color: $color-iea-white;
+                    border-bottom: 1px solid $color-iea-faded;
+                }  
+            }
+	    }
+
+        .expandable {
+        	border-bottom: 1px solid $color-iea-faded;
+            background-color: $color-iea-sec-nav;
+        }
+
+        .navbar-default .navbar-toggle {
+        	&:active, &:hover, &:focus {
+                background-color: transparent;
+            }
+        }
+
+        a:before {
+            color: $color-iea-blue;
+        }
+    }
+
+    @include theme('aurora') {
+
+    }
+
+}

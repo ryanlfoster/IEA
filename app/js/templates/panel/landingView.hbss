@@ -1,0 +1,5 @@
+{{#if panel.image}}
+    {{include this "panel/imagePanel.hbss" }}
+{{else}}
+    {{include this "panel/videoPanel.hbss" }}
+{{/if}}

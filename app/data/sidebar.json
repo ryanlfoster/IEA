@@ -1,0 +1,79 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "911",
+        "path": "/content/iea/en_us/fly_out1/_jcr_content/flexi_hero_par/sectionnavigation",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "sectionNavigation": {
+            "title": "",
+            "items": [{
+                    "linklabel": "navigation",
+                    "linkURL": "#navigation"
+                }, {
+                    "linklabel": "Section Navigation",
+                    "linkURL": "#section-navigation"
+                }, {
+                    "linklabel": "Accordion",
+                    "linkURL": "#accordion"
+                }, {
+                    "linklabel": "Carousel",
+                    "linkURL": "#carousel"
+                }, {
+                    "linklabel": "Content Result Grid",
+                    "linkURL": "#contentRestultsGrid"
+                }, {
+                    "linklabel": "form",
+                    "linkURL": "#form"
+                }, {
+                    "linklabel": "Search Input",
+                    "linkURL": "#searchInput"
+                }, {
+                    "linklabel": "Hotspot",
+                    "linkURL": "#hotspot"
+                }, {
+                    "linklabel": "Link List",
+                    "linkURL": "#linkList"
+                }, {
+                    "linklabel": "Media Gallery",
+                    "linkURL": "#mediaGallery"
+                }, {
+                    "linklabel": "Plain text image",
+                    "linkURL": "#plainTextImage"
+                }, {
+                    "linklabel": "Rick text Image",
+                    "linkURL": "#richTextImage"
+                }, {
+                    "linklabel": "Related Content List",
+                    "linkURL": "#relatedContentList"
+                }, {
+                    "linklabel": "Search Result",
+                    "linkURL": "#searchResult"
+                }, {
+                    "linklabel": "video",
+                    "linkURL": "#video"
+                }, {
+                    "linklabel": "Instagram",
+                    "linkURL": "#instagram"
+                }, {
+                    "linklabel": "Twitter",
+                    "linkURL": "#twitter"
+                }, {
+                    "linklabel": "Pinterest",
+                    "linkURL": "#pinterest"
+                }, {
+                    "linklabel": "Panel",
+                    "linkURL": "#panel"
+                }
+
+
+            ],
+            "parentlabel": "Components"
+        },
+        "componentType": "sectionNavigation",
+        "isContainer": false
+    }
+}

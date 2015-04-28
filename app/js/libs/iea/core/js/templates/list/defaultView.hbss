@@ -1,0 +1,33 @@
+{{#if list.heading}}
+<h4>{{{list.heading}}}</h4>
+{{/if}}
+{{#if list.subHeading}}
+<h5>{{{list.subHeading}}}</h5>
+{{/if}}
+<ul>
+    {{#each list.linkList}}
+        <li>
+            {{#ifCond  ../list.isDescImgRequired "true"}}    
+                {{#if imagePath}}
+                <div class="thumbnail-image">
+                    <a target= "{{#ifCond windowType "Yes"}}_blank{{else}}_self{{/ifCond}}" {{#if linkUrl}}href="{{linkUrl}}"{{else}}disabled{{/if}}><img src="{{imagePath}}" alt="{{imageAltText}}"/></a>
+                </div>
+                {{/if}}
+            {{/ifCond }}
+            {{#if linkName}}
+                <div class="list-content">
+                {{#if linkUrl}}
+                    <a target= "{{#ifCond windowType "Yes"}}_blank{{else}}_self{{/ifCond}}" href="{{linkUrl}}">{{{linkName}}}</a>
+                {{else}}
+                    <span>{{{linkName}}}</span>
+                {{/if}}
+            {{/if}}
+            {{#ifCond  ../list.isDescImgRequired "true"}}  
+                {{#if linkDesc}}
+                        <p>{{{linkDesc}}}</p>
+                {{/if}}
+            {{/ifCond }}
+                </div>
+        </li>
+    {{/each}}
+</ul>

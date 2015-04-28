@@ -1,0 +1,46 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "panel": {
+            "properties": {
+                "displayUrl": "priamary cta",
+                "headline": "heading",
+                "secondaryActionUrl": "/content/engagednow/en_us/solutions/traveler.html",
+                "secondaryDisplayUrl": "secondary cta",
+                "randomNumber": "116",
+                "primaryBrowserSelection": "no",
+                "secondaryBrowserSelection": "yes",
+                "alignmentOfLinks": "bottom-right",
+                "subHeadLine": "sub heading",
+                "actionUrl": "/content/engagednow/en_us/contact-us.html"
+            },
+            "viewType": "videoPanel",
+            "isContainer": "false",
+            "video": {
+                "videoTitle": "Video Title",
+                "videoLink": "Link Text",
+                "viewType": "youtube",
+                "isNotAdaptive": true,
+                "displayOption": "Overlay",
+                "allowFullScreen": "false",
+                "videoDescription": "Video Headline",
+                "randomNumber": "116",
+                "showControls": true,
+                "videoId": "zzA4AFVb47U",
+                "thumbnailUrl": "http://placehold.it/1280x668&text=videoslide?",
+                "autoplay": true,
+                "videoSubHeadline": "Sub headline"
+            },
+            "componentType": "video"
+        },
+        "randomNumber": "659",
+        "path": "/content/iea/en_us/panel3/_jcr_content/flexi_par/panel",
+        "clientSideRendering": false,
+        "viewType": "videoPanel",
+        "componentType": "panel",
+        "isContainer": false
+    }
+}

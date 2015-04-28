@@ -1,0 +1,102 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.search-result {
+
+}
+
+@include theme('whitelabel') {
+
+    .search-result  {
+
+        .load-more {
+        //    @include button-variant($color:$btn-primary-color,$background:$btn-link-disabled-color,$border:$btn-link-disabled-color);
+        }
+
+        .result-count {
+            border-top: 1px solid $gray-light;
+            border-bottom: 1px solid $gray-light;
+        }
+
+        article {
+            border-bottom: 1px solid $gray-light;
+        }
+        
+        h1 {
+            font-family: $font-family-base;
+            font-size: $mobile-font-size-x-large;
+        }
+
+        h2 {
+            font-family: $font-family-base;
+        }
+
+        .result-count {
+            p {
+                font-family: $font-sapient-centroslab-medium;
+                font-size: $mobile-font-size-medium;
+            }
+        }
+        
+        .search-result-container {
+            h2 {
+                font-size: $mobile-font-size-medium;
+            }
+
+            p {
+                font-size: $mobile-font-size-small;
+            }
+        }
+
+        @media (min-width: $bp-large) {
+
+            h1 {
+                font-size: $tablet-font-size-x-large;
+            }
+
+            .result-count {
+                p {
+                    font-size: $tablet-font-size-small;
+                }
+            }
+            
+            .search-result-container {
+                h2 {
+                    font-size: $tablet-font-size-medium;
+                }
+
+                p {
+                    font-size: $tablet-font-size-small;
+                }
+            }
+        }
+
+        @media (min-width: $bp-extra-large) {
+
+            h1 {
+                font-size: $desktop-font-size-x-large;
+            }
+
+            .result-count {
+                p {
+                    font-size: $desktop-font-size-small;
+                }
+            }
+            
+            .search-result-container {
+                h2 {
+                    font-size: $desktop-font-size-medium;
+                }
+
+                p {
+                    font-size: $desktop-font-size-small;
+                }
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+    .search-result  {
+
+    }
+}

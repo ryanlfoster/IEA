@@ -1,0 +1,104 @@
+/*
+SapientSans styles:
+    "light"
+    "light-italic"
+    "regular"
+    "regular-italic"
+    "medium"
+    "medium-italic"
+    "bold"
+    "bold-italic"
+    "black"
+    "black-italic"
+
+SapientCentroSlab
+    "extra-thin"
+    "extra-thin-italic"
+    "thin"
+    "thin-italic"
+    "light"
+    "light-italic"
+    "regular"
+    "italic"
+    "medium"
+    "medium-italic"
+    "bold"
+    "bold-italic"
+    "black"
+    "black-italic"
+    "ultra-black"
+    "ultra-black-italic"
+*/
+@mixin font-family($family: "Helvetica", $style: "regular") {
+    @if $family == "Arial" {
+        font-family: Arial, sans-serif;
+    } @else if $family == "ArialNarrow" {
+        @if $style == "bold-italic" {
+            font-family: "Arial Narrow", sans-serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+    } @else if $family == "Helvetica" {
+        font-family: Helvetica, Arial, sans-serif;
+    } @else if $family == "SapientSans" {
+        @if $style == "bold" {
+            font-family: "sapientsansboldregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "bold-italic" {
+            font-family: "sapientsansbolditalicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "black" {
+            font-family: "sapientsansblackregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "black-italic" {
+            font-family: "sapientsansblackitalicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "light" {
+            font-family: "sapientsanslightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "light-italic" {
+            font-family: "sapientsanslightitalicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "medium" {
+            font-family: "sapientsansmediumregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "medium-italic" {
+            font-family: "sapientsansmediumitalicRg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "regular" {
+            font-family: "sapientsansregularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } @else if $style == "regular-italic" {
+            font-family: "sapientsansregularitalicRg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        font-weight: normal;
+        font-style: normal;
+    } @else if $family == "SapientCentroSlab" {
+        @if $style == "black" {
+            font-family: "sapient_centro_slabblack", Georgia, Times, "Times New Roman", serif;
+        } @else if $style == "black-italic" {
+            font-family: "sapient_centro_slabBlkIt", Georgia, Times, "Times New Roman", serif;
+        } @else if $style == "bold" {
+            font-family: "sapient_centro_slabbold", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "bold-italic" {
+            font-family: "sapient_centro_slabBdIt", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "italic" {
+            font-family: "sapient_centro_slabitalic", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "light" {
+            font-family: "sapient_centro_slablight", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "light-italic" {
+            font-family: "sapient_centro_slabLtIt", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "medium" {
+            font-family: "sapient_centro_slabmedium", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "medium-italic" {
+            font-family: "sapient_centro_slabMdIt", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "regular" {
+            font-family: "sapient_centro_slabregular", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "thin" {
+            font-family: "sapient_centro_slabthin", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "thin-italic" {
+            font-family: "sapient_centro_slabThIt", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "ultra-black" {
+            font-family: "sapient_centro_slabultrablack", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "ultra-black-italic" {
+            font-family: "sapient_centro_slabultraBlkIt", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "extra-thin" {
+            font-family: "sapient_centro_slabextrathin", Georgia, Times, "Times New Roman", serif;
+        }  @else if $style == "extra-thin-italic" {
+            font-family: "sapient_centro_slabXThIt", Georgia, Times, "Times New Roman", serif;
+        }
+        font-weight: normal;
+        font-style: normal;
+    }
+}

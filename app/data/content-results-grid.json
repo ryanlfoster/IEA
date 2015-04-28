@@ -1,0 +1,289 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "tenant": {
+            "tenantConfigMap": {
+                "email_NEWS_TO": "spanghal@sapient.com",
+                "addThis_socialNetworks": "Facebook,Twitter,Gmail,Pinterest",
+                "defaultThumbImagePath": "/content/dam/engagednow/hero_video.png",
+                "output_date_format": "MMM dd yyyy",
+                "oldestYearOfBirth": "1900",
+                "analyticsKey": "ZDEtc2FwaWVudHNhbmRib3gtMTI1OTgtNDA4My0",
+                "form_PATH": "/content/belcourt/en_us/events/privateevents,/content/belcourt",
+                "youTubePlayerSrc": "//www.youtube.com/embed/",
+                "email_PE_PATH": "/content/usergenerated/belcourt/en-us/events/privateevents/cq-gen1380028217079/",
+                "emailTemplatePath": "/content/sakonnet/en_us/emailtemplate",
+                "reset": "com.sapient.platform.enow.aem.profile.service.ResetPassword",
+                "facebookShareThisURL": "https://www.facebook.com/sharer/sharer.php?u=",
+                "email_PE_TO": "spanghal@sapient.com",
+                "login": "com.sapient.platform.enow.aem.profile.service.Login",
+                "IDM_LOGIN": "http://localhost:8080/services/api/credentials/verify",
+                "IDM_FORGET_PASSWORD": "http://localhost:8080/services/api/credentials/token/create",
+                "pinterestShareThisURL": "http://www.pinterest.com/pin/create/button/?url=",
+                "IDM_CONSUMER_BY_ID": "http://localhost:8080/services/api/consumers/",
+                "IDM_RESPONSE_TIMEOUT": "5000",
+                "charset": "ISO-8859-1",
+                "imageScale_mob": "700",
+                "IDM_PROFILE_UPDATE": "http://localhost:8080/services/api/consumers",
+                "service.pid": "config.engagewithadobe",
+                "email_PE_FROM": "pgaur3@sapient.com",
+                "brightcovePlayerKey": "AQ~~,AAAB-EKyGAk~,FWLPqL0p3eox0yzvqceSQhW6rPFbXEvv",
+                "IDM_GET_IMAGE": "http://localhost:8080/services/api/image",
+                "analytics.json": "/apps/tenantSetup/config.files/engagewithadobe/analytics.json",
+                "IDM_RESET_PASSWORD": "http://localhost:8080/services/api/credentials/token/resetPasswordAndDeleteToken",
+                "isAnalytics": "false",
+                "canvasUploadTimeOut": "10000",
+                "isMultiChannel": "false",
+                "update": "com.sapient.platform.enow.aem.profile.service.UpdateProfile",
+                "IDM_VALIDATE_TOKEN": "http://localhost:8080/services/api/credentials/token/verify",
+                "LOGIN_COOKIE_MAX_AGE": "2592000",
+                "videoGalleryPlayMode": "popup",
+                "vimeoPlayerSrc": "http://player.vimeo.com/video/",
+                "viewPortWithoutScaleTag": true,
+                "validate-token": "com.sapient.platform.enow.aem.profile.service.ValidateToken",
+                "twitterShareThisURL": "http://www.twitter.com/share?url=",
+                "fbShareImage": "/content/dam/engagednow/hero_video.png",
+                "defaultCarouselImagePath": "/content/dam/sakonnet/content-hero.jpg",
+                "domain": "engagewithadobe.com",
+                "analyticsProvider": "omniture",
+                "email_NEWS_PATH": "/content/usergenerated/belcourt/en-us/cq-gen1380020509072/",
+                "LOGIN_COOKIE_DEFAULT_PATH": "/",
+                "imageScale_full": "1280",
+                "form_FIELD": "budget,name2,date,email,eventtype,message,numberofattendees,phonenumber",
+                "IDM_IMAGE_SAVE": "http://localhost:8080/services/api/image/{0}",
+                "tenantID": "00004",
+                "brightcovePlayerId": "2869183427001",
+                "clientInfo": "Engage With Adobe",
+                "register": "com.sapient.platform.enow.aem.profile.service.Register",
+                "IDM_REGISTER": "http://localhost:8080/services/api/consumers",
+                "EMAIL_FROM": "admin.engagedNow@sapient.com",
+                "imageScale_tab": "1024",
+                "fbAdminId": "452523228200083",
+                "forget": "com.sapient.platform.enow.aem.profile.service.ForgetPassword",
+                "email_NEWS_FROM": "pgaur3@sapient.com"
+            },
+            "tenantEmailInfo": {
+                "emailPePath": "/content/usergenerated/belcourt/en-us/events/privateevents/cq-gen1380028217079/",
+                "emailNewsPath": "/content/usergenerated/belcourt/en-us/cq-gen1380020509072/",
+                "emailPeTo": "spanghal@sapient.com",
+                "emailPeFrom": "pgaur3@sapient.com",
+                "emailFrom": "admin.engagedNow@sapient.com",
+                "emailNewsFrom": "pgaur3@sapient.com",
+                "serviceName": null,
+                "purgeActive": null,
+                "emailPrefix": null,
+                "emailTo": null,
+                "emailServiceClass": null,
+                "emailSubject": null,
+                "emailSchedulerExp": null,
+                "emailReportGen": null,
+                "emailPassword": null,
+                "emailPagesUgc": null,
+                "emailFormName": null,
+                "emailField": null,
+                "emailDuration": null,
+                "emailBody": null,
+                "emailActive": null,
+                "emailNewTo": "spanghal@sapient.com"
+            },
+            "tenantProfileInfo": {
+                "login": "com.sapient.platform.enow.aem.profile.service.Login",
+                "register": "com.sapient.platform.enow.aem.profile.service.Register",
+                "update": "com.sapient.platform.enow.aem.profile.service.UpdateProfile",
+                "forget": "com.sapient.platform.enow.aem.profile.service.ForgetPassword",
+                "reset": "com.sapient.platform.enow.aem.profile.service.ResetPassword",
+                "validateToken": "com.sapient.platform.enow.aem.profile.service.ValidateToken",
+                "emailTemplatePath": "/content/sakonnet/en_us/emailtemplate",
+                "formPath": "/content/belcourt/en_us/events/privateevents,/content/belcourt",
+                "formField": "budget,name2,date,email,eventtype,message,numberofattendees,phonenumber",
+                "loginCookieMaxAge": "2592000",
+                "loginCookieDefaultPath": "/"
+            },
+            "tenantIdmServicesInfo": {
+                "idmValidateToken": "http://localhost:8080/services/api/credentials/token/verify",
+                "idmLogin": "http://localhost:8080/services/api/credentials/verify",
+                "idmImageSave": "http://localhost:8080/services/api/image/{0}",
+                "idmConsumerById": "http://localhost:8080/services/api/consumers/",
+                "idmResponseTimeOut": "5000",
+                "idmProfileUpdate": "http://localhost:8080/services/api/consumers",
+                "idmRegister": "http://localhost:8080/services/api/consumers",
+                "idmImage": "http://localhost:8080/services/api/image",
+                "idmResetPassword": "http://localhost:8080/services/api/credentials/token/resetPasswordAndDeleteToken",
+                "idmForgetPassword": "http://localhost:8080/services/api/credentials/token/create"
+            },
+            "tenantSocialShareInfo": {
+                "twitterShareThisUrl": "http://www.twitter.com/share?url=",
+                "popOverJS": null,
+                "pinterestShareThisUrl": "http://www.pinterest.com/pin/create/button/?url=",
+                "fbShareImage": "/content/dam/engagednow/hero_video.png",
+                "fbAdminId": "452523228200083",
+                "facebookShareThisUrl": "https://www.facebook.com/sharer/sharer.php?u=",
+                "addThisSocialNetworks": "Facebook,Twitter,Gmail,Pinterest"
+            },
+            "tenantAnalyticsInfo": {
+                "analyticsKey": "ZDEtc2FwaWVudHNhbmRib3gtMTI1OTgtNDA4My0",
+                "analyticsProvider": "omniture",
+                "isAnalytics": "false",
+                "analyticsJson": "/apps/tenantSetup/config.files/engagewithadobe/analytics.json",
+                "domain": "engagewithadobe.com",
+                "clientInfo": "Engage With Adobe"
+            },
+            "tenantDesignInfo": {
+                "isMultiChannel": "false",
+                "fontUrl": null,
+                "parallexCss": null,
+                "parallexCssUrl": null
+            },
+            "tenantId": "00004",
+            "brightcovePlayerId": "2869183427001",
+            "brightcovePlayerKey": "AQ~~,AAAB-EKyGAk~,FWLPqL0p3eox0yzvqceSQhW6rPFbXEvv",
+            "charset": "ISO-8859-1",
+            "outputDateFormat": "MMM dd yyyy",
+            "outputTimeFormat": null,
+            "tenantName": null
+        },
+        "randomNumber": "569",
+        "path": "/content/engagewithadobe/en_us/events/jcr:content/flexi_hero_par/contentresultsgrid",
+        "viewType": "normal",
+        "componentType": "contentResultsGrid",
+        "isContainer": false,
+        "contentResultsGrid": {
+            "totalResults": 12,
+            "resultCount": 2,
+            "configurations": {
+                "resultContentLabel": "Result Contents",
+                "viewFormat": 3,
+                "pageSize": 3,
+                "lazyload": true,
+                "noResultCopy": "No Results",
+                "sortRequired": true,
+                "sortLabel": "Sort By",
+                "defaultSortOption": "Descending",
+                "sortOptions": [
+                    {
+                        "key": "asc",
+                        "value": "Title A 2 Z",
+                        "field": "titleDetail"
+                    },
+                    {
+                        "key": "desc",
+                        "value": "title Z to A",
+                        "field": "titleDetail"
+                    },
+                    {
+                        "key": "asc",
+                        "value": "Price 0 to 9",
+                        "field": "price"
+                    },
+                    {
+                        "key": "desc",
+                        "value": "Price 9 to 0",
+                        "field": "price"
+                    }
+                ]
+            },
+            "contentType": "event",
+            "contentResults": [
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "A Third Page",
+                    "shortDescription": "This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/third-page",
+                    "price": 500
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "B Adobe Second Page",
+                    "shortDescription": "B This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-second-page",
+                    "price": 600
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "C Adobe First Page",
+                    "shortDescription": "C This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-first-page",
+                    "price": 700
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "D Adobe Third Page",
+                    "shortDescription": "D This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-third-page",
+                    "price": 800
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "E Second Page",
+                    "shortDescription": "E This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/second-page",
+                    "price": 900
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "F First Page",
+                    "shortDescription": "This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/first-page",
+                    "price": 100
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "G Third Page",
+                    "shortDescription": "This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/third-page",
+                    "price": 1600
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "H Adobe Second Page",
+                    "shortDescription": "This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-second-page",
+                    "price": 1700
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "I Adobe First Page",
+                    "shortDescription": "This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-first-page",
+                    "price": 1800
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "J Adobe Third Page",
+                    "shortDescription": "This is the adobe first page. Adobe first venture.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-third-page",
+                    "price": 1900
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "K Second Page",
+                    "shortDescription": "This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/second-page",
+                    "price": 2000
+                },
+                {
+                    "imageDetail": "http://lorempixel.com/300/300/food/?",
+                    "titleDetail": "L First Page",
+                    "shortDescription": "This is adobe's First Page.",
+                    "ctaText": "Read More",
+                    "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/first-page",
+                    "price": 2001
+                }
+            ]
+        }
+    }
+}

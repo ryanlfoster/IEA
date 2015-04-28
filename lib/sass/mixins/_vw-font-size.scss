@@ -1,0 +1,4 @@
+@mixin vw-font-size($fontSize, $ratio: 0.071) {
+    @include rem(font-size, $fontSize + px);
+    font-size: ($fontSize * $ratio) + vw;
+}

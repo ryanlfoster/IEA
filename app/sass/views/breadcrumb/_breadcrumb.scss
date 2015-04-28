@@ -1,0 +1,34 @@
+.breadcrumb {
+
+
+	/* Generic icons for the component*/
+	li {
+		+ li:before {
+			font-family: icomoon;
+			@extend .icon-chevron-side;
+		}
+	}
+
+
+
+	/* Theme specific changes */
+	@include theme('whitelabel') { 
+
+		li {
+			line-height: $font-size-large;
+			+ li:before {
+				color: $color-iea-light-grey;
+				font-size: 14px;
+				vertical-align: top;
+			}
+			&.active {
+				a {
+					color: $color-iea-dark-grey;
+					&:hover, &:active {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

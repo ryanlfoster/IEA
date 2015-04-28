@@ -1,0 +1,54 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.video {
+
+}
+
+@include theme('whitelabel') {
+
+    .video {
+
+        .video-details {
+            h5 {
+                font-family: $font-sapient-centroslab-medium;
+                font-weight: normal;
+                font-size: $font-size-large;
+            }
+        }
+
+        div.video-frame, .video-container{
+            background-color: $color-iea-black;
+        }
+
+        legend {
+            &.video-title {
+                font-size: $mobile-font-size-x-large;
+
+                 @media (min-width: $bp-large) { 
+                    font-size: $tablet-font-size-x-large;
+                 }
+
+                 @media (min-width: $bp-extra-large) { 
+                    font-size: $desktop-font-size-x-large;
+                 }
+            }
+        }
+
+        .video-details {
+            p {
+                color: $color-iea-black;
+                font: normal 1em $font-family-base;
+            }
+        }
+    }
+
+    .mfp-content .video-container{
+        background-color: $color-iea-black;
+    }
+}
+
+@include theme('aurora') {
+
+    .video {
+
+    }
+}

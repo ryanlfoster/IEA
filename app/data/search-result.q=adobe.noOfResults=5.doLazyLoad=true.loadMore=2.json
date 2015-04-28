@@ -1,0 +1,59 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "searchResult": {
+            "results": [
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/first-page",
+                    "linkSummary": "This is <strong>adobe's</strong> First Page.",
+                    "linkTitle": "Second page"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-fifth-page",
+                    "linkSummary": "This is the <strong>adobe</strong> first page. Adobe first venture.",
+                    "linkTitle": "Second page"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-fourth-page",
+                    "linkSummary": "This is the <strong>adobe</strong> first page. Adobe first venture.",
+                    "linkTitle": "Second page"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/magazine",
+                    "linkSummary": "Adobe Marketing Cloud Blog",
+                    "linkTitle": "Second page"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/magazine",
+                    "linkSummary": "Adobe Marketing Cloud Blog",
+                    "linkTitle": "Second page"
+                }
+            ],
+            "totalResults": 12,
+            "searchText": "adobe",
+            "staticConfigurations": {
+                "searchResultsHeading": "results",
+                "defaultSearchTerm": null,
+                "showMoreResultsCopy": "Show More",
+                "noResultsText": "No Results",
+                "resultsForCopy": "Results For",
+                "showingLabelCopy": "Showing",
+                "paginatingOfCopy": "of"
+            },
+            "loadMoreConfig": {
+                "loadMoreBaseUrl": "data/search-result.json",
+                "loadMoreAjaxUrl": "q=adobe.noOfResults=5.doLazyLoad=true.loadMore=3"
+            },
+            "resultSize": 5
+        },
+        "randomNumber": "422",
+        "path": "/content/engagewithadobe/en_us/events/jcr:content/flexi_par/searchresult",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "componentType": "searchResult",
+        "isContainer": false
+    }
+}

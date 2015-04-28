@@ -1,0 +1,35 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "expandCollapse": {
+            "panels": [
+                {
+                    "content": "<p>A Content Author must be able to set the breadcrumb component to hide the site homepage from the breadcrumb.</p>\n<p>NOTE: This is a content strategy decision for a specific site. Some sites prefer to hide the homepage as it is considered implied that all paths lead back to the homepage. Therefore it is redundant to repeatedly display the homepage in the breadcrumb.</p>\n<p>NOTE: As discussed in tech design review, this requirement will be supported via current OOTB Adobe component feature to set the level in which the breadcrumb will begin.</p>\n",
+                    "heading": "Breadcrumb",
+                    "imagePath": "http://www.placehold.it/100x100"
+                },
+                {
+                    "content": "<p>At approximately 3am this morning I said a prayer with the boot camp prison Drill Instructors and Lieutenants just minutes before the new group of youth offenders stepped off the bus and into a whole new world of hell. We're proud to partner with HBO DOCUMENTARY FILMS to bring you a one of kind inside look at why this highly intense boot camp prison is one of the toughest and most successful in the world. #DadeCounty #Commitment #Pride #Integrity #YouthOffenders #BreakEmDown #ToBuildEmBackUp #7BucksProductions #44BlueProductions #HBO #TheRockAndHardPlace</p>\n",
+                    "expanded": true,
+                    "heading": "Expand Collapse Component",
+                    "imagePath": "http://www.placehold.it/100x100"
+                },
+                {
+                    "content": "<p>Inspired by you. It's official: #ProjectRock is under way.. We're all a project and a work in progress.. We get knocked down, get back up, get better and kick that ass again. Big things are coming soon. Get ready.. #RecognizedSymbol #HardWork #Commitment #Purpose #</p>\n",
+                    "expanded": true,
+                    "heading": "Country selector",
+                    "imagePath": "http://www.placehold.it/100x100"
+                }
+            ]
+        },
+        "randomNumber": "137",
+        "path": "/content/iea/en_us/_jcr_content/flexi_hero_par/expandcollapse",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "componentType": "expandCollapse",
+        "isContainer": "false"
+    }
+}

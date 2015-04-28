@@ -1,0 +1,14 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.link-list {
+    
+    @include theme('whitelabel') {
+            h2 {
+            color: $color-iea-white;
+        }
+    }
+
+    @include theme('aurora') {
+
+
+    }
+}

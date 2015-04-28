@@ -1,0 +1,9 @@
+@mixin cq($cq-css, $cq-cssname) {
+  
+    @if $cq-css {
+        #{$cq-cssname} {
+            @content;
+        }
+    }
+
+}

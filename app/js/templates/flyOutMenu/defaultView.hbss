@@ -1,0 +1,68 @@
+
+    {{#ifCondx flyOutMenu.flyOutMenuLinks.length '===' 1}}
+        <ul class="dropdown-menu single-result">
+    {{/ifCondx}}
+
+    {{#ifCondx flyOutMenu.flyOutMenuLinks.length '>' 1}}
+        <ul class="dropdown-menu multi-column columns-{{flyOutMenu.flyOutMenuLinks.length}}">
+            <div class="">
+    {{/ifCondx}}
+
+        {{#each flyOutMenu.flyOutMenuLinks}}
+
+                {{#ifCondx ../flyOutMenu.flyOutMenuLinks.length '===' 2}}
+                <div class="col-sm-6 ">
+                    <ul class="multi-column-dropdown">
+                {{/ifCondx}}
+                {{#ifCondx ../flyOutMenu.flyOutMenuLinks.length '===' 3}}
+                <div class="col-sm-4 ">
+                    <ul class="multi-column-dropdown">
+                {{/ifCondx}}
+                {{#ifCondx ../flyOutMenu.flyOutMenuLinks.length '===' 4}}
+                <div class="col-sm-2 ">
+                    <ul class="multi-column-dropdown">
+                {{/ifCondx}}
+
+                    {{#if menuTitle}}
+                    <h4>{{menuTitle}}</h4>
+                    {{/if}}
+
+                     {{#if imagePath}}
+                        {{#if imageLinkUrl}}
+                            <li>
+                                <a href="{{imageLinkUrl}}">
+                                    {{adaptive imagePath "" imageAltText "" ""}}
+                                </a>
+                            </li>
+                        {{else}}
+                            <li>
+                                {{adaptive imagePath "" imageAltText "" ""}}
+                            </li>
+                        {{/if}}
+                    {{/if}}
+
+                    {{#if menus}}
+                        {{#each menus}}
+                            {{#if menuLink}}
+                                <li><a href="{{menuLink}}">{{menuLabel}}</a></li>
+                            {{else}}
+                                <li><span>{{menuLabel}}</span></li>
+                            {{/if}}
+                        {{/each}}
+                    {{/if}}
+
+
+                {{#ifCondx ../flyOutMenu.flyOutMenuLinks.length '>' 1}}
+                    </ul>
+                </div>
+                {{/ifCondx}}
+        {{/each}}
+
+    {{#ifCondx flyOutMenu.flyOutMenuLinks.length '>' 1}}
+        </div>
+    </ul>
+    {{/ifCondx}}
+
+    {{#ifCondx flyOutMenu.flyOutMenuLinks.length '===' 1}}
+        </ul>
+    {{/ifCondx}}

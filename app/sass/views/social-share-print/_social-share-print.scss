@@ -1,0 +1,18 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.social-share-print {
+
+}
+
+@include theme('whitelabel') {
+    .social-share-print {
+        .addthis_toolbox > a {
+            font-family: $font-sapient-centroslab-medium;
+            font-size: $font-size-medium;
+        }
+    }
+
+}
+
+@include theme('aurora') {
+
+}

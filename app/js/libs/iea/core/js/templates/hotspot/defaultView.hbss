@@ -1,0 +1,38 @@
+{{#if hotspot.bgTitle}}
+    <div class="image-title">{{hotspot.bgTitle}}</div>
+{{/if}}
+{{#if hotspot.background}}
+<div class="base-image">
+    {{adaptive hotspot.background hotspot.extension hotspot.bgAltText hotspot.bgTitle ""}}
+    {{#each hotspot.hotspots}}
+        <div class="pointer {{#unless title}}{{#unless description}}{{#unless imageSRC}}hidden{{/unless}}{{/unless}}{{/unless}}">
+            <div class="hotspot-pointer" data-top="{{position.top}}" data-left = "{{position.left}}"></div>
+            <div class="hotspot-content">
+                {{#if imageSRC}}
+                    <div class="image hotspot-image">
+                        <img src="{{imageSRC}}" alt="">
+                    </div>
+                {{/if}}
+                {{#if title}}
+                    {{#if description}}
+                        <div class="content {{#if imageSRC}} with-image {{/if}}">
+                            <h3 class = "title">{{title}}</h3>
+                            <p class = "desc">{{description}}</p>
+                        </div>
+                    {{else}}
+                        <div class="content {{#if imageSRC}} with-image {{/if}}">
+                            <h3 class = "title">{{title}}</h3>
+                        </div>
+                    {{/if}}
+                {{else}}
+                    {{#if description}}
+                    <div class="content {{#if imageSRC}} with-image {{/if}}">
+                        <p class = "desc">{{description}}</p>
+                    </div>
+                    {{/if}}
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+</div>
+{{/if}}

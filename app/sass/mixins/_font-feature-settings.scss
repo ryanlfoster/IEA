@@ -1,0 +1,6 @@
+@mixin font-feature-settings($values) {
+    -ms-font-feature-settings:     $values;  /* IE10 */
+    -moz-font-feature-settings:    $values;  /* Firefox */
+    -webkit-font-feature-settings: $values;  /* Chrome, Safari, Opera */
+    font-feature-settings:         $values;  /* Future-proof! */ 
+}

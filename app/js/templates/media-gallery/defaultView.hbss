@@ -1,0 +1,60 @@
+<div class="media-gallery-container row clearfix">
+    {{#if mediaGallery.heading}}
+    <h1 class="media-gallery-heading">{{mediaGallery.heading}}</h1>
+    {{/if}}
+    {{#if mediaGallery.subHeading}}
+    <p class="media-gallery-subheading">{{mediaGallery.subHeading}}</p>
+    {{/if}}
+
+    <div class="media-slides">
+        {{#each mediaGallery.media}}
+            <div class="col-lf-3 col-md-3 col-sm-3 col-xs-12 media-slide">
+                <div class="thumbnail">
+                    <a class="media-link" href="#overlay-{{@index}}" type="inline">
+                      <img class="hidden-xs hidden-sm" src="{{this.thumbnailURL}}" alt="">
+                      {{#ifCond this.mediaType "image"}}
+                          <div id="overlay-{{@index}}" class="overlay visible-xs visible-sm hidden-md hidden-lg">
+                            {{adaptive this.fileReference this.extension this.alt this.imageTitle this.fileName}}
+                          </div>
+
+                          {{#if this.imageTitle}}
+                          <div class="caption">
+                            <h4>{{this.imageTitle}}</h4>
+                          </div>
+                          {{/if}}
+                      {{else}}
+                          <div id="overlay-{{@index}}" class="overlay visible-xs visible-sm hidden-md hidden-lg">
+                            {{#ifCond this.viewType "html5"}}
+                              <div class="video" data-mp4="{{this.videoFormats.mp4Video}}" data-ogg="{{this.videoFormats.oggVideo}}" data-flv="{{this.videoFormats.flvVideo}}" data-type="{{this.viewType}}"></div>
+                            {{else}}
+                              <div class="video" data-url="{{this.videoId}}" data-type="{{this.viewType}}"></div>
+                            {{/ifCond}}
+                          </div>
+
+                          {{#if this.videoTitle}}
+                          <div class="caption">
+                            <h4>{{this.videoTitle}}</h4>
+                          </div>
+                          {{/if}}
+                      {{/ifCond}}
+                      <span class="icon-Enlarge"></span>
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <div class="media-thumbnail-container visible-xs visible-sm hidden-md hidden-lg">
+      <ul class="media-thumbnails">
+        {{#each mediaGallery.media}}
+          <li class="media-thumbnail slide-index-{{@index}}"><a href="#">
+            {{#ifCond this.mediaType "image"}}
+              <img src="{{this.thumbnailURL}}" alt="{{this.imageTitle}}">
+            {{else}}
+              <img src="{{this.thumbnailURL}}" alt="{{this.videoTitle}}">
+            {{/ifCond}}
+          </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+</div>

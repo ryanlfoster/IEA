@@ -1,0 +1,101 @@
+{
+    "data": {
+        "mediaGallery": {
+            "subHeading": "gallerySubHeading",
+            "heading": "galleryHeading",
+            "media": [
+                {
+                    "imageTitle": "image",
+                    "extension": "jpg",
+                    "alt": "alt text",
+                    "isAdaptive": "false",
+                    "fileReference": "http://lorempixel.com/800/450/food/?",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "mediaType": "image"
+                },
+                {
+                    "imageTitle": "image",
+                    "extension": "jpg",
+                    "alt": "alt text",
+                    "isAdaptive": "false",
+                    "fileReference": "http://lorempixel.com/800/450/food/?",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "mediaType": "image"
+                },
+                {
+                    "imageTitle": "image",
+                    "extension": "jpg",
+                    "alt": "alt text",
+                    "isAdaptive": "false",
+                    "fileReference": "http://lorempixel.com/800/450/food/?",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "mediaType": "image"
+                },
+                {
+                    "imageTitle": "image",
+                    "extension": "jpg",
+                    "alt": "alt text",
+                    "isAdaptive": "false",
+                    "fileReference": "http://lorempixel.com/800/450/food/?",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "mediaType": "image"
+                },
+                {
+                    "videoTitle": "video",
+                    "videoId": "123123",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "vimeo",
+                    "mediaType": "video"
+                },
+                {
+                    "videoTitle": "video",
+                    "videoId": "123123",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "vimeo",
+                    "mediaType": "video"
+                },
+                {
+                    "videoTitle": "video",
+                    "videoId": "7HKoqNJtMTQ",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "youtube",
+                    "mediaType": "video"
+                },
+                {
+                    "videoTitle": "video",
+                    "videoId": "7HKoqNJtMTQ",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "youtube",
+                    "mediaType": "video"
+                },
+                {
+                    "videoTitle": "video",
+                    "videoId": "2874968075001",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "brightcove",
+                    "mediaType": "video"
+                },
+                {
+                    "videoTitle": "video",
+                    "thumbnailURL": "http://lorempixel.com/800/450/food/?",
+                    "viewType": "html5",
+                    "mediaType": "video",
+                    "videoFormats" : {
+                        "mp4Video": "http://localhost:9000/images/video/tamil.mp4",
+                        "oggVideo": "http://localhost:9000/images/video/tamil.ogg",
+                        "flvVideo": "http://localhost:9000/images/video/tamil.flv"
+                    }
+                }
+            ]
+        },
+        "randomNumber": "785",
+        "path": "/content/test/page1/page2/jcr:content/flexi_par/mediagallery",
+        "viewType": "defaultView",
+        "componentType": "mediaGallery",
+        "isContainer": false
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

@@ -1,0 +1,72 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+@include theme('whitelabel') {
+
+    .instagram-feed-header {
+        background-color: $color-instagram-blue;
+        font-size: $mobile-font-size-small;
+        color: $color-iea-white;
+
+        h2 {
+            font-family: $font-sapient-centroslab-medium;
+            font-size: $mobile-font-size-large;
+        }
+
+        @media (min-width: $bp-large) {
+            font-size: $tablet-font-size-small;
+
+            h2 {
+                font-size: $tablet-font-size-large;
+            }
+        }
+
+        @media (min-width: $bp-extra-large) {
+            font-size: $desktop-font-size-large;
+
+            p {
+                font-size: $desktop-font-size-x-large;
+                font-family: $font-sapient-centroslab-medium;
+            }
+        }
+    }
+
+    .instagram-feed {
+        .instagram-feed-wrapper {
+
+            .thumbnail {
+                background: #ecedee;
+            }
+        }
+    }
+
+    .small-container, .x-small-container {
+        .instagram-feed-header {
+            font-size: $mobile-font-size-small;
+
+            h2 {
+                font-size: $mobile-font-size-large;
+            }
+
+            p {
+                font-size: $mobile-font-size-small;
+            }
+        }
+    }
+
+    .medium-container {
+        .instagram-feed-header {
+            font-size: $tablet-font-size-small;
+
+            h2 {
+                font-size: $tablet-font-size-large;
+            }
+
+            p {
+                font-size: $tablet-font-size-small;
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+}

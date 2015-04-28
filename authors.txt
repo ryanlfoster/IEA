@@ -1,0 +1,10 @@
+aayyap = Anooj Ayyappan <aayyappan@sapient.com>
+agoe29 = Ankur Goel <angoel@sapient.com>
+bkuma9 = Binay Kumar <bkumar10@sapient.com>
+jdagar = Jitender Dagar <jdagar@sapient.com>
+ntyag1 = Nitin Kumar Tyagi <ntyagi@sapient.com>
+pjagan = Praveen Jaganathan <pjaganathan@sapient.com>
+skarm2 = Surbhi Karmahe <skarmahe@sapient.com>
+smond1 = Suvarna Mondal <smondal2@sapient.com>
+vpan14 = Vikesh Pandey <vpandey11@sapient.com>
+vchatu = Vaibhav Chaturvedi <vchaturvedi@sapient.com>

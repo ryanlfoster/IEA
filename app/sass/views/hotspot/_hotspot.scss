@@ -1,0 +1,57 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+
+@include theme('whitelabel') {
+        .hotspot-pointer {
+            &.arrow:before{
+                border-top: 20px solid $color-iea-white;
+            }
+        }
+
+        .hotspot-content {
+            .image{
+                &.hotspot-image {
+                    .close{
+                        color: $color-iea-white;
+                    }
+                }
+            }
+
+            .cross-icon-tooltip {
+                background-color: $color-iea-blue;
+            }
+
+            .content {
+                .desc{
+                    font-size: $font-size-x-small;
+                    font-family: $font-sapient-centroslab-regular;
+                }
+            }
+        }
+
+        .tooltipster-default {
+            background: $color-iea-white;
+            color: $color-iea-black;
+            @include box-shadow(2px, 0px, 6px, 0, $color-iea-medium-grey);
+        }
+
+        .hotspot-content {
+            background-color: $color-iea-white;
+
+            .content {
+
+                .title{
+                    color: $color-iea-blue;
+                    font-size: $font-size-x-small;
+                    font-family: $font-sapient-centroslab-medium;
+                }
+            }
+        }
+
+        .image-title {
+            background-color: $color-iea-black;
+            color: $color-iea-white;
+            font-size: $font-size-x-large;
+            font-family: $font-sapient-centroslab-regular;
+        }
+
+}

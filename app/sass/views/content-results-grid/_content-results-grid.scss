@@ -1,0 +1,119 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+@include theme('whitelabel') {    
+    .content-results-grid {
+        clear: both;
+
+        .grid-header {
+            h2 {
+                font-size: $font-size-x-large;
+                border-bottom: 1px solid $color-iea-dark-grey;
+            }
+        }
+
+        .sortby {
+            font-family: $font-size-medium;
+        }
+
+        .grid-body-head {
+            font-size: $font-size-large;
+        }
+
+        .thumbnail {
+            background: #f2f1eb;
+        }
+
+        .caption {
+
+            h4 {
+                a {
+                    font-size: $font-size-medium;
+                }
+            }
+
+            p {
+                font-size: $font-size-small;
+            }
+        }
+
+        .grid-body-head {
+            .total-res {
+                font-family: $font-sapient-centroslab-medium;
+            }
+        }
+
+        .thumbnail {
+            background: #d4d1c7;
+
+            .thumbnail-arrow {
+                color: #d4d1c7;
+            }
+        }
+
+        .caption {
+
+            h4 {
+                a {
+                    color: #21addd;
+                    font-size: $font-size-medium;
+                }
+            }
+
+            p {
+                color: #575757;
+                font-size: $font-size-small;
+            }
+        }
+
+        .dropdown-toggle {
+            background-color: $color-iea-white;
+            color: $color-iea-black;
+        }
+
+        ul.dropdown-menu {
+            background-color: $color-iea-white;
+
+            li > a{
+                color: $color-iea-black;
+            }
+        }
+
+        .btn-group {
+            button {
+                font-size: $font-size-medium;
+            }
+        }
+
+        .btn-group.open {
+            .dropdown-toggle {
+                font-family: $font-size-medium;
+                background-color: $color-iea-white;
+                color: $color-iea-black;
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+    .content-results-grid {
+        .thumbnail {
+            background: $color-aurora-white;
+            border-bottom: 1px dotted $color-aurora-custom-grey;
+        }
+
+        .caption {
+
+            h4 {
+                a {
+                    color: $color-aurora-blue;
+                    font-size: $font-size-medium;
+                }
+            }
+
+            p {
+                color: $color-aurora-dark-grey;
+                font-size: $font-size-small;
+            }
+        }
+    }
+}

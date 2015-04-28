@@ -1,0 +1,62 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+@include theme('whitelabel') {
+    .rich-text-image {
+
+        .thumbnail {
+            font-family: $font-family-base;
+        }
+
+        .caption {
+            font-size: $font-size-small;
+
+            h3 {
+                font-size: $font-size-large;
+            }
+
+            .btn-primary {
+                border-bottom: 1px solid $color-btn-border;
+                font-family: $font-family-base;
+                font-size: $font-size-large;
+                color: #fff;
+            }
+        }
+
+        a[disabled] {
+
+            &:hover {
+                color: $color-iea-blue;
+            }
+        }
+
+        /* iPads (portrait and landscape) */
+        @media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+            .caption {
+                p {
+                    font-size: $font-size-medium;
+                }
+            }
+        }
+
+        @media only screen and (min-width: $screen-lg-min) {
+
+            .caption {
+                p,a {
+                    font-size: $font-size-large;
+                }
+
+                 h3 {
+                    font-size: $font-size-h3;
+                }
+            }
+        }
+
+        .caption {
+
+            color: $color-iea-custom-grey;
+
+            a {
+                color: $color-iea-light-blue;
+            }
+        }
+    }
+}

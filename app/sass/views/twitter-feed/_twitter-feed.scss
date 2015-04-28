@@ -1,0 +1,131 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.twitter-feed {
+    @include theme('whitelabel') {
+        .twitter-header {
+            background-color: $color-iea-blue;
+            color: $color-iea-white;
+        }
+
+        a {
+            color:  $color-iea-white;
+            font-size: $mobile-font-size-medium;
+
+            &:hover {
+                color:  $color-iea-white;
+                text-decoration: none;
+            }
+        }
+
+        .button-wrapper {
+            padding: 10px;
+            text-align: right;
+        }
+
+        h1 {
+            padding: 4px 0 0 10px;
+            font-family: $font-sapient-centroslab-medium;
+            font-size: $mobile-font-size-large;
+        }
+
+        p {
+            padding: 0 0 8px 10px;
+            font-size: $mobile-font-size-small;
+        }
+
+        .btn {
+            background-color: $color-twitter-header;
+            padding: 5px 10px;
+            font-size: $mobile-font-size-small;
+            text-transform: capitalize;
+        }
+
+        @media (min-width: $bp-large) {
+
+            .twitter-header {
+                margin-bottom: 10px;
+                max-height: 100px;
+            }
+
+            h1 {
+                font-size: $tablet-font-size-large;
+            }
+
+            p {
+                font-size: $tablet-font-size-small;
+            }
+
+            .btn {
+                font-size: $tablet-font-size-small;
+            }
+        }
+
+        @media (min-width: $bp-extra-large) {
+
+            .twitter-header {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: $tablet-font-size-large;
+            }
+
+            p {
+                font-size: $desktop-font-size-large;
+                padding-top: 8px;
+            }
+
+            .btn {
+                font-size: $desktop-font-size-small;
+            }
+        }
+
+        iframe {
+            padding: 10px;
+        }
+
+    }
+}
+
+.small-container, .x-small-container {
+
+    .twitter-header {
+        h1 {
+            padding: 4px 0 0 10px;
+            font-size: $mobile-font-size-large;
+        }
+
+        p {
+            padding: 0 0 8px 10px;
+            font-size: $mobile-font-size-small;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: $mobile-font-size-small;
+        }
+    }
+}
+
+.medium-container {
+    .twitter-header {
+        margin-bottom: 10px;
+        max-height: 100px;
+
+        h1 {
+            font-size: $tablet-font-size-large;
+        }
+
+        p {
+            font-size: $tablet-font-size-small;
+        }
+
+        .btn {
+            font-size: $tablet-font-size-small;
+        }
+    }
+}
+
+
+@include theme('aurora') {
+
+}

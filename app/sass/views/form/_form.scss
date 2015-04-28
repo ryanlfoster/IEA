@@ -1,0 +1,57 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+.form {
+    @include theme('whitelabel') { 
+        .form-horizontal {
+            .control-label {
+                font-size: $mobile-font-size-small;
+
+
+                @media (min-width: $screen-sm) {
+                    font-size: $tablet-font-size-small;
+                }
+
+                @media (min-width: $screen-md) {
+                    font-size: $desktop-font-size-x-small;
+                }
+            }
+
+            .form-group {
+                .input-reset {
+                    background-color: $color-iea-light-grey;
+                }
+            }
+        }
+
+        .form-control {
+            @media (min-width: $screen-sm) {
+                font-size: $tablet-font-size-small;
+            }
+            @media (min-width: $screen-md) {
+                font-size: $desktop-font-size-x-small;
+            }
+        }
+
+        .btn-primary:hover {
+            background-color: $color-iea-black;
+            border-bottom: 1px solid $color-iea-medium-grey;
+        }
+
+        .form-success-msg {
+            color: $color-success-green;
+        }
+
+        @media (min-width: $screen-sm-min) {
+
+            .help-block {
+                font-size: $mobile-font-size-x-small;
+                @media (min-width: $bp-large) {
+                    font-size: $tablet-font-size-small;
+                }
+                @media (min-width: $bp-extra-large) {
+                    font-size: $desktop-font-size-x-small;
+                }
+            }
+        }
+    }
+}
+

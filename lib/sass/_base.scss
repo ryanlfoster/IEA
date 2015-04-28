@@ -1,0 +1,279 @@
+/* ----------------------------------------------------------------------------- *\
+   DEFAULTS
+\* ----------------------------------------------------------------------------- */
+$bp-small: 320px !default;
+$bp-medium: 480px !default;
+$bp-large: 768px !default;
+$bp-extra-large: 1025px !default;
+
+/* ----------------------------------------------------------------------------- *\
+    CONFIG
+\* ----------------------------------------------------------------------------- */
+$image-path: '<%= imagePath %>';
+$font-path: '<%= fontPath %>';
+
+$bp-small: <%= breakpointSmall %>;
+$bp-medium: <%= breakpointMedium %>;
+$bp-large: <%= breakpointLarge %>;
+$bp-extra-large: <%= breakpointXlarge %>;
+
+$containerSmall: <%= containerSmall %>;
+$containerMedium: <%= containerMedium %>;
+$containerLarge: <%= containerLarge %>;
+$containerXLarge: <%= containerXLarge %>;
+
+$icomoon-font-path:  $font-path + 'icons/';
+
+/* ----------------------------------------------------------------------------- *\
+   MIXINS
+\* ----------------------------------------------------------------------------- */
+@import "mixins/rem";
+@import "mixins/font-family";
+@import "mixins/font-face";
+@import "mixins/vw-font-size";
+@import "mixins/box-shadow";
+@import "mixins/opacity";
+@import "mixins/grayscale";
+@import "mixins/rounded";
+@import "mixins/background-size";
+@import "mixins/background";
+@import "mixins/gradient";
+@import "mixins/cq";
+@import "mixins/placeholder";
+@import "mixins/column-count";
+@import "mixins/appearance";
+@import "mixins/font-feature-settings";
+
+/* ----------------------------------------------------------------------------- *\
+   THEME DEFAULT - BOOTSTRAP
+\* ----------------------------------------------------------------------------- */
+//@import "bootstrap/breakpoints";
+@import "bootstrap/variables";
+
+/* ----------------------------------------------------------------------------- *\
+   PLUGIN
+\* ----------------------------------------------------------------------------- */
+// Core variables and mixins
+/* @import "sass-bootstrap/lib/variables"; */
+@import "sass-bootstrap/lib/mixins";
+
+// Reset
+@import "sass-bootstrap/lib/normalize";
+@import "sass-bootstrap/lib/print";
+
+// Core CSS
+@import "sass-bootstrap/lib/scaffolding";
+@import "sass-bootstrap/lib/type";
+@import "sass-bootstrap/lib/grid";
+@import "sass-bootstrap/lib/buttons";
+
+// Components
+@import "sass-bootstrap/lib/glyphicons";
+@import "sass-bootstrap/lib/dropdowns";
+@import "sass-bootstrap/lib/button-groups";
+@import "sass-bootstrap/lib/input-groups";
+@import "sass-bootstrap/lib/forms";
+@import "sass-bootstrap/lib/navs";
+@import "sass-bootstrap/lib/navbar";
+@import "sass-bootstrap/lib/thumbnails";
+@import "sass-bootstrap/lib/panels";
+@import "sass-bootstrap/lib/component-animations";
+
+// Utility classes
+@import "sass-bootstrap/lib/utilities";
+@import "sass-bootstrap/lib/responsive-utilities";
+
+// third party plugins
+@import "plugins/jquery.bxslider";
+@import "plugins/magnific-popup";
+@import "plugins/bootstrap.datepicker";
+@import "plugins/tooltipster";
+
+/* ----------------------------------------------------------------------------- *\
+   plugin override
+\* ----------------------------------------------------------------------------- */
+.mfp-image-holder .mfp-content,
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+    max-width: 960px;
+
+    .hidden-xs, .hidden-sm, .hidden-md, .hidden-lg {
+        display: block !important;
+    }
+}
+
+@media (max-width: $bp-medium) {
+    .mfp-hide {
+        display: block !important;
+    }
+}
+
+@media (min-width: $bp-medium) {
+    .mfp-image-holder .mfp-content,
+    .mfp-inline-holder .mfp-content,
+    .mfp-ajax-holder .mfp-content {
+        width: auto;
+    }
+}
+
+.mfp-counter {
+    display: none;
+}
+
+.mfp-s-loading .mfp-arrow {
+   display: none;
+}
+
+button.mfp-close {
+    .icon-close-light {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+}
+
+button.mfp-close,
+button.mfp-arrow,
+.bx-wrapper .bx-controls-direction a {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    padding: 0;
+}
+
+button.mfp-arrow, .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 0;
+    opacity: 0.65;
+    margin: 0;
+    top: 50%;
+    margin-top: -35px;
+    padding: 0;
+    width: 40px;
+    height: 70px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color : $black;
+    @include opacity(.5);
+
+    &.right {
+        right: 0;
+    }
+
+    &.left {
+        left: 0;
+    }
+
+    .icon-arrow-left,.icon-arrow-right {
+        color: $white;
+        font-size: 40px;
+    }
+}
+
+button.mfp-arrow:active {
+    margin-top: -35px;
+}
+
+button.mfp-arrow:hover, button.mfp-arrow:focus {
+    @include opacity(1);
+}
+
+
+.bx-wrapper .bx-controls-direction a {
+    text-indent: inherit;
+    text-decoration: none;
+
+    &.bx-prev, &.bx-next {
+        padding: 15px 0;
+    }
+}
+
+.white-popup-block {
+    background: $white;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+}
+
+/*************form ovrerides******************/
+
+.has-error .control-label {
+    color: inherit;
+}
+
+@media (max-width: $screen-xs-max) {
+    @include input-size('.input-md', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+
+    .btn-md {
+        @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+    }
+}
+
+/********************image loader*******************/
+
+picture img {
+  -webkit-transition: opacity 0.4s;
+     -moz-transition: opacity 0.4s;
+      -ms-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+ picture.is-loading, picture.is-broken {
+    min-height: 200px;
+    width: 100%;
+    margin: 0 5px 5px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+picture.is-loading {
+    @include background("common/loading.gif",$image-path,'no-repeat','center','center');
+    background-color: black;
+}
+
+picture.is-broken {
+    @include background("common/broken.png",$image-path,'no-repeat','center','center');
+    background-color: $color-noimg;
+}
+
+/* picture.is-loading img, */
+picture.is-broken img {
+    @include opacity(0);
+}
+
+/* ----------------------------------------------------------------------------- *\
+   COMPONENT DEFAULT
+\* ----------------------------------------------------------------------------- */
+@import "views/carousel/carousel";
+@import "views/accordion/accordion";
+@import "views/content-results-grid/content-results-grid";
+@import "views/dynamic-page-properties/dynamic-page-properties";
+@import "views/form/form";
+@import "views/hotspot/hotspot";
+@import "views/instagram-feed/instagram-feed";
+@import "views/link-list/link-list";
+@import "views/list/list";
+@import "views/media-gallery/media-gallery";
+@import "views/navigation/navigation";
+@import "views/panel/panel";
+@import "views/pinterest/pinterest";
+@import "views/plain-text-image/plain-text-image";
+@import "views/related-content-list/related-content-list";
+@import "views/rich-text-image/rich-text-image";
+@import "views/search-input/search-input";
+@import "views/search-result/search-result";
+@import "views/social-share-print/social-share-print";
+@import "views/tabbed-content/tabbed-content";
+@import "views/twitter-feed/twitter-feed";
+@import "views/video/video";
+@import "views/expand-collapse/expand-collapse";
+@import "views/breadcrumb/breadcrumb";
+@import "views/section-navigation/section-navigation";
+@import "views/country-language-selector/country-language-selector";
+@import "views/section-navigation/section-navigation";

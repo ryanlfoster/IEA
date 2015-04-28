@@ -1,0 +1,78 @@
+/* the base class name is the name added to each component in the component view js (home.js) */
+
+@include theme('whitelabel') {
+    .panel {
+        &.component {
+            color: $color-iea-white;
+            font-family: $font-sapient-centroslab-light;
+
+            .panel-overlay {
+
+                .text {
+
+                    &> h3 {
+                        font-size: $font-size-h3;
+                    }
+
+                    .text-small {
+                        font-size: $font-size-large;
+                    }
+                }
+
+                .animate-header-button {
+                    .link {
+                        font-size: $font-size-large;
+                    }
+                }
+            }
+
+            .panel-overlay {
+                .text {
+                     &> h3 {
+                        font-family: $font-sapient-centroslab-regular;
+                    }
+
+                    .text-small {
+                        font-family: $font-sapient-centroslab-regular;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+
+                .panel-overlay {
+                    .text {
+                        &> h3 {
+                            font-size: $font-size-h1;
+                        }
+
+                        .text-small {
+                            font-size: $font-size-large;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (min-width: $screen-lg-min) {
+
+                .panel-overlay {
+                    .text {
+
+                        .text-small {
+                            font-size: $font-size-large;
+                        }
+
+                        &> h3 {
+                            font-size: $font-size-h1 + 6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include theme('aurora') {
+
+}
+

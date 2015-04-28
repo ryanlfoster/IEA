@@ -1,0 +1,4 @@
+@mixin appearance($webkit: menulist-text, $moz: none) {
+	-webkit-appearance: $webkit;
+    -moz-appearance: $moz;
+}

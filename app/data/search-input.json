@@ -1,0 +1,24 @@
+{
+
+    "data": {
+        "randomNumber": "113",
+        "path": "/content/engagewithadobe/en_us/events/jcr:content/flexi_par/searchinput",
+        "searchInput": {
+            "basePath": "/content/engagewithadobe/en_us/events/2014/3",
+            "limit": "20",
+            "selector": "searchResults",
+            "resultPagePath": "/content/engagewithadobe/en_us/events",
+            "noOfResults": "5",
+            "randomNumber": "113",
+            "defaultText": "PlaceHolder",
+            "searchLabel": "",
+            "clientSideRendering": true,
+            "doLazyLoad": "true",
+            "searchButtonText": "",
+            "isAjax": true
+        },
+        "viewType": "defaultView",
+        "componentType": "searchInput",
+        "isContainer": false
+    }
+}

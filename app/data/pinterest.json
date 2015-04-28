@@ -1,0 +1,25 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "53",
+        "clientSideRendering": false,
+        "path": "/content/iea/en_us/panel_jitu_1/_jcr_content/flexi_hero_par/pinterest",
+        "viewType": "defaultView",
+        "componentType": "pinterest",
+        "isContainer": false,
+        "pinterest": {
+            "subTitle": "sample sub header",
+            "logoImage": "/content/dam/geometrixx/banners/banner-mono.png",
+            "maxPinNum": "10",
+            "randomNumber": "53",
+            "iconImage": "/content/dam/geometrixx/banners/banner-retro.png",
+            "pinterestUserName": "mscookiesncream",
+            "pinterestBoardURL": "nature",
+            "header": "sample header",
+            "followCTAText": "sample CTA text"
+        }
+    }
+}

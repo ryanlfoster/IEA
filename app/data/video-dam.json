@@ -1,0 +1,28 @@
+{
+    "data": {
+        "randomNumber": "194",
+        "path": "/content/iea/en_us/home/_jcr_content/flexi_hero_par/video",
+        "clientSideRendering": false,
+        "viewType": "dam",
+        "componentType": "video",
+        "isContainer": true,
+        "video": {
+            "videoFormats": {
+                "mp4Video": "http://leanbackplayer.com/videos/360p/elephants_dream_640x360_2.30.mp4",
+                "oggVideo": "http://leanbackplayer.com/videos/360p/elephants_dream_640x360_2.30.ogv",
+                "flvVideo": "http://localhost:9000/images/video/tamil.flv"
+            },
+            "fallbackUrl": "http://leanbackplayer.com/videos/poster/elephants_dream_640x360.jpg",
+            "loopPlayback": false,
+            "audio": false,
+            "autoplay": false,
+            "showControls": true,
+            "displayOption": "Overlay",
+            "videoUrl": "http://leanbackplayer.com/videos/360p/elephants_dream_640x360_2.30.mp4",
+            "videoTitle": "Video Headline",
+            "viewType": "html5",
+            "videoSubHeadline": "Video Subheadline",
+            "isContainer": false
+        }
+    }
+}

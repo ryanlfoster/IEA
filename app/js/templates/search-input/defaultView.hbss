@@ -1,0 +1,22 @@
+<div class="search-icon-wrapper">
+    <a class="search-icon btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+</div>
+<div class="input-group">
+    {{#if searchInput.searchLabel}}
+    <label>{{searchInput.searchLabel}}</label>
+    {{/if}}
+    <input type="text" class="form-control search-textbox" placeholder="{{searchInput.defaultText}}">
+    <span class="input-group-btn">
+
+        {{#if searchInput.searchButtonText}}
+        <button class="btn btn-default btn-iea" type="button">
+            {{{searchInput.searchButtonText}}}
+        </button>
+        {{else}}
+        <button class="btn btn-default search-submit-btn" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+        </button>
+        {{/if}}
+
+    </span>
+</div>

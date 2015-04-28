@@ -1,0 +1,251 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "988",
+        "form": {
+            "sling:resourceType": "engagednow/components/form/form",
+            "randomNumber": "988",
+            "failureMessage": "The form failed to submit\n",
+            "successMessage": "Thank you for your submission.\n",
+            "action": "static.html",
+            "isAjax": true,
+            "validation": true,
+            "redirect": "/content/engagewithadobe/en_us/panel1",
+            "actionType": "store-content",
+            "servletPath": "/bin/engagednow/form/servlet",
+            "isContainer": true,
+            "formid": "_content_engagewithadobe_en_us_ankurtest_jcr_content_flexi_par_form",
+            "title": "Contact form",
+            "formElementsConfig": [{
+                "formElement": {
+                    "name": "fname",
+                    "description": "First Name of the user",
+                    "multivalue": true,
+                    "inputLimit": 10,
+                    "label": "first Name",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "this field is required"
+                    }, {
+                        "pattern": "%5B%5Cw%5C.%5Cs%5D+%24",
+                        "msg": "Valid alphabets only"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "mname",
+                    "description": "Middle Name of the user",
+                    "multivalue": false,
+                    "label": "Middle Name",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": false,
+                        "msg": "this field is required"
+                    }, {
+                        "pattern": "%5B%5Cw%5C.%5Cs%5D+%24",
+                        "msg": "Valid alphabets only"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "lname",
+                    "description": "last Name of the user",
+                    "multivalue": false,
+                    "label": "last Name",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "this field is required"
+                    }, {
+                        "pattern": "%5B%5Cw%5C.%5Cs%5D+%24",
+                        "msg": "Valid alphabets only"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "gender",
+                    "description": "Gender of the user",
+                    "label": "Gender",
+                    "dropdownOptions": {
+                        "Male": "male",
+                        "Female": "female"
+                    },
+                    "hideTitle": false,
+                    "defaultValue": "male",
+                    "viewType": "select",
+                    "multiSelection": false,
+                    "rules": [{
+                        "required": true,
+                        "msg": "Please provide appropriate input"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "phone",
+                    "description": "Mobile Number of the user",
+                    "multivalue": false,
+                    "label": "Mobile",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "Valid phone number"
+                    }, {
+                        "pattern": "digits",
+                        "msg": "Valid phone number"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "description":"Date of Expiry of Policy",
+                    "name":"date_id",
+                    "hideTitle":false,
+                    "label": "Date of Start",
+                    "dateFormat":"dd/mm/yyyy",
+                    "viewType":"text",
+                    "rules":[{
+                        "required": false,
+                        "msg": ""
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "dateofexpiry",
+                    "description": "Date of Expiry of Policy",
+                    "label": "Date of Expiry",
+                    "hideTitle": false,
+                    "dateFormat": "dd/mm/yyyy",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "Date is required field"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "description",
+                    "description": "enter detail description",
+                    "multivalue": true,
+                    "label": "Description",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "this field is required"
+                    }, {
+                        "maxLength": 10,
+                        "msg": "10 chars only"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "city",
+                    "description": "City of user",
+                    "label": "City",
+                    "dropdownOptions": {
+                        "San Francisco": "SF",
+                        "Boston": "B",
+                        "New York": "NY",
+                        "New Hampshire": "NH",
+                        "Gurgaon": "GGN"
+                    },
+                    "hideTitle": false,
+                    "defaultValue": "NH",
+                    "viewType": "select",
+                    "multiSelection": false
+                }
+            }, {
+                "formElement": {
+                    "name": "nationality",
+                    "description": "Nationality of the user",
+                    "label": "Nationality",
+                    "dropdownOptions": {
+                        "Indian": "IN",
+                        "German": "DE",
+                        "Italian": "LE",
+                        "Spanish": "ESP"
+                    },
+                    "hideTitle": false,
+                    "defaultValue": "IN,DE",
+                    "viewType": "select",
+                    "multiSelection": true
+                }
+            }, {
+                "formElement": {
+                    "name": "lorem",
+                    "description": "Test radio field",
+                    "label": "Radio Button",
+                    "hideTitle": false,
+                    "radioOptions": {
+                        "Awesome": "awesome",
+                        "Legendary": "legendary",
+                        "Insane": "insane",
+                        "Psyched": "psyched"
+                    },
+                    "defaultValue": "insane",
+                    "viewType": "radio",
+                    "rules": [{
+                        "required": true,
+                        "msg": "Please provide a valid trait"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "ccNumber",
+                    "description": "Enter credit card",
+                    "multivalue": false,
+                    "label": "credit card",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "this field is required"
+                    }, {
+                        "creditcard": true,
+                        "msg": "Invalid creditcard"
+                    }]
+                }
+            }, {
+                "formElement": {
+                    "name": "cvv",
+                    "description": "Enter cvv no",
+                    "multivalue": false,
+                    "label": "Cvv",
+                    "hideTitle": false,
+                    "defaultValue": "",
+                    "viewType": "text",
+                    "rules": [{
+                        "required": true,
+                        "msg": "this field is required"
+                    }, {
+                        "cvv": true,
+                        "msg": "invalid cvv"
+                    }]
+                }
+            }],
+            "formEndConfig": {
+                "sling:resourceType": "engagednow/components/form/end",
+                "name": "submit it",
+                "resetName": "reset fields",
+                "jcr:description": "this is a form"
+            }
+        },
+        "path": "/content/engagewithadobe/en_us/ankurtest/jcr:content/flexi_par/form",
+        "viewType": "defaultView",
+        "componentType": "form",
+        "isContainer": true
+    }
+}

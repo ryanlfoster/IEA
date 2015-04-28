@@ -1,0 +1,24 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "794",
+        "clientSideRendering": false,
+        "path": "/content/iea/en_us/fly-out/_jcr_content/flexi_par/instagramfeed",
+        "viewType": "defaultView",
+        "componentType": "instagramFeed",
+        "isContainer": false,
+        "instagramFeed": {
+            "subHeading": "feed sub heading",
+            "title": "feed title",
+            "randomNumber": "794",
+            "hideCaption": "true",
+            "instagramUserName": "therock",
+            "iconImage": "http://socaldream.org/wp/wp-content/plugins/instagram-picture/button/button_package_1/Followme3.png",
+            "instagramUserId": "232192182",
+            "maxImageNum": 8
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{{#if video.videoTitle}}
+<legend class="video-title">{{video.videoTitle}}</legend>
+{{/if}}
+{{#ifCond video.displayOption "Overlay"}}
+    {{#if video.thumbnailUrl}}
+        <a class = "brightcove-overlay video-overlay" href ="javascript:void(0)">
+            {{adaptive video.thumbnailUrl "" video.alt "" ""}}
+        </a>
+
+        <div class = "video-content mfp-hide brightcove-content" id = "brightcove-{{video.randomNumber}}">
+            <div class = "popup-content">
+                <div class = "video-frame"></div>
+            </div>
+        </div>
+    {{/if}}
+{{else}}
+    <div class = "video-frame"></div>
+{{/ifCond}}
+<div class="video-details">
+    <h5 class="video-subheading">{{{video.videoSubHeadline}}}</h5>
+    <p class="video-desc">{{{video.videoDescription}}}</p>
+</div>

@@ -1,0 +1,226 @@
+{
+  "responseHeader": {
+    "status": "200",
+    "messages": []
+  },
+  "data": {
+    "countryLanguageSelector": {
+      "title": "Australia",
+      "imagePath": "images/country-selector/Australia.png",
+      "RegionCount": 4,
+      "imageAltText": "Asia Flag Image",
+      "regions": [
+        {
+          "region": "Asia",
+          "countries": [
+            {
+              "countryName": "India",
+              "flagImage": "images/country-selector/India.png",
+              "flagImageAlt": "India",
+              "items" : [
+                {
+                  "language": "English",
+                  "pageURL": "www.google.com"
+                },
+                {
+                  "language": "Hindi",
+                  "pageURL": "something.in/index.html?lang=hindi",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "countryName": "Australia",
+              "flagImage": "images/country-selector/Australia.png",
+              "flagImageAlt": "Australia",
+              "items" : [
+                {
+                  "language": "English",
+                  "pageURL": "something.aus/index.html?lang=eng"
+                }
+              ]
+            },
+            {
+              "countryName": "China",
+              "flagImage": "images/country-selector/China.png",
+              "flagImageAlt": "China",
+              "items" : [
+                {
+                  "language": "Chinese",
+                  "pageURL": "something.chi/index.html?lang=eng"
+                },
+                {
+                  "language": "Cantonese",
+                  "pageURL": "something.chi/index.html?lang=eng"
+                }
+              ]
+            },
+            {
+              "countryName": "Japan",
+              "flagImage": "images/country-selector/Japan.png",
+              "flagImageAlt": "Australia",
+              "items" : [
+                {
+                  "language": "Japanese",
+                  "pageURL": "something.aus/index.html?lang=eng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "region": "Europe",
+          "countries": [
+            {
+              "countryName": "Germany",
+              "flagImage": "images/country-selector/Germany.png",
+              "flagImageAlt": "Germany",
+              "items" : [
+                {
+                  "language": "Germany",
+                  "pageURL": "something.ger/index.html?lang=ger"
+                },
+                {
+                  "language": "Dutch",
+                  "pageURL": "something.ger/index.html?lang=dut"
+                }
+              ]
+            },
+            {
+              "countryName": "France",
+              "flagImage": "images/country-selector/France.png",
+              "flagImageAlt": "Germany",
+              "items" : [
+                {
+                  "language": "French",
+                  "pageURL": "something.fr/index.html?lang=ger"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.fr/index.html?lang=dut"
+                }
+              ]
+            },
+            {
+              "countryName": "Italy",
+              "flagImage": "images/country-selector/Italy.png",
+              "flagImageAlt": "Italy",
+              "items" : [
+                {
+                  "language": "Italian",
+                  "pageURL": "something.ger/index.html?lang=ger"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.ger/index.html?lang=dut"
+                }
+              ]
+            },
+            {
+              "countryName": "Switzerland",
+              "flagImage": "images/country-selector/Switzerland.png",
+              "flagImageAlt": "Switzerland",
+              "items" : [
+                {
+                  "language": "English",
+                  "pageURL": "something.ger/index.html?lang=ger"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "region": "North America",
+          "countries": [
+            {
+              "countryName": "USA",
+              "flagImage": "images/country-selector/USA.png",
+              "flagImageAlt": "USA",
+              "items" : [
+                {
+                  "language": "Spanish",
+                  "pageURL": "something.us/index.html?lang=br"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.us/index.html?lang=eng"
+                }
+              ]
+            },
+            {
+              "countryName": "Canada",
+              "flagImage": "images/country-selector/Canada.png",
+              "flagImageAlt": "Canada",
+              "items" : [
+                {
+                  "language": "Spanish",
+                  "pageURL": "something.us/index.html?lang=br"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.us/index.html?lang=eng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "region": "South America",
+          "countries": [
+            {
+              "countryName": "Argentina",
+              "flagImage": "images/country-selector/Argentina.png",
+              "flagImageAlt": "Argentina",
+              "items" : [
+                {
+                  "language": "Spanish",
+                  "pageURL": "something.us/index.html?lang=br"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.us/index.html?lang=eng"
+                }
+              ]
+            },
+            {
+              "countryName": "Brazil",
+              "flagImage": "images/country-selector/Brazil.png",
+              "flagImageAlt": "Brazil",
+              "items" : [
+                {
+                  "language": "Portuguese",
+                  "pageURL": "something.us/index.html?lang=br"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.us/index.html?lang=eng"
+                }
+              ]
+            },
+            {
+              "countryName": "Colombia",
+              "flagImage": "images/country-selector/Colombia.png",
+              "flagImageAlt": "Colombia",
+              "items" : [
+                {
+                  "language": "Spanish",
+                  "pageURL": "something.us/index.html?lang=br"
+                },
+                {
+                  "language": "English",
+                  "pageURL": "something.us/index.html?lang=eng"
+                }
+              ]
+            }
+          ]
+        }
+      ] 
+    },
+    "randomNumber": "428",
+    "path": "/content/engagednow/en_us/work/breadcrumb/_jcr_content/flexi_hero_par/countryLanguageSelector",
+    "clientSideRendering": false,
+    "viewType": "defaultView",
+    "componentType": "countryLanguageSelector",
+    "isContainer": false
+  }
+}

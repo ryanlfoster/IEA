@@ -1,0 +1,77 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "758",
+        "relatedContentList": {
+            "totalResults": 8,
+            "resultCount": 8,
+            "configurations": {
+                "resultContentLabel": "Component Heading",
+                "viewFormat": null,
+                "pageSize": null,
+                "lazyload": false,
+                "noResultCopy": "No Results",
+                "sortRequired": false
+            },
+            "contentType": "event",
+            "contentResults": [{
+                "extension": "jpg",
+                "imageDetail": "http://placehold.it/300x300&text=placeholder?",
+                "titleDetail": "Third Page",
+                "shortDescription": "This is adobe's First Page.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/third-page.html"
+            },
+            {
+                "extension": "jpg",
+                "imageDetail": "http://placehold.it/300x300&text=placeholder?",
+                "titleDetail": "Zdobe Second Page",
+                "shortDescription": "This is the adobe first page. Adobe first venture.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-second-page.html"
+            },
+            {
+                "extension": "png",
+                "imageDetail": "http://placehold.it/300x300&text=placeholder?",
+                "titleDetail": "Adobe First Page",
+                "shortDescription": "This is the adobe first page. Adobe first venture.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-first-page.html"
+            },
+            {
+                "titleDetail": "Adobe Third Page",
+                "shortDescription": "With out image and cta."
+            },
+            {
+                "shortDescription": "With out image and title.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/second-page.html"
+            },
+            {
+                "titleDetail": "With out image and shortDescription.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/first-page.html"
+            },
+            {
+                "titleDetail": "With out image",
+                "shortDescription": "This is the adobe first page. Adobe first venture.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-fifth-page.html"
+            },
+            {
+                "titleDetail": "With out image",
+                "shortDescription": "This is the adobe first page. Adobe first venture.",
+                "ctaText": "Read More",
+                "ctaUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-fourth-page.html"
+            }]
+        },
+        "path": "/content/iea/en_us/home/_jcr_content/flexi_hero_par/relatedcontentlist",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "componentType": "relatedContentList",
+        "isContainer": false
+    }
+}

@@ -1,0 +1,56 @@
+<nav role="navigation" class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<span>{{{sectionNavigation.title}}}</span>
+        <button type="button" data-target="#navbarCollapse-{{randomNumber}}" data-toggle="collapse" class="navbar-toggle">
+    		<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse-{{randomNumber}}" class="collapse navbar-collapse">
+    	<div class="parent-label">{{{sectionNavigation.title}}}</div>
+        <ul class="nav nav-stacked">
+        	<li><a href='javascript:void(0)'>{{{sectionNavigation.parentlabel}}}</a></li>
+            {{#each sectionNavigation.items}}
+				{{#if items}}
+					<li class="sub-menu">
+						<a href="javascript:void(0)">{{{linklabel}}}</a>
+						<ul class="expandable">
+							{{#each this.items}}
+								{{#if this.items}}
+								<li class="sub-menu {{#if this.selected}}active{{/if}}">
+									<a href="javascript:void(0)">{{{linklabel}}}</a>
+									<ul class="expandable">
+										{{#each this.items}}
+											{{#if linklabel}}
+												<li class="{{#if this.selected}}active{{/if}}">
+													<a {{#if linkURL}}href="{{linkURL}}" {{else}} href="javascript:void(0)" {{/if}}>{{{linklabel}}}</a>
+												</li>	
+											{{/if}}
+										{{/each}}
+									</ul>
+								</li>
+								{{else}}
+									{{#if linklabel}}
+										<li class="{{#if this.selected}}active{{/if}}">
+											<a {{#if linkURL}}href="{{linkURL}}" {{else}} href="javascript:void(0)" {{/if}}>{{{linklabel}}}</a>
+										</li>
+									{{/if}}
+								{{/if}}
+							{{/each}}
+						</ul>
+					</li>
+				{{else}}
+					{{#if linklabel}}
+						<li class="{{#if this.selected}}active{{/if}}">
+							<a {{#if linkURL}}href="{{linkURL}}" {{else}} href="javascript:void(0)" {{/if}}>{{{linklabel}}}</a>
+						</li>
+					{{/if}}
+				{{/if}}
+			{{/each}}
+        </ul>
+    </div>
+</nav>

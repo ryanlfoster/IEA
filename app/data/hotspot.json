@@ -1,0 +1,50 @@
+{
+    "data": {
+        "randomNumber": "983",
+        "path": "/content/test/page1/page2/jcr:content/flexi_par/hotspot",
+        "viewType": "defaultView",
+        "hotspot": {
+            "bgTitle": "",
+            "bgAltText": "base alt text",
+            "hotspots": [
+                {
+                    "imageSRC": "",
+                    "description": "",
+                    "title": "",
+                    "position": {
+                        "left": 5.034483,
+                        "top": 60.838446
+                    }
+                },
+                {
+                    "imageSRC": "/images/hotspot/hotspot-2.png",
+                    "description": "Praesent dictum dui mattis  magna posuere, ac fringilla",
+                    "title": "LOREM IPSUM 2",
+                    "position": {
+                        "left": 33.87356,
+                        "top": 58.153374
+                    }
+                },
+                {
+                    "imageSRC": "/images/hotspot/hotspot-2.png",
+                    "description": "Praesent dictum dui mattis  magna posuere, ac fringilla",
+                    "title": "LOREM IPSUM 2",
+                    "position": {
+                        "left": 95.87356,
+                        "top": 70.153374
+                    }
+                }
+            ],
+            "background": "/images/hotspot/baseImage.jpg",
+            "extension": "jpg"
+        },
+        "componentType": "hotspot",
+        "isContainer": false
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": [
+
+        ]
+    }
+}

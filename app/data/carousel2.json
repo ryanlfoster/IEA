@@ -1,0 +1,160 @@
+{
+    "data": {
+        "randomNumber": "110",
+        "path": "/content/engagednow/page1/jcr:content/flexi_hero_par/carousel",
+        "carousel": {
+            "numlinks": "2",
+            "slides": [
+                {
+                    "image": {
+                        "windowType": "Yes",
+                        "title": "title-1",
+                        "alt": "altertenate-1",
+                        "fileReference": "http://www.engagednow.com/content/dam/engagednow/hero-idea.jpg",
+                        "isNotAdaptive": "false",
+                        "isCroppingRequired": "false",
+                        "linkURL": "false"
+                    },
+                    "properties": {
+                        "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "secondaryActionUrl": "zsdv",
+                        "subHeadLine": "Praesent dictum dui mattis magna posuere.",
+                        "displayUrl": "dfb",
+                        "actionUrl": "zsdv",
+                        "primaryBrowserSelection": "sameBrowser",
+                        "secondaryBrowserSelection": "newBrowser",
+                        "secondaryDisplayUrl": "zsdv",
+                        "alignmentOfLinks": "bottom-center",
+                        "randomNumber": "1204"
+                    },
+                    "viewType": "/etc/ui/engagednow/templates/components/panel/displayAs_imagePanel.hbss",
+                    "isContainer": true,
+                    "componentType": "Image"
+                },
+                {
+                    "image": {
+                        "windowType": "Yes",
+                        "title": "title-2",
+                        "alt": "altertenate-2",
+                        "fileReference": "http://www.engagednow.com/content/dam/engagednow/hero-idea.jpg",
+                        "isNotAdaptive": "false",
+                        "isCroppingRequired": "false",
+                        "linkURL": "false"
+                    },
+                    "properties": {
+                        "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "secondaryActionUrl": "zsdv",
+                        "subHeadLine": "Praesent dictum dui mattis magna posuere.",
+                        "displayUrl": "dfb",
+                        "actionUrl": "zsdv",
+                        "primaryBrowserSelection": "sameBrowser",
+                        "secondaryBrowserSelection": "newBrowser",
+                        "secondaryDisplayUrl": "zsdv",
+                        "alignmentOfLinks": "bottom-left",
+                        "randomNumber": "1205"
+                    },
+                    "viewType": "/etc/ui/engagednow/templates/components/panel/displayAs_imagePanel.hbss",
+                    "isContainer": true,
+                    "componentType": "Image"
+                },
+                {
+                    "image": {
+                        "windowType": "Yes",
+                        "title": "title-3",
+                        "alt": "altertenate-3",
+                        "fileReference": "http://www.engagednow.com/content/dam/engagednow/hero-idea.jpg",
+                        "isNotAdaptive": "false",
+                        "isCroppingRequired": "false",
+                        "linkURL": "false"
+                    },
+                    "properties": {
+                        "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "secondaryActionUrl": "zsdv",
+                        "subHeadLine": "Praesent dictum dui mattis magna posuere.",
+                        "displayUrl": "dfb",
+                        "actionUrl": "zsdv",
+                        "primaryBrowserSelection": "sameBrowser",
+                        "secondaryBrowserSelection": "newBrowser",
+                        "secondaryDisplayUrl": "zsdv",
+                        "alignmentOfLinks": "bottom-right",
+                        "randomNumber": "1206"
+                    },
+                    "viewType": "/etc/ui/engagednow/templates/components/panel/displayAs_imagePanel.hbss",
+                    "isContainer": true,
+                    "componentType": "Image"
+                },
+                {
+                    "image": {
+                        "windowType": "Yes",
+                        "title": "title-4",
+                        "alt": "altertenate-4",
+                        "fileReference": "http://www.engagednow.com/content/dam/engagednow/hero-idea.jpg",
+                        "isNotAdaptive": "false",
+                        "isCroppingRequired": "false",
+                        "linkURL": "false"
+                    },
+                    "properties": {
+                        "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        "secondaryActionUrl": "zsdv",
+                        "subHeadLine": "Praesent dictum dui mattis magna posuere.",
+                        "displayUrl": "dfb",
+                        "actionUrl": "zsdv",
+                        "primaryBrowserSelection": "sameBrowser",
+                        "secondaryBrowserSelection": "newBrowser",
+                        "secondaryDisplayUrl": "zsdv",
+                        "alignmentOfLinks": "top-center",
+                        "randomNumber": "1207"
+                    },
+                    "viewType": "/etc/ui/engagednow/templates/components/panel/displayAs_imagePanel.hbss",
+                    "isContainer": true,
+                    "componentType": "Image"
+                },
+                {
+                    "video": {
+                        "videoTitle": "Video Title",
+                        "videoLink": "Link Text",
+                        "viewType": "youtube",
+                        "isNotAdaptive": "true",
+                        "displayOption": "Embedded",
+                        "allowFullScreen": "false",
+                        "videoDescription": "Video Headline",
+                        "randomNumber": "14847",
+                        "showControls": "true",
+                        "videoId": "eN9XX-dd0LQ",
+                        "thumbnailUrl": "../../images/video/youtube.jpg",
+                        "autoPlay": "false",
+                        "videoSubHeadline": "Sub headline"
+                    },
+                    "properties": {
+                        "headline": "asf",
+                        "subHeadLine": "as",
+                        "displayUrl": "asf",
+                        "actionUrl": "asd",
+                        "primaryBrowserSelection": "newBrowser",
+                        "secondaryBrowserSelection": "sameBrowser",
+                        "secondaryDisplayUrl": "v",
+                        "secondaryActionUrl": "zsdv",
+                        "alignmentOfLinks": "top_center",
+                        "randomNumber": "14847"
+                    },
+                    "viewType": "/etc/ui/engagednow/templates/components/panel/displayAs_videoPanel.hbss",
+                    "isContainer": true,
+                    "componentType": "Video"
+                }
+            ],
+            "intervalsOfRotation": "2",
+            "slideType": [
+                "/content/engagednow/page2/jcr:content/flexi_hero_par/panel",
+                "/content/engagednow/page3/jcr:content/flexi_hero_par/panel"
+            ],
+            "randomNumber": "110"
+        },
+        "viewType": "/etc/ui/engagednow/templates/components/carousel/displayAs_carouselStatic.hbss",
+        "componentType": "carousel",
+        "isContainer": true
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

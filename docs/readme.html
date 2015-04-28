@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bootstrap</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <style>
+      body {        
+        background-color: #f6f6f6;
+      }
+      .main {
+        padding: 0px 40px;
+        background: rgba(255,255,255,0.5);
+        -webkit-box-shadow: 0 0 20px #d2d2d2;
+        box-shadow: 0 0 20px #d2d2d2;
+      }
+      .container {
+        width: 1100px;
+      }
+      .nav-list {
+        font-size: 17px;
+      }
+      .nav-header {
+        font-size: 17px;
+        text-transform: none;
+        line-height: 30px;
+      }
+    </style>
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css"/>
+    
+  </head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <ul class="nav nav-list"><li><a href="#iea_developer_guide">IEA Developer guide</a></li><li><a href="#conceptual_overview">Conceptual Overview</a></li><li><a href="#getting_started_with_iea">Getting started with IEA</a></li><li><a href="#generator_setup">Generator Setup</a></li><li><a href="#using_iea_with_commandline_">Using IEA with commandline </a></li><li><a href="#application_generator__">Application generator *</a></li><li><a href="#available_sub_generators">Available sub-generators</a></li><li><a href="#creating_components">Creating Components</a></li><li><a href="#creating_collection">Creating Collection</a></li><li><a href="#creating_model">Creating Model</a></li><li><a href="#creating_module">Creating Module</a></li><li><a href="#creating_service">Creating Service</a></li><li><a href="#component_list">Component List</a></li><li><a href="#creating_application">Creating Application</a></li><li><a href="#adding_intializer">Adding Intializer</a></li><li><a href="#application_events">Application events</a></li><li><a href="#application_configuration">Application configuration</a></li><li><a href="#application_events">Application Events</a></li><li><a href="#application_methods">Application Methods</a></li><li><a href="#creating_components">Creating Components</a></li><li><a href="#component_defenition">Component defenition</a></li><li><a href="#component_events">Component events</a></li><li><a href="#component_methods">Component Methods</a></li><li><a href="#type_of_components">Type of Components</a></li><li><a href="#client_side_component">Client-side component</a></li><li><a href="#sever_side_component">Sever-side component</a></li><li><a href="#extending_components">Extending components</a></li><li><a href="#how_extensiblity_works__">How extensiblity works !</a></li><li><a href="#template_overriding">Template Overriding</a></li><li><a href="#styling_the_component_">Styling the component.</a></li><li><a href="#extending_and_over_riding_behaviour">Extending and over-riding behaviour</a></li><li><a href="#common_methods">Common Methods</a></li><li><a href="#carousel">Carousel</a></li><li><a href="#content_results_grid">Content-results-grid</a></li><li><a href="#form">Form</a></li><li><a href="#hotspot">Hotspot</a></li><li><a href="#instagram_feed">Instagram-feed</a></li><li><a href="#social_share_print">Social-share-print</a></li><li><a href="#accordion">Accordion</a></li><li><a href="#adaptive_image">Adaptive-image</a></li><li><a href="#panel">Panel</a></li><li><a href="#list">List</a></li><li><a href="#media_gallery">Media-gallery</a></li><li><a href="#navigation">Navigation</a></li><li><a href="#pinterest">Pinterest</a></li><li><a href="#plain_text_image">Plain-text-image</a></li><li><a href="#related_content_list">Related-content-list</a></li><li><a href="#rich_text_image">Rich-text-image</a></li><li><a href="#search_input">Search-input</a></li><li><a href="#search_result">Search-result</a></li><li><a href="#social_share_print">Social-share-print</a></li><li><a href="#twitter_feed">Twitter-feed</a></li><li><a href="#video">Video</a></li><li><a href="#section_navigation">Section Navigation</a></li><li><a href="#country_language_selector">Country language Selector</a></li><li><a href="#breadcrumb">Breadcrumb</a></li><li><a href="#expand_collapse">Expand Collapse</a></li><li><a href="#creating_module">Creating Module</a></li><li><a href="#creating_services">Creating services</a></li><li><a href="#out_of_box_services">Out-of-box services</a></li><li><a href="#grid_system">Grid System</a></li><li><a href="#troubleshooting">Troubleshooting</a></li><li><a href="#open_issues">Open Issues</a></li></ul>
+      </div>
+      <div class="span9 main">
+        <a name="iea_developer_guide"></a><h1>IEA Developer guide<a class="anchorlink" href="#iea_developer_guide"></a></h1>
+<p>[TOC]</p>
+<a name="conceptual_overview"></a><h1>Conceptual Overview<a class="anchorlink" href="#conceptual_overview"></a></h1>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IEA.Application</code></td>
+<td>Create new iea application using IEA.Application which return a new instance of the app.</td>
+</tr>
+<tr>
+<td><code>IEA.View</code></td>
+<td>New view in iea is created by extending IEA.view. </td>
+</tr>
+<tr>
+<td><code>IEA.Model</code></td>
+<td>Create new model by creating instance of IEA.Model</td>
+</tr>
+<tr>
+<td><code>IEA.Collection</code></td>
+<td>Create new collection by creating instance of IEA.Collection</td>
+</tr>
+<tr>
+<td><code>IEA.Config</code></td>
+<td>IEA stored all the application and tenant configuration inside the IEA.config class which is accessible throughout the application using <code>app.getValue()</code> </td>
+</tr>
+<tr>
+<td><code>IEA.callbacks</code></td>
+<td>IEA.Callback can be used to register callbacks which can be executed in future </td>
+</tr>
+<tr>
+<td><code>IEA.TriggerMethod</code></td>
+<td>IEA level observer pattern which can be used to trigger events and also methods which is prefixed with <code>on</code>. </td>
+</tr>
+<tr>
+<td><code>IEA.Module</code></td>
+<td>IEA&#39;s Core class which is used to create components and general modules. Modules are singleton in nature. </td>
+</tr>
+<tr>
+<td><code>IEA.Service</code></td>
+<td>IEA&#39;s Core class to create Service class which returns new instance or every call. </td>
+</tr>
+<tr>
+<td><code>IEA.Analytics</code></td>
+<td>IEA analytics implementation</td>
+</tr>
+</tbody>
+</table>
+<a name="getting_started_with_iea"></a><h1>Getting started with IEA<a class="anchorlink" href="#getting_started_with_iea"></a></h1>
+<p>To get started with the code here you&#39;ll need a few things:</p>
+<ul class="list">
+<li><a href="http://nodejs.org/">Node.js</a>/<a href="https://npmjs.org/">npm</a> </li>
+<li><a href="http://gruntjs.com/">Grunt</a> (<code>npm install -g grunt-cli</code>)</li>
+<li><a href="http://bower.io/">Bower</a> (<code>npm install -g bower</code>)</li>
+<li><a href="http://yeoman.io/generators.html">Yeoman/generator-generator</a> (<code>npm install -g yo generator-generator</code>)</li>
+<li><a href="http://compass-style.org/">Compass</a> (<code>gem install compass</code>) </li>
+</ul>
+<p>If you need help installing some of these tools on a PC, please see <a href="http://www.youtube.com/watch?v=kXikXodx-y4">this short YouTube video</a>.</p>
+<p><strong>NOTE : Read <a href="#troubleshooting">know Issues</a> in case you are finding porblem doing setup</strong></p>
+<p>When you&#39;ve got all that set up, <code>cd</code> into the directory where you wish to create your project.Get the code downloaded from the <a href="https://vox.sapient.com/docs/DOC-124182">IEA Vox page</a></p>
+<p><em>If you have already checkedout the code base. do update the code to get the latest code.</em></p>
+<p>Now that you have the repository you&#39;ll need to <code>cd</code> into the working directory and download the project dependencies:</p>
+<pre class="prettyprint">$ cd &lt;&lt;project folder&gt;&gt;
+$ npm install
+$ bower install</pre>
+<p><strong>NOTE: Depending on your system settings you may need to use <code>sudo</code> in front of any commands that don&#39;t execute correctly.</strong></p>
+<p>You&#39;re now ready to work on the project. Run the Grunt command to open up a local server and get all the benefits of using Grunt.</p>
+<pre class="prettyprint">$ grunt server</pre>
+<p>Done!</p>
+<p><strong>NOTE: If you run into an <code>EMFILE, too many open files</code> error in Terminal, see <a href="https://github.com/yeoman/yeoman/wiki/Additional-FAQ#q-im-getting-emfile-too-many-open-files">this</a>.</strong></p>
+<hr>
+<a name="generator_setup"></a><h1>Generator Setup<a class="anchorlink" href="#generator_setup"></a></h1>
+<p>To use the generator properly through the command line you have to link it in npm.  To do so, run the following:</p>
+<pre class="prettyprint">$ cd &lt;&lt;Project folder&gt;&gt;/generator-iea
+$ npm install
+$ npm link</pre>
+<p>This creates a link on your system to the generator-iea directory which will allow you to easily call the generator from the command line.</p>
+<a name="using_iea_with_commandline_"></a><h1>Using IEA with commandline <a class="anchorlink" href="#using_iea_with_commandline_"></a></h1>
+<p>Once you have linked the generator-iea, you should be able to use commands in console for creating application, views, collection, model, module and service.</p>
+<a name="application_generator__"></a><h2>Application generator *<a class="anchorlink" href="#application_generator__"></a></h2>
+<p>Application generators provides a functional boilerplate app out of the box.</p>
+<pre class="prettyprint">$ cd &lt;&lt;project folder&gt;&gt;
+$ yo iea helloWorld
+$ npm install
+$ bower install</pre>
+<a name="available_sub_generators"></a><h2>Available sub-generators<a class="anchorlink" href="#available_sub_generators"></a></h2>
+<ul class="list">
+<li>iea:view</li>
+<li>iea:collection</li>
+<li>iea:model</li>
+<li>iea:module</li>
+<li>iea:service</li>
+</ul>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">$ cd &lt;&lt;project folder&gt;&gt;
+$ yo iea:view helloWorld</pre>
+<a name="creating_components"></a><h2>Creating Components<a class="anchorlink" href="#creating_components"></a></h2>
+<p>Components in IEA is a combination of <strong>json, hbss, js and scss</strong> which has to created in its own designated folders.</p>
+<ul class="list">
+<li><p><strong>JSON</strong> : The json file which is created in the <strong>/app/data/</strong> folder will be used by the component to unit test it. the json should adher to the set contract structure for the component to work correctly</p>
+</li>
+<li><p><strong>HBSS</strong> : IEA uses handlebars to create templates. the file has extension <em>.hbss</em>. the template files are located in <strong>/app/js/template/</strong> folder. each component will have a folder with the component name and inside you will have the template file. By default the <em>hbss</em> files are named as <em>defaultView.hbss</em>. This can be overridden using the application configuration explan later in the docs.</p>
+</li>
+<li><p><strong>JS</strong> : Each component will have its own js file which is located in the  <strong>/app/js/view</strong> . the component js will be places inside the folder with the same name of component.</p>
+</li>
+<li><p><strong>SASS</strong> : Component sass file is located inside <em>/app/sass/views/</em> folder. Each sass file is located inside the folder with the component name.</p>
+</li>
+</ul>
+<p><strong>NOTE : you should not change the name of the folder for a component or name of the json file after you have created the component. the folder name and file name is mapped with the component and execution failes if renamed incorrectly</strong></p>
+<p>The following steps outline how components are created:</p>
+<p>Main level components should always be housed in a folder/path that is of the same name as they are for organizational purposes.  You can take a look of the current state of the components directory to see an example of how to properly path them.</p>
+<p><strong>Create component manually</strong></p>
+<p>To create a component manually to have to add files describe above.</p>
+<p>Each files has its own designation location. </p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Component by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/data/helloWorld.json</em></li>
+<li><em>/app/js/template/helloWorld/defaultView.hbss</em></li>
+<li><em>/app/js/views/helloWorld/helloWorld.js</em></li>
+<li><em>/app/sass/views/helloWorld/_helloWorld.scss</em></li>
+</ul>
+<p><strong>Create your component using the generator:</strong></p>
+<p>Using the iea generator to create the component by using the below syntax</p>
+<p><code>yo iea:view [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:view helloWorld</code></p>
+<p>After sucessfull execution of generator you should get files created is required locations as below</p>
+<ul class="list">
+<li><em>/app/data/helloWorld.json</em></li>
+<li><em>/app/js/template/helloWorld/defaultView.hbss</em></li>
+<li><em>/app/js/views/helloWorld/helloWorld.js</em></li>
+<li><em>/app/sass/views/helloWorld/_helloWorld.scss</em></li>
+</ul>
+<hr>
+<p>Once these files are created you have to make some hard binding of the sass file to the <em>_base.scss</em> file at the end where all component scss is imported.</p>
+<p>The name of the template is set as defaultView and the same can be controlled by modifying the <strong>config.js</strong> file in the <em>/app/config.js</em>. </p>
+<a name="creating_collection"></a><h2>Creating Collection<a class="anchorlink" href="#creating_collection"></a></h2>
+<p>Collections are ordered sets of models.</p>
+<p><strong>Create Collection manually</strong></p>
+<p>Add collection file to designated place.</p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Collection by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/js/collection/helloWorld.js</em></li>
+</ul>
+<p><strong>Create your collection using the generator:</strong></p>
+<p>Using the iea generator to create the collection by using the below syntax</p>
+<p><code>yo iea:collection [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:collection helloWorld</code></p>
+<p>After sucessfull execution of generator you should get files created is required locations as below</p>
+<ul class="list">
+<li><em>/app/js/collection/helloWorld.js</em></li>
+</ul>
+<hr>
+<a name="creating_model"></a><h2>Creating Model<a class="anchorlink" href="#creating_model"></a></h2>
+<p>Models contains the interactive data as well as the logic surrounding it.</p>
+<p><strong>Create Model manually</strong></p>
+<p>Add model file to designated place.</p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Model by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/js/model/helloWorld.js</em></li>
+</ul>
+<p><strong>Create your model using the generator:</strong></p>
+<p>Using the iea generator to create the model by using the below syntax</p>
+<p><code>yo iea:model [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:model helloWorld</code></p>
+<ul class="list">
+<li><em>/app/js/model/helloWorld.js</em></li>
+</ul>
+<hr>
+<a name="creating_module"></a><h2>Creating Module<a class="anchorlink" href="#creating_module"></a></h2>
+<p>Module contains logically seperated code in one section.</p>
+<p><strong>Create Module manually</strong></p>
+<p>Add module file to designated place.</p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Module by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/js/module/helloWorld.js</em></li>
+</ul>
+<p><strong>Create your module using the generator:</strong></p>
+<p>Using the iea generator to create the module by using the below syntax</p>
+<p><code>yo iea:module [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:module helloWorld</code></p>
+<ul class="list">
+<li><em>/app/js/module/helloWorld.js</em></li>
+</ul>
+<hr>
+<a name="creating_service"></a><h2>Creating Service<a class="anchorlink" href="#creating_service"></a></h2>
+<p><strong>Create Service manually</strong></p>
+<p>Add service file to designated place.</p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Service by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/js/service/helloWorld.js</em></li>
+</ul>
+<p><strong>Create your service using the generator:</strong></p>
+<p>Using the iea generator to create the service by using the below syntax</p>
+<p><code>yo iea:service [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:service helloWorld</code></p>
+<ul class="list">
+<li><em>/app/js/service/helloWorld.js</em></li>
+</ul>
+<hr>
+<a name="component_list"></a><h1>Component List<a class="anchorlink" href="#component_list"></a></h1>
+<p>After running grunt server you will have be able to see all the out-of-box components listed in the <a href="http://localhost:9000/">index.html</a>.</p>
+<a name="creating_application"></a><h1>Creating Application<a class="anchorlink" href="#creating_application"></a></h1>
+<p>The IEA.Application object is the hub of your composite application. It organizes, initializes and coordinates the various pieces of your app.</p>
+<p>The code base comes with the boilerplate application which you can run rightaway using grunt command. the boilerplate code consist of </p>
+<ul class="list">
+<li><code>app.js</code></li>
+<li><code>config.js</code></li>
+<li><code>main.js</code></li>
+</ul>
+<p><code>app.js</code> if the js where the new application instance is created and returned. on loading of the application with its configuration and tentant configuration you will get the events exposed (<code>application:ready</code>) which you can listen to before firing the <code>app.start()</code> (explained below)</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">var app = new IEA.Application([configuration object]);
+    app.start();</pre>
+<a name="adding_intializer"></a><h2>Adding Intializer<a class="anchorlink" href="#adding_intializer"></a></h2>
+<p>All those logic which should be executed with the application start can be added into initializer callbacks which gets executed immediatly when the application starts running</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">    app.addInitializer(function() {
+        //application logic which will get executed on app.start()
+    });</pre>
+<a name="application_events"></a><h2>Application events<a class="anchorlink" href="#application_events"></a></h2>
+<p>the application raises couple of events during its lifecycle which can be used by the application which can be used to add addition processing of your application </p>
+<ul class="list">
+<li><code>config:loaded</code></li>
+<li><code>config:changed</code></li>
+<li><code>application:ready</code></li>
+<li><code>before:start</code></li>
+<li><code>start</code></li>
+</ul>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">    app.on(&#39;start&#39;, function (options) {
+        // gets triggered when the application start is fired.
+    });</pre>
+<a name="application_configuration"></a><h2>Application configuration<a class="anchorlink" href="#application_configuration"></a></h2>
+<p>IEA application is located inside the app folder. when creating an IEA application , we can optionally send a configuration which can add/override the default setting of IEA application.</p>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appBasePath</td>
+<td><code>path</code></td>
+<td></td>
+</tr>
+<tr>
+<td>debug</td>
+<td><code>boolean</code></td>
+<td>to enable disable the debug informations</td>
+</tr>
+<tr>
+<td>dependencies</td>
+<td><code>array</code></td>
+<td>dependencies which should be loaded after the application starts, this uses require to load the dependencies</td>
+</tr>
+<tr>
+<td>templatePath</td>
+<td><code>path</code></td>
+<td>relative path where the template folder is located</td>
+</tr>
+<tr>
+<td>imagePath</td>
+<td><code>path</code></td>
+<td>relative path where the images are located</td>
+</tr>
+<tr>
+<td>sassPath</td>
+<td><code>path</code></td>
+<td>relative path where the sass files are located</td>
+</tr>
+<tr>
+<td>jsPath</td>
+<td><code>path</code></td>
+<td>relative path where the component js files are located</td>
+</tr>
+<tr>
+<td>cssPath</td>
+<td><code>path</code></td>
+<td>reltive path where css files and font icons are located</td>
+</tr>
+<tr>
+<td>templateFramework</td>
+<td><code>string</code></td>
+<td>which template frameworks is used, by default it uses &#39;Handlebars&#39; and thats the only supported one</td>
+</tr>
+<tr>
+<td>loadErrorMsg</td>
+<td><code>string</code></td>
+<td>Default error message to show when a component cannot be loaded</td>
+</tr>
+<tr>
+<td>loadErrorDetails</td>
+<td><code>string</code></td>
+<td>Default detail message to show when a component cannot be loaded</td>
+</tr>
+<tr>
+<td>selector</td>
+<td><code>string</code></td>
+<td>adaptive image specific prefix to add into URL</td>
+</tr>
+<tr>
+<td>extension</td>
+<td><code>string</code></td>
+<td>default extend of the image to used when constructing the adptive image</td>
+</tr>
+<tr>
+<td>breakpoints</td>
+<td><code>object</code></td>
+<td>json object which describes the breakpoints which is used for adaptive image</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sample structure of how breakpoint configuration is added</strong></p>
+<pre class="prettyprint">&#39;breakpoints&#39;: {
+    &#39;mobile&#39;: {
+        &#39;media&#39;: &#39;screen and (min-width: 320px) and (max-width: 767px)&#39;,
+        &#39;prefix&#39;: &#39;.mobP.high.&#39;
+    },
+    &#39;mobileLandscape&#39;: {
+        &#39;media&#39;: &#39;screen and (min-width: 321px) and (max-width: 767px) and (orientation : landscape)&#39;,
+        &#39;prefix&#39;:&#39;.mobL.high.&#39;
+    },
+    &#39;tablet&#39;: {
+        &#39;media&#39;: &#39;screen and (min-width: 768px) and (max-width: 1024px)&#39;,
+        &#39;prefix&#39;: &#39;.tabP.high.&#39;
+    },
+    &#39;tabletLandscape&#39;: {
+        &#39;media&#39;: &#39;screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)&#39;,
+        &#39;prefix&#39;: &#39;.tabL.high.&#39;
+    },
+    &#39;desktop&#39;: {
+        &#39;media&#39;: &#39;screen and (min-width: 1025px)&#39;,
+        &#39;prefix&#39;: &#39;.full.high.&#39;
+    }
+}</pre>
+<a name="application_events"></a><h2>Application Events<a class="anchorlink" href="#application_events"></a></h2>
+<p>IEA uses a mix of backbone event and triggerMethod functionality to Trigger an event and a corresponding method on the target object <em>(application, view, module, service)</em>. When an event is triggered, the first letter of each section of the event name is capitalized, and the word &quot;on&quot; is tagged on to the front of it. </p>
+<p><strong>Examples:</strong></p>
+<p><code>triggerMethod(&quot;render&quot;)</code> fires the &quot;onRender&quot; function
+<code>triggerMethod(&quot;before:destroy&quot;)</code> fires the &quot;onBeforeDestroy&quot; function</p>
+<p>All arguments that are passed to the triggerMethod call are passed along to both the event and the method, with the exception of the event name not being passed to the corresponding method.</p>
+<p><strong>Usage</strong>
+<code>triggerMethod(&quot;foo&quot;, bar)</code> will call <code>onFoo: function(bar){...})</code></p>
+<p><strong>NOTE : Trigger event princple works same for application, module, component and service the same way. this is also the core building block of extensible components in IEA</strong></p>
+<a name="application_methods"></a><h2>Application Methods<a class="anchorlink" href="#application_methods"></a></h2>
+<p>IEA Application exposed some methods which can be used anywhere in the application by using the <code>app.</code> scope</p>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addInitializer</td>
+<td>enables application to add initialize level logics which gets executed when the application is started</td>
+</tr>
+<tr>
+<td>start</td>
+<td>Starts the application</td>
+</tr>
+<tr>
+<td>getValue</td>
+<td>can use to get the configuration value from the application</td>
+</tr>
+<tr>
+<td>setValue</td>
+<td>Use to set or update application configuration</td>
+</tr>
+<tr>
+<td>getTemplate</td>
+<td>use getTempate to get the component template</td>
+</tr>
+<tr>
+<td>getModelJSON</td>
+<td>use to fetch the component JSON based on the modulename</td>
+</tr>
+<tr>
+<td>getCurrentBreakpoint</td>
+<td>get the current application breakpoint</td>
+</tr>
+<tr>
+<td>onConfigLoad</td>
+<td>gets fired when the application configuration is loaded</td>
+</tr>
+<tr>
+<td>onApplicationReady</td>
+<td>get fired when the appication is ready to start</td>
+</tr>
+<tr>
+<td>onBeforeStart</td>
+<td>get fired just before starting the application.</td>
+</tr>
+<tr>
+<td>onStart</td>
+<td>gets fired when the application is started</td>
+</tr>
+<tr>
+<td>onMatchMobile</td>
+<td>gets fired when the application hits mobile breakpoints</td>
+</tr>
+<tr>
+<td>onUnmatchMobile</td>
+<td>gets fired when the application moved out of mobile</td>
+</tr>
+<tr>
+<td>onMatchTablet</td>
+<td>gets fired when application hits Tablet breakpoint</td>
+</tr>
+<tr>
+<td>onUnmatchTablet</td>
+<td>gets fired when application moved out of tablet</td>
+</tr>
+<tr>
+<td>onMatchdesktop</td>
+<td>gets fired when application hits desktop breakpoint</td>
+</tr>
+<tr>
+<td>onUnmatchDesktop</td>
+<td>gets fired when the application moved out of desktop</td>
+</tr>
+<tr>
+<td>onWindowResized</td>
+<td>gets fired when the application browser window is resized</td>
+</tr>
+<tr>
+<td>onImageLazyloaded</td>
+<td>get fired when adaptive image is loaded</td>
+</tr>
+<tr>
+<td>onWindowScrolled</td>
+<td>gets fired when window is scrolled</td>
+</tr>
+<tr>
+<td>triggerMethod</td>
+<td>can use this method to trigger an event in the application context</td>
+</tr>
+<tr>
+<td>triggerMethodOn</td>
+<td>can use this method to trigger event on specified context</td>
+</tr>
+<tr>
+<td>_super</td>
+<td>use this method inside the component methods which will make sure the super method is called</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">    onMatchMobile: function () {
+        // gets fired when the application hits mobile breakpoints
+    }</pre>
+<a name="creating_components"></a><h2>Creating Components<a class="anchorlink" href="#creating_components"></a></h2>
+<p>Components in IEA is a combination of <strong>json, hbss, js and scss</strong> which has to created in its own designated folders.</p>
+<ul class="list">
+<li><p><strong>JSON</strong> : The json file which is created in the <strong>/app/data/</strong> folder will be used by the component to unit test it. the json should adher to the set contract structure for the component to work correctly</p>
+</li>
+<li><p><strong>HBSS</strong> : IEA uses handlebars to create templates. the file has extension <em>.hbss</em>. the template files are located in <strong>/app/js/template/</strong> folder. each component will have a folder with the component name and inside you will have the template file. By default the <em>hbss</em> files are named as <em>defaultView.hbss</em>. This can be overridden using the application configuration explan later in the docs.</p>
+</li>
+<li><p><strong>JS</strong> : Each component will have its own js file which is located in the  <strong>/app/js/view</strong> . the component js will be places inside the folder with the same name of component.</p>
+</li>
+<li><p><strong>SASS</strong> : Component sass file is located inside <em>/app/sass/views/</em> folder. Each sass file is located inside the folder with the component name.</p>
+</li>
+</ul>
+<p><strong>NOTE : you should not change the name of the folder for a component or name of the json file after you have created the component. the folder name and file name is mapped with the component and execution failes if renamed incorrectly</strong></p>
+<p>The following steps outline how components are created:</p>
+<p>Main level components should always be housed in a folder/path that is of the same name as they are for organizational purposes.  You can take a look of the current state of the components directory to see an example of how to properly path them.</p>
+<p><strong>Create component manually</strong></p>
+<p>To create a component manually to have to add files describe above.</p>
+<p>Each files has its own designation location. </p>
+<p><strong>Example: </strong></p>
+<p>Create a helloWorld Component by adding files in the below locations</p>
+<ul class="list">
+<li><em>/app/data/helloWorld.json</em></li>
+<li><em>/app/js/template/helloWorld/defaultView.hbss</em></li>
+<li><em>/app/js/views/helloWorld/helloWorld.js</em></li>
+<li><em>/app/sass/views/helloWorld/_helloWorld.scss</em></li>
+</ul>
+<p><strong>Create your component using the generator (recommended)</strong></p>
+<p>Using the iea generator to create the component by using the below syntax</p>
+<p><code>yo iea:component [name]</code></p>
+<p><strong>Example: </strong></p>
+<p><code>yo iea:component helloWorld</code></p>
+<p>After sucessfull execution of generator you should get files created is required locations as below</p>
+<ul class="list">
+<li><em>/app/data/helloWorld.json</em></li>
+<li><em>/app/js/template/helloWorld/defaultView.hbss</em></li>
+<li><em>/app/js/views/helloWorld/helloWorld.js</em></li>
+<li><em>/app/sass/views/helloWorld/_helloWorld.scss</em></li>
+</ul>
+<hr>
+<p>Once these files are created you have to make some hard binding of the sass file to the <em>_base.scss</em> file at the end where all component scss is imported.</p>
+<p>The name of the template is set as defaultView and the same can be controlled by modifying the <strong>config.js</strong> file in the <em>/app/config.js</em>. </p>
+<p><strong>Config.js</strong></p>
+<pre class="prettyprint">define({    
+    &#39;defaultTemplateName&#39; : [&#39;defaultView&#39;,&#39;landingView&#39;]    
+});</pre>
+<p>the <code>defaultTemplateName</code> property can accept both string and array of possible view names which you are going to use. if you set this propertly as empty string <code>&#39;&#39;</code>. The Framework will consider the component hbss name to be same as the component name.</p>
+<a name="component_defenition"></a><h2>Component defenition<a class="anchorlink" href="#component_defenition"></a></h2>
+<p>All component in IEA is an instance of IEA.module and below are many ways you can define </p>
+<p><strong>Non AMD defenition</strong></p>
+<pre class="prettyprint">IEA.module(&#39;UI.custom-list&#39;, function(custom-list, app, IEA) {    
+
+    this.intitialize = function(){
+        this._super();
+    };
+
+});</pre>
+<p><strong>Non AMD defenition with object extension</strong></p>
+<pre class="prettyprint">IEA.module(&#39;UI.custom-list&#39;, function(custom-list, app, IEA) {    
+
+    _.extend(this,{ // this is equal to custom-list which is passed as the first paramater
+        intitialize: function(){
+            this._super();
+        };
+    })
+
+});</pre>
+<p><strong>AMD defenition with object extension</strong></p>
+<pre class="prettyprint">define(function(){
+    var CustomList = IEA.module(&#39;UI.custom-list&#39;, function(custom-list, app, IEA) {    
+
+        _.extend(this,{ // this is equal to custom-list which is passed as the first paramater
+            intitialize: function(){
+                this._super();
+            };
+        })
+
+    });   
+
+    return  CustomList;
+});</pre>
+<a name="component_events"></a><h2>Component events<a class="anchorlink" href="#component_events"></a></h2>
+<p>All component in iea exposes some default set of events as below</p>
+<ul class="list">
+<li><code>before:show</code></li>
+<li><code>show</code></li>
+</ul>
+<p>Inside the component you can add any no-of trigger events using (<code>this.triggerMethod(&#39;event-name&#39;,[parmaters])</code>)</p>
+<a name="component_methods"></a><h2>Component Methods<a class="anchorlink" href="#component_methods"></a></h2>
+<p>Every component in IEA exposes a set of methods which you can use to get add more power to the component.</p>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initialize</td>
+<td>gets called automatically when the component view is intialized</td>
+</tr>
+<tr>
+<td>render</td>
+<td>component view render function which gets called when the component is intialized</td>
+</tr>
+<tr>
+<td>addEvents</td>
+<td>enables you to add more events into the component behaviour logic</td>
+</tr>
+<tr>
+<td>removeEvents</td>
+<td>remove existing events</td>
+</tr>
+<tr>
+<td>updateSetting</td>
+<td>enables you to update or add component defaultsettings</td>
+</tr>
+<tr>
+<td>getTemplate</td>
+<td>get the componen template by passing the componen name to it</td>
+</tr>
+<tr>
+<td>getModelJSON</td>
+<td>use to fetch the component JSON based on the modulename</td>
+</tr>
+<tr>
+<td>clearStyles</td>
+<td>create element style attr , need to pass the element instance</td>
+</tr>
+<tr>
+<td>stop</td>
+<td></td>
+</tr>
+<tr>
+<td>hide</td>
+<td></td>
+</tr>
+<tr>
+<td>clean</td>
+<td></td>
+</tr>
+<tr>
+<td>onBeforeShow</td>
+<td>fires just before the component is shown</td>
+</tr>
+<tr>
+<td>onShow</td>
+<td>fires when the component is shown</td>
+</tr>
+<tr>
+<td>onMatchMobile</td>
+<td>gets fired when the application hits mobile breakpoints</td>
+</tr>
+<tr>
+<td>onUnmatchMobile</td>
+<td>gets fired when the application moved out of mobile</td>
+</tr>
+<tr>
+<td>onMatchTablet</td>
+<td>gets fired when application hits Tablet breakpoint</td>
+</tr>
+<tr>
+<td>onUnmatchTablet</td>
+<td>gets fired when application moved out of tablet</td>
+</tr>
+<tr>
+<td>onMatchdesktop</td>
+<td>gets fired when application hits desktop breakpoint</td>
+</tr>
+<tr>
+<td>onUnmatchDesktop</td>
+<td>gets fired when the application moved out of desktop</td>
+</tr>
+<tr>
+<td>onWindowResized</td>
+<td>gets fired when the application browser window is resized</td>
+</tr>
+<tr>
+<td>onWindowScrolled</td>
+<td></td>
+</tr>
+<tr>
+<td>triggerMethod</td>
+<td>can use this method to trigger an event in the application context</td>
+</tr>
+<tr>
+<td>triggerMethodOn</td>
+<td>can use this method to trigger event on specified context</td>
+</tr>
+<tr>
+<td>_super</td>
+<td>use this method inside the component methods which will make sure the super method is called</td>
+</tr>
+</tbody>
+</table>
+<a name="type_of_components"></a><h2>Type of Components<a class="anchorlink" href="#type_of_components"></a></h2>
+<p>IEA components can be used as both serverside and clientside rendering based on the data attributes provided.</p>
+<p>All components has one mandatory data attribute <code>data-role</code> which tells the framework which component js it should bind the markup with.</p>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">    &lt;div data-role=&quot;navigation&quot;&gt;&lt;/div&gt;</pre>
+<a name="client_side_component"></a><h3>Client-side component<a class="anchorlink" href="#client_side_component"></a></h3>
+<p>A client-side component does not have any content markup but only the container with <code>role</code> and <code>path</code> attributed provided. the <code>data-path</code> attribute suggests the component to hit the path and get the component specific configuration and data from a REST URL</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">&lt;div data-role=&quot;navigation&quot; data-path=&quot;/data/navigation.json&quot;&gt;&lt;/div&gt;</pre>
+<a name="sever_side_component"></a><h3>Sever-side component<a class="anchorlink" href="#sever_side_component"></a></h3>
+<p>A server side component in iea is a component where the component markup is rendered from backend and only the behavior is binded with js <strong>(No markup rendering happens)</strong></p>
+<p>A SS Component uses <code>data-role</code> and <code>data-config</code> attributes to determine the component and its configuration (from inline script) and then binds with the front end component js</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">&lt;script type=&quot;text/module-config&quot; id=&quot;carousel-1-config&quot;&gt; 
+    {
+        &quot;data&quot;: {
+            &quot;randomNumber&quot;: &quot;1&quot;,
+            &quot;carousel&quot;: {
+                &quot;numlinks&quot;: &quot;2&quot;,
+                &quot;slides&quot;: {
+                    &quot;length&quot;: 2
+                },
+                &quot;intervalsOfRotation&quot;: &quot;2&quot;,
+                &quot;randomNumber&quot;: &quot;110&quot;
+            },
+            &quot;componentType&quot;: &quot;carousel&quot;,
+            &quot;isContainer&quot;: false
+        }
+    }
+&lt;/script&gt;   
+
+&lt;div data-role=&quot;carousel&quot; data-config=&quot;carousel-1-config&quot;&gt; 
+    &lt;div&gt; 
+        &lt;div class=&quot;media&quot;&gt; 
+            &lt;img src=“path/to/image&quot; alt=“alternate text comes here&quot; title=&quot;slide 1&quot;&gt; 
+        &lt;/div&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt;</pre>
+<a name="extending_components"></a><h2>Extending components<a class="anchorlink" href="#extending_components"></a></h2>
+<p>IEA enables all the OOB components to be <em>Extended/Overrided</em> to custom requirements. There are three stages where you can extend a components</p>
+<ul class="list">
+<li>Extending template</li>
+<li>Extending JS</li>
+<li>Extending Css</li>
+</ul>
+<a name="how_extensiblity_works__"></a><h2>How extensiblity works !<a class="anchorlink" href="#how_extensiblity_works__"></a></h2>
+<p>Each component created in the IEA with the same name (<em>Name is the key</em>) automatically binds with the IEA OOB component. The application first looks for template in the  <code>App</code> folder, if not found it will look into <code>Lib</code> folder. you can extend any of the three points avoiding other two. For example. you can just extend or override the template of the component and still ignore others.</p>
+<p><strong>NOTE: In many cases making a markup change could impact the underlying behaviour as well and hence would need change to Js and sometime to css as well</strong></p>
+<a name="template_overriding"></a><h2>Template Overriding<a class="anchorlink" href="#template_overriding"></a></h2>
+<p>There is only overriding possible with template as the moment you specify the same name template in your <em>app/js/template</em> folder, the application will pick the <code>app</code> version and not the <code>lib</code> version. However, you can add more markup or change the existing markup based on your requirement.</p>
+<p><strong>Example</strong></p>
+<p>IEA version of the list component markup</p>
+<pre class="prettyprint">&lt;ul&gt;
+    {{#each list.linkList}}
+        &lt;li&gt;
+            {{#if linkName}}
+                {{#if linkUrl}}
+                    &lt;a target= &quot;{{#ifCond windowType &quot;Yes&quot;}}_blank{{else}}_self{{/ifCond}}&quot; href=&quot;{{linkUrl}}&quot;&gt;{{{linkName}}}&lt;/a&gt;
+                {{else}}
+                    &lt;a disabled&gt;{{linkName}}&lt;/a&gt;
+                {{/if}}
+            {{/if}}
+        &lt;/li&gt;
+    {{/each}}
+&lt;/ul&gt;</pre>
+<p>Application overiding the same with more markups</p>
+<pre class="prettyprint">&lt;ul class=&quot;list list-stacked&quot;&gt;
+    &lt;li&gt;1&lt;/li&gt;
+    &lt;li&gt;2&lt;/li&gt;
+    &lt;li&gt;3&lt;/li&gt;
+    &lt;li&gt;4&lt;/li&gt;
+    &lt;li&gt;5&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>By default all components look for the defaultview (hbss) file inside the component folder in templates. if you want to use custom templates. you can use <code>this.getTemplate(componentname[,templatepath])</code> method to fetch the required template. The method take two parameters, the first parameter is the component name which you can pass and the function will return the default tempate for that component. if you pass the second parameter as the explicity related path of the template (in case you want to use different template), the first parameter will be ignored and the funtion will return you the template which is asked for.</p>
+<p><strong>Example for fetching template using method</strong></p>
+<p>Default way of getting template is using this.template </p>
+<pre class="prettyprint">this.$el.html(this.template(this.model.toJSON().data));</pre>
+<p><strong>Custom template can be fetched as below</strong></p>
+<pre class="prettyprint">this.template = this.getTemplate(&#39;componentName&#39;);
+this.$el.html(this.template(this.model.toJSON().data));                
+
+OR
+
+this.template = this.getTemplate(&#39;customname&#39;,&#39;relative/path/to/custom/template.hbss&#39;);
+this.$el.html(this.template(this.model.toJSON().data));</pre>
+<p><strong>NOTE: custom name can be any name just to identify the template, in case you are using the second parameter</strong></p>
+<a name="styling_the_component_"></a><h2>Styling the component.<a class="anchorlink" href="#styling_the_component_"></a></h2>
+<p>Application can override the existing styling of the components using the same principle for themeing any website. The application structure will have <em>app/sass/views/component/_component_scss</em> where you can add or override the styling of the existing component.</p>
+<p>All app level component css will have the parent css as the component name </p>
+<p><strong>Example</strong></p>
+<p>App scss (<em>app/sass/views/carousel/_carousel.scss</em>) file content of carousel will look as below</p>
+<pre class="prettyprint">.carousel {
+
+}</pre>
+<p>You can add any no of css overriding into the scss file to change the styling of the component. The final build will make sure that the override css is added to the build file.</p>
+<a name="extending_and_over_riding_behaviour"></a><h2>Extending and over-riding behaviour<a class="anchorlink" href="#extending_and_over_riding_behaviour"></a></h2>
+<p>IEA components support both composition and inheritance methodology. Any two components with the same name acts as one by creating a automatic composition of all the methods and properties into one final component. For inheritance, any component in IEA can extend another component. </p>
+<p><strong>Composition benefits</strong>
+Composition enables component to have many version where the last added version will override/add/update the previous version. This principle enables project to have many version of the same component which keeps on changing behaviour.</p>
+<p>Composition also enables writing modulatized component where the same component can be written in many parts and the framework will combile it together before initialization</p>
+<p><strong>Inheritance benefits</strong></p>
+<p>Inheritance in IEA component works on the same javascript prototype chaining principle where the child components protoype is updated with parent component and the chain can be of any length up to the topmost component which will always be IEA.View.</p>
+<p>IEA supports any level of inheritance where a component can inherit another component which inturn can inherit another component.</p>
+<p><em>NOTE: IEA currently supports only single level inheritance</em></p>
+<pre class="prettyprint">IEA.module(&#39;UI.custom-list&#39;, function(inheritanceSample, app, IEA) {
+
+    this.extend = app.UI[&#39;list&#39;];
+
+    this.intitialize = function(){
+        this._super();
+    };
+
+});</pre>
+<p><strong>Component hooks (Event Emitters)</strong>
+All components exposes two type of methods. One with <code>on</code> prefixed and other without it. the function with <code>on</code> are extension hooks where you can extent the logic, where are the latter ones are methods which are exposed for all components from its super class. </p>
+<p>Apart of the extended hooks and super class methods, you can use any no of custom methods according to the requirement.</p>
+<p><strong>NOTE : Super class methods needs to be used inside component methods to execute it.</strong></p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint">define(function() { 
+&#39;use strict&#39;; 
+    var Video = IEA.module(&#39;UI.video&#39;, function(video, app, IEA) {                       
+        _.extend(video,{ 
+                onInit: function() {
+                    this.addEvent({
+                        &#39;click img&#39;: &#39;_highlightImage&#39;
+                    });
+                },
+
+                _highlightImage: function(){
+                    console.log(&#39;highlight the image&#39;);
+                }
+        }); 
+    }); 
+return Video; 
+});</pre>
+<a name="common_methods"></a><h3>Common Methods<a class="anchorlink" href="#common_methods"></a></h3>
+<p><strong>onInit</strong> : Extension of the iea component initialize function, this can be used to add more initialization logic to the component.</p>
+<p><strong>onRender</strong>: Extension of the iea render function which can be used to add post render functionalities</p>
+<p><strong>onEnable</strong>: Extension of IEA enable function which can be used to add post enable functionlities.</p>
+<p><strong>addEvent</strong> : Helps to add events to DOM and bind a callback to the event.</p>
+<p><strong>removeEvent</strong>: remove existing events from the event object.</p>
+<p><strong>updateSettings</strong>: All component has a defaultSetting which can be updated/overrided using the updateSettings method.</p>
+<a name="carousel"></a><h3>Carousel<a class="anchorlink" href="#carousel"></a></h3>
+<p><strong>Options</strong>
+<code>updateSettings</code> take options as an object been passed to it. Carousel internally uses Slider service and you can see the options in the <a href="http://bxslider.com/options">option documentation</a></p>
+<a name="content_results_grid"></a><h3>Content-results-grid<a class="anchorlink" href="#content_results_grid"></a></h3>
+<p><strong>onFirstPage</strong>: this method is used when you want to do some action on the first page show</p>
+<p><strong>onNextPage</strong>: Method to be used on each next page show</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>articleContainer</td>
+<td><code>type: String</code></td>
+<td>The main grid container class</td>
+</tr>
+<tr>
+<td>sortingEl</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pageIndexEl</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pageSortKey</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waypointOffset</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>sortingField</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>articleInnerEl</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a name="form"></a><h3>Form<a class="anchorlink" href="#form"></a></h3>
+<p><strong>onBeforeEnable</strong>: Extension to add logic before the component is enabled.</p>
+<p><strong>onFormSubmit</strong>: used when you want to tap into form submit.</p>
+<p><strong>onFormReset</strong>: used when you want to tap into form reset.</p>
+<p><strong>onSuccess</strong>: use this method to add logic when the form submission is success</p>
+<p><strong>onError</strong>: use this method to add logic when the form submission failed.</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>calenderInput</td>
+<td><code>default:&#39;.input-calendar&#39;</code></td>
+<td>form calendar input class name</td>
+</tr>
+<tr>
+<td>calenderTodayBtn</td>
+<td><code>default:&#39;linked&#39;</code></td>
+</tr>
+<tr>
+<td>calenderAutoclose</td>
+<td><code>default:true</code></td>
+<td>autoclose calendar or not</td>
+</tr>
+<tr>
+<td>calenderTodayHighlight</td>
+<td><code>default:true</code></td>
+<td>highlight today</td>
+</tr>
+</tbody>
+</table>
+<a name="hotspot"></a><h3>Hotspot<a class="anchorlink" href="#hotspot"></a></h3>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baseImage</td>
+<td><code>default:&#39;.base-image&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>pointerContainer</td>
+<td><code>default:&#39;.pointer&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>pointer</td>
+<td><code>default:&#39;.hotspot-pointer&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>pointerContent</td>
+<td><code>default:&#39;.hotspot-content&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>pointerEvent</td>
+<td><code>default:&#39;click&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>pointerPosition</td>
+<td><code>default:&#39;bottom&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td>onlyOne</td>
+<td><code>default:true</code></td>
+</tr>
+</tbody>
+</table>
+<a name="instagram_feed"></a><h3>Instagram-feed<a class="anchorlink" href="#instagram_feed"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="social_share_print"></a><h3>Social-share-print<a class="anchorlink" href="#social_share_print"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="accordion"></a><h3>Accordion<a class="anchorlink" href="#accordion"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="adaptive_image"></a><h3>Adaptive-image<a class="anchorlink" href="#adaptive_image"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="panel"></a><h3>Panel<a class="anchorlink" href="#panel"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="list"></a><h3>List<a class="anchorlink" href="#list"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="media_gallery"></a><h3>Media-gallery<a class="anchorlink" href="#media_gallery"></a></h3>
+<p><strong>onPopupEnable</strong>: use this method to do something when the media-gallery popup option is enabled (only in desktop).</p>
+<p><strong>onSlideEnable</strong> use this method to do something when the Slider option is enabled (in mobile).</p>
+<a name="navigation"></a><h3>Navigation<a class="anchorlink" href="#navigation"></a></h3>
+<p><strong>onBeforeInit</strong> : do something before the navigation is intialized</p>
+<p><strong>onMouseenter</strong> : do somthing when the mouse enter the nav item</p>
+<p><strong>onMouseleave</strong> : do something when the mouse leave the nav item</p>
+<p><strong>onMouseclick</strong> : do somethine when you click on the nav item</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enableHover</td>
+<td><code>default:true</code></td>
+<td>enable flyout on hover, other option <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<a name="pinterest"></a><h3>Pinterest<a class="anchorlink" href="#pinterest"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="plain_text_image"></a><h3>Plain-text-image<a class="anchorlink" href="#plain_text_image"></a></h3>
+<p>Only function overriding exists for this component</p>
+<a name="related_content_list"></a><h3>Related-content-list<a class="anchorlink" href="#related_content_list"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="rich_text_image"></a><h3>Rich-text-image<a class="anchorlink" href="#rich_text_image"></a></h3>
+<p>Only function overriding exists for this component</p>
+<a name="search_input"></a><h3>Search-input<a class="anchorlink" href="#search_input"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="search_result"></a><h3>Search-result<a class="anchorlink" href="#search_result"></a></h3>
+<p><strong>onFirstPage</strong>: this method is used when you want to do some action on the first page show</p>
+<p><strong>onNextPage</strong>: Method to be used on each next page show</p>
+<a name="social_share_print"></a><h3>Social-share-print<a class="anchorlink" href="#social_share_print"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="twitter_feed"></a><h3>Twitter-feed<a class="anchorlink" href="#twitter_feed"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="video"></a><h3>Video<a class="anchorlink" href="#video"></a></h3>
+<p><strong>onPlay</strong>: do something when video plays</p>
+<p><strong>onPause</strong>: do something when video pause</p>
+<p><strong>onStop</strong>: do something when stops</p>
+<p><strong>onDestroy</strong>: do something when video element is destroyed</p>
+<p><strong>onRestart</strong>: do something when the video is restarted</p>
+<p><strong>onSeek</strong>: do something when the video seeked</p>
+<p><strong>onResize</strong>: do seomthing when the video is resized</p>
+<a name="section_navigation"></a><h3>Section Navigation<a class="anchorlink" href="#section_navigation"></a></h3>
+<p><strong>onBeforeInit</strong> : do something before the navigation is intialized</p>
+<p><strong>onBeforeShowMenu</strong> : do somthing before when the Menu is clicked to expand</p>
+<p><strong>onAfterShowMenu</strong> : do something after when the Menu is clicked to expand</p>
+<p><strong>onBeforeHideMenu</strong> : do something before when the Menu is clicked to collapse</p>
+<p><strong>onAfterHideMenu</strong> : do something when the Menu is clicked to collapse</p>
+<a name="country_language_selector"></a><h3>Country language Selector<a class="anchorlink" href="#country_language_selector"></a></h3>
+<p><strong>onBeforeInit</strong> : do something before the Country Language Selector is intialized</p>
+<p><strong>onBeforeExpand</strong> : do somthing before when the Menu is expanded on mobile screen</p>
+<p><strong>onAfterExpand</strong> : do something after when the Menu is expanded on mobile screen</p>
+<p><strong>onBeforeOpen</strong> : do something before dropdown is shown</p>
+<p><strong>onAfterOpen</strong> : do something after dropdown is shown</p>
+<p><strong>onBeforeClose</strong> : do something before dropdown hides</p>
+<p><strong>onAfterClose</strong> : do something after drodown hides</p>
+<a name="breadcrumb"></a><h3>Breadcrumb<a class="anchorlink" href="#breadcrumb"></a></h3>
+<p>Only the default methods exists for extending.</p>
+<a name="expand_collapse"></a><h3>Expand Collapse<a class="anchorlink" href="#expand_collapse"></a></h3>
+<p><strong>onBeforeInit</strong> : do something before the Expand Collapse is intialized</p>
+<p><strong>onBeforeExpand</strong> : do somthing before when the content is expanded</p>
+<p><strong>onAfterExpand</strong> : do something after when the content is expanded</p>
+<p><strong>onBeforeCollapse</strong> : do somthing before when the content is collapsed</p>
+<p><strong>onAfterCollapse</strong> : do something after when the content is collapsed</p>
+<a name="creating_module"></a><h2>Creating Module<a class="anchorlink" href="#creating_module"></a></h2>
+<p>IEA modules are the main component which enables you to create application modules. A iea component is also a iea module with the exception of having <code>UI.</code> prefixed with the module name. </p>
+<p><strong>Example for creating a iea component</strong></p>
+<pre class="prettyprint">define(function() { 
+&#39;use strict&#39;; 
+    var Video = IEA.module(&#39;UI.video&#39;, function(video, app, IEA) {                       
+        _.extend(video,{ 
+                // iea view logic goes inside 
+        }); 
+    }); 
+return Video; 
+});</pre>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">&lt;div data-role=&quot;video&quot; data-path=&quot;/data/video.json&quot;&gt;&lt;/div&gt;</pre>
+<p><strong>Example for creating a iea general module</strong></p>
+<pre class="prettyprint">define(function() { 
+&#39;use strict&#39;; 
+    var module = IEA.module(‘mymodule&#39;, function(module, app, IEA){           
+        callFunction: function() {
+            // do something
+        }
+    }); 
+return module; 
+});</pre>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">var module = app.myModule() 
+    module.callfunction();</pre>
+<p>IEA component modules are auto intialized based on the html markup whereas a general module can be used by just getting the instance my fetching it from the app scope.</p>
+<p>All iea module will have default arguments send to the module function which includes <strong>reference to the module itself, the application reference and IEA instance</strong>. In addition it also passes reference of <strong>jQuery and underscore</strong> incase you want to use them (these will be more applicable if you are writing your code in a non AMD principle)</p>
+<a name="creating_services"></a><h2>Creating services<a class="anchorlink" href="#creating_services"></a></h2>
+<p>There is no major difference between IEA.module and IEA.service. the only difference is that the former creates a singleton object where as the latter creates new instance everytime you call it.</p>
+<p><strong>Example for creating a iea service</strong></p>
+<pre class="prettyprint">define(function() { 
+&#39;use strict&#39;; 
+    var service = IEA.service(‘myservice&#39;, function(){
+            // service code goes here
+    }); 
+
+    return service; 
+});</pre>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">var service = app.myservice() // creates new instance
+service.callfunction();</pre>
+<a name="out_of_box_services"></a><h2>Out-of-box services<a class="anchorlink" href="#out_of_box_services"></a></h2>
+<p>IEA out-of-box comes with some services which can be used directly when creating application</p>
+<p><strong>Tooltip</strong> : Tooltip service enable you to add tooltip into your application component. </p>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">    //creating new instance of tootltip
+    var  tooltip = IEA.tooltip(element) // default configuration &amp; element can be string or jQuery Object
+    ex. IEA.tooltip(&#39;.class-elem&#39;)
+    or
+    IEA.tooltip(&#39;#class-elem&#39;)
+    or
+    IEA.tooltip($(&#39;.class-elem&#39;)
+    NOTE: to use it with default config, do add &#39;title&#39; attribute to your HTML element
+    or
+    var  tooltip = IEA.tooltip(element, {theme: &#39;my-custom-theme&#39;}) // initialization with congiruation
+
+    //creating new instance of tootltip with content as markup
+    var  tooltip = IEA.tooltip(element, {content: &#39;&lt;div&gt; Tooltip content as markup&lt;/div&gt;&#39;, contentAsMarkup: true})
+
+    // creating tooltip instance with cross icon
+    var  tooltip = IEA.tooltip(element, {trigger: &#39;click&#39;})</pre>
+<p><strong>Methods</strong>
+- show
+- hide
+- disable
+- enable
+- destroy
+- content
+- updateContent
+- reposition
+- getTooltipElement
+- getIconElement</p>
+<p><strong>Slider</strong> : Slider service enable you to create carousel components with overridable defaults.</p>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">    //creating new instance of slider
+    var  slider = IEA.slider(element, config) // default configuration
+    or
+    var  slider = IEA.slider(elemnt, {auto: true}) // initialization with congiruation
+
+    // start the carousel
+    slider.enable();</pre>
+<p><strong>Methods</strong>
+- disable();
+- distroy();
+- reload(); // just reload with set config
+- reload({auto: false}); // reload the carousel with new configuration
+- getCurrentSlide();
+- getSlideCount();
+- play();
+- pause()</p>
+<p><strong>Events</strong>
+- slider:load
+- slide:before
+- slide:after
+- slide:next
+- slide:prev</p>
+<p><strong>video</strong> : Video serice which enables to create video component. Currently video component supports Youtube, BrightCove and Vimeo players</p>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">    //creating new instance of video
+    var video = IEA.video(container, config)</pre>
+<p><strong>Methods</strong>
+- getVideoContainer()
+- getPlayer()
+- play()
+- pause()
+- stop()
+- destroy()
+- restart()
+- seek()
+- resize()</p>
+<p><strong>Popup</strong> : Popup service enables to create popup in component in a no of ways </p>
+<p><strong>Usage</strong></p>
+<pre class="prettyprint">    // create new instance for popup
+    var popup = IEA.popup() // default configuraion
+    or
+    var popup = IEA.popup({type:inline}) // intialization with configuration
+
+    // open popup image
+    popup.open(&quot;http://path/to/image/jpg&quot;,&quot;image&quot;);
+
+    // open popup inline content
+    popup.open($(&#39;element&#39;),&#39;inline&#39;);
+
+    // open poup with IEA Model
+    var model = IEA.model([
+          {
+            src: &#39;path-to-image-1.jpg&#39;
+          },
+          {
+            src: &#39;http://vimeo.com/123123&#39;,
+            type: &#39;iframe&#39; // this overrides default type
+          },
+          {
+            src: $(&#39;&lt;div&gt;Dynamically created element&lt;/div&gt;&#39;), // Dynamically created element
+            type: &#39;inline&#39;
+          },
+          {
+            src: &#39;&lt;div&gt;HTML string&lt;/div&gt;&#39;,
+            type: &#39;inline&#39;
+          },
+          {
+            src: &#39;#my-popup&#39;, // CSS selector of an element on page that should be used as a popup
+            type: &#39;inline&#39;
+          }
+        ])
+    popup.open(model);
+    popup.close();</pre>
+<p><strong>Events</strong>
+- popup:open
+- popup:close</p>
+<a name="grid_system"></a><h2>Grid System<a class="anchorlink" href="#grid_system"></a></h2>
+<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here&#39;s how the Bootstrap grid system works:</p>
+<ul class="list">
+<li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+<li>Use rows to create horizontal groups of columns.</li>
+<li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+<li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+<li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.</li>
+<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
+<li>Gutter width is 30px (15px on each side of the column).</li>
+</ul>
+<p><strong>We use the following media queries in our Sass files to create the key breakpoints in our grid system.</strong></p>
+<pre class="prettyprint">/* Extra small devices (phones) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (480px and up) */
+@media (min-width: $screen-sm-min) { ... }
+
+/* Medium devices (768px and up) */
+@media (min-width: $screen-md-min) { ... }
+
+/* Large devices (1025px and up) */
+@media (min-width: $screen-lg-min) { ... }</pre>
+<p><strong>We occasionally expand on these media queries to include a max-width to limit CSS to a narrower set of devices.</strong></p>
+<pre class="prettyprint">@media (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }</pre>
+<p>Read more about <a href="http://bootstrapdocs.com/v3.1.1/docs/css/#grid">grid system</a></p>
+<a name="troubleshooting"></a><h2>Troubleshooting<a class="anchorlink" href="#troubleshooting"></a></h2>
+<ol class="list">
+<li><code>gem install compass</code> fails and shows error saying SSL connection problem </li>
+</ol>
+<p>Ruby gem installation failes due to certificate issue.</p>
+<pre class="prettyprint">$ gem install compass
+ERROR: Could not find a valid gem &#39;compass&#39; (&gt;= 0), here is why:
+          Unable to download data from https://rubygems.org/ - SSL_connect retur
+ned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (
+https://rubygems.org/latest_specs.4.8.gz)</pre>
+<p>The problem is due to expired rubygem certificate. The new certificate needs to be added manually to regain the access. you can refer the link and get the new certificate added <a href="https://gist.github.com/luislavena/f064211759ee0f806c88">SSL upgrades on rubygems.org and RubyInstaller versions</a></p>
+<ol class="list">
+<li><code>bower install</code> fails to complete the installation and shows error <em>fatal: unable to connect to github.com:</em></li>
+</ol>
+<pre class="prettyprint">    Additional error details:
+    fatal: unable to connect to github.com:
+    github.com[0: 192.30.252.131]: errno=No error</pre>
+<p>The problem happends when there is firewall bocking the request going to git://. To solve this problem we have to change the Protocol to http:// </p>
+<p>To do that you can change the git global configuration to change all git:// request to http:// using below configuration change</p>
+<pre class="prettyprint">    git config --global url.&quot;https://github.com/&quot;.insteadOf git@github.com:
+    git config --global url.&quot;https://&quot;.insteadOf git://</pre>
+<ol class="list">
+<li><code>bower install</code> failes to complete</li>
+</ol>
+<p>There are chances that the bower install does not complete due to network timeouts. Bower needs a continuous highspeed connection open to download and install all the required front-end dependencies. in case the network is slow. There is a high probabilty that the process will not complete successfully. </p>
+<p><strong>Troubleshooting</strong></p>
+<ul class="list">
+<li>Check if you network speed is adequate for download all the assets. </li>
+<li>Try switching the network and then try running the command</li>
+<li><p>Try connecting your computer to LAN cable rather than WIFI and check if that helps.</p>
+</li>
+<li><p><code>grunt build</code> failes with error at <code>imagemin</code> process. Error says <strong>Fatal error: This socket is closed.</strong></p>
+</li>
+</ul>
+<pre class="prettyprint">Running &quot;imagemin:dist&quot; (imagemin) task
+Fatal error: This socket is closed.</pre>
+<p>The issue occurs after the node js is upgraded to newer version v0.10.33+. There is a defect on the same open with vendor on the same <a href="https://github.com/gruntjs/grunt-contrib-imagemin/issues/273">273</a>.</p>
+<a name="open_issues"></a><h2>Open Issues<a class="anchorlink" href="#open_issues"></a></h2>
+<ol class="list">
+<li>CSS extendible but there should be “template.scss” file which I found missing (required for header/footer etc)</li>
+<li>Found it difficult to handle/ change responsive behavior; a document would be helpful</li>
+<li>Navigation component is complex to extend in defferent scenarios for whitehouse/iea.com due to the way the iea version is constructed.</li>
+<li>Component extension hooks and options are not documented.</li>
+<li>All services and modules in the architecture should have to be documented as currently is very hard to know how to you any of them</li>
+<li>Architecture error logic mechanism needs to be put in place. Many time its very hard to find the root cause of the problem.</li>
+<li>Social media components needs to be much more configurable and easy to use.</li>
+<li>Very difficult to test serverside component in the local during component  development. Need to create a mechanism to do that.</li>
+<li>The AEM uses flexible template should be generated from frontend and should be delivered as part of the build.</li>
+<li>There should be some option to enable extending of the server side components like column control and tabbed component to add addition classes or id to it. currently only CQ authoring dialog for column control has this option to add classes.</li>
+<li>Some of the complex components like Content results grid , Related Content, Form is very hard to extend due to the complexity and the limited extension hooks provided.</li>
+<li>More usecases needs to be brought into picture and more extension points needs to be exposed to cater more solutions.</li>
+<li>Page created during development of component vs page created by authoring in CQ varies drastically due to the way the base layout , column controls and other parsys and iparsys and added into the page. </li>
+<li>The pages should avoid exposing the parsys blocks in HTML as in certain scenarios, the components needs to know about its parent element (like tab component) and having more and more nesting structure makes it hard to find the exact element.</li>
+<li>More and more nested CQ authoring structure creates more JS performance problem as the js needs to read through the markup very often to find elements, the more markup , slower the traversal.</li>
+<li>A page should be created using the already existing IEA components by customizing it or create new components specific to the requirement rather than trying to combine more than one components to create a impression of a component. This would create bad code as well it would be hard to manage and organize these codes.</li>
+<li>Each components added into the CQ page <strong>MUST HAVE</strong> a semantic classname added to it to identify them. these styles would be necessary for the UI part to style the component accordingly and not creating the css which is global and could affect other component styles.</li>
+<li>IEA <code>grunt build</code> fails in MAC and shows error with regards to opening file. The problem seems to be happening from the permission side as node is not allowed to read files. </li>
+</ol>
+<hr>
+<p>@author : Anooj Ayyappan</p>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

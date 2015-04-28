@@ -1,0 +1,102 @@
+.expand-collapse {
+
+    /* Generic icons for the component*/
+    .expanded {
+        h3:before {
+            @extend .icon-minus;
+        }
+    }
+
+    .collapsed {
+        h3:before {
+            @extend .icon-plus;
+        }
+    }
+
+
+
+    /* Theme specific changes */
+    @include theme('whitelabel') { 
+        .expandcollapse-header {
+
+            border-bottom: 1px solid $color-iea-shadow-dark;
+            
+            h3 {
+                color: $color-iea-medium-grey;
+                font-size: $mobile-font-size-large;
+
+                @media (min-width: $bp-large) {
+                    font-size: $tablet-font-size-medium;
+                }
+
+                @media (min-width: $bp-extra-large) {
+                    font-size: $desktop-font-size-large;
+                }
+
+                &:before {
+                    color: $color-iea-blue;
+                    font-family: 'icomoon';
+                    font-size: $font-size-h3;
+                    line-height: $font-size-large;
+                    float: right;
+                }
+            }
+
+            a:active, a:hover, a:focus {
+                color: $color-iea-blue;
+                outline: none;
+            }
+        }
+
+        .expanded {
+            h3 {
+                color: $color-iea-blue;
+            }
+        }
+
+        .expandcollapse-body {
+
+            font-size: $mobile-font-size-small;
+            border-bottom: 1px solid $color-iea-shadow-dark;
+            background: $color-iea-expandcollapse-background;
+
+            p {
+                text-align: justify;
+            }
+
+            h3 {
+                font-size: $mobile-font-size-x-large;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: $mobile-font-size-small;
+                color: $color-iea-blue;
+            }
+
+            @media (min-width: $bp-large) {
+                font-size: $tablet-font-size-x-small;
+
+                h3 {
+                    font-size: $tablet-font-size-x-large;
+                }
+
+                a {
+                    font-size: $tablet-font-size-x-small;
+                }
+            }
+
+            @media (min-width: $bp-extra-large) {
+                font-size: $desktop-font-size-small;
+
+                h3 {
+                    font-size: $desktop-font-size-x-large;
+                }
+
+                a {
+                    font-size: $desktop-font-size-small;
+                }
+            }
+        }
+    }
+}

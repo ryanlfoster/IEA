@@ -1,0 +1,13 @@
+{{!-- Search result component base templet for loading dynamic data --}}
+<h1>{{searchResult.staticConfigurations.searchResultsHeading}}</h1>
+<div class="result-count row">
+    <p class="col-md-12 col-sm-12">{{searchResult.staticConfigurations.showingLabelCopy}} <span class="start"></span> {{searchResult.staticConfigurations.paginatingOfCopy}} <span class="total">{{searchResult.totalResults}}</span> {{searchResult.staticConfigurations.resultsForCopy}} "{{{searchResult.searchText}}}"</p>
+</div>
+{{#if searchResult.results}}
+    <div class="search-result-container">
+        {{!-- Dynamic data population --}}
+    </div>
+    <button type="button" class="load-more btn btn-lg btn-primary btn-block">{{searchResult.staticConfigurations.showMoreResultsCopy}}</button>
+{{else}}
+    <p class="no-result">{{searchResult.staticConfigurations.noResultsText}}</p>
+{{/if}}

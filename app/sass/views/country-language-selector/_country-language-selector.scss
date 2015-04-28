@@ -1,0 +1,122 @@
+.country-language-selector {
+
+
+	/* Generic icons for the component*/
+    .display-arrow {
+        &:before {
+            @extend .icon-chevron-down;
+            padding-left: 5px;
+        }
+    }
+
+    &.open {
+        font-family: inherit;
+        .display-arrow {
+            &:before {
+                @extend .icon-chevron-up;
+            }
+        }
+    }
+
+    .selector-body {
+        .region-group {
+            .region-title {
+                a:before {
+                    @extend .icon-chevron-down;
+                }
+
+                &.expanded {
+                    a:before {
+                        @extend .icon-chevron-up;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+	/* Theme specific changes */
+	@include theme('whitelabel') {
+	    color: white;
+
+	    a:hover, a:active {
+	    	font-weight: normal;
+	    }
+
+	    .dropdown.open {
+	    	background-color: transparent;
+	    }
+
+	    .display-arrow  {
+	    	&:before {
+	    		font-family: icomoon;
+	    	}
+	    }
+
+	    .selector-body {
+
+	    	background-color: $color-iea-dark-grey;
+
+	    	a {
+				background-color: transparent;
+	    	}
+
+	        .region-group {
+	        	border-top: 1px solid $color-iea-black;
+
+	           	.region-title {
+	                a {
+	                	color: $color-iea-white;
+	                	&:before {
+	                		font-family: icomoon;
+	                	}
+	                }
+	            }
+	        }
+
+	        .country-list {
+
+	        	li a {
+	        		background-color: transparent;
+	        		&.is-broken, img {
+	        			background-color: $color-iea-black;
+	        		}
+
+	        	}
+
+	            .language-list {
+	                li {
+	                    a {
+	                        color: $color-iea-blue;
+	                        &:hover {
+	                        	font-weight: normal;
+	                        }
+	                    }
+                        &:after {
+                        	color: $color-iea-blue;
+                        }
+	                }
+	            }
+	        }
+
+	        &.desktop {
+	            .global-title {
+	                border-bottom: 1px solid $color-iea-black;
+	            }
+	        }
+	    }
+
+	    .dropdown-menu:before {
+	      border-right: 7px solid transparent;
+	      border-bottom: 7px solid $color-iea-dark-grey;
+	      border-left: 7px solid transparent;
+	    }
+
+	    .dropdown-menu:after {
+	      border-right: 15px solid transparent;
+	      border-bottom: 15px solid $color-iea-dark-grey;
+	      border-left: 15px solid transparent;
+	    }
+	}
+}

@@ -1,0 +1,28 @@
+{
+    "data": {
+        "randomNumber": "498",
+        "clientSideRendering": false,
+        "path": "/content/iea/en_us/test_vineet_23rdNow/_jcr_content/flexi_hero_par/adaptiveimage",
+        "adaptiveImage": {
+            "windowType": "Yes",
+            "selectCropOption_tabP": "Default",
+            "completeUrl": "/content/communities.html",
+            "imageRotate": "0",
+            "fileReference": "/content/iea/en_us/test_vineet_23rdNow/jcr:content/flexi_hero_par/adaptiveimage",
+            "selectCropOption_tabL": "Default",
+            "selectCropOption_web": "Default",
+            "extension": "jpg",
+            "selectCropOption_mobL": "Default",
+            "title": "title",
+            "selectCropOption_mobP": "Default",
+            "randomNumber": "498",
+            "alt": "alt text",
+            "fileName": "rich-text-image",
+            "path": "/content/iea/en_us/test_vineet_23rdNow/jcr:content/flexi_hero_par/adaptiveimage",
+            "linkURL": "/content/communities"
+        },
+        "viewType": "defaultView",
+        "componentType": "adaptiveImage",
+        "isContainer": false
+    }
+}

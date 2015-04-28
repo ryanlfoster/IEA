@@ -1,0 +1,32 @@
+{{#if panel.image.fileReference}}
+
+    <div class = "media">
+        {{adaptive panel.image.fileReference panel.image.extension panel.image.altImage panel.image.title panel.image.fileName}}
+
+    </div>
+    <div class="panel-overlay {{panel.properties.alignmentOfLinks}}">
+        <div class="text">
+            <h3>{{panel.properties.headline}}</h3>
+            {{#if panel.properties.subHeadLine}}
+               <p class="text-small">{{panel.properties.subHeadLine}}</p>
+            {{/if}}    
+        </div>
+        <p class="animate-header-button">
+            {{#if panel.properties.displayUrl}}
+                {{#if panel.properties.actionUrl}}
+                    <a target= "{{#ifCond panel.properties.primaryBrowserSelection "yes"}}_blank{{else}}_self{{/ifCond}}" href="{{panel.properties.actionUrl}}" class="btn btn-info btn-iea">{{panel.properties.displayUrl}}</a>
+                {{else}}
+                    <a disabled>{{panel.properties.displayUrl}}</a>
+                {{/if}}
+            {{/if}}
+
+             {{#if panel.properties.secondaryDisplayUrl}}
+                {{#if panel.properties.secondaryActionUrl}}
+                    <a target= "{{#ifCond panel.properties.secondaryBrowserSelection "yes"}}_blank{{else}}_self{{/ifCond}}" href="{{panel.properties.secondaryActionUrl}}" class="link">{{panel.properties.secondaryDisplayUrl}}</a>
+                {{else}}
+                    <a disabled>{{panel.properties.secondaryDisplayUrl}}</a>
+                {{/if}}
+            {{/if}}
+        </p>
+    </div>
+{{/if}}

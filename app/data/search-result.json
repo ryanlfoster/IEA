@@ -1,0 +1,61 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "searchResult": {
+            "results": [
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/third-page",
+                    "linkSummary": ", it’s important to understand what these terms mean and when each type of layout should be utilized.",
+                    "linkTitle": "Which Layout? Static, Liquid, Adaptive, or Responsive"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-second-page",
+                    "linkSummary": "The horizontal width of the browser could change because the website is being viewed on different devices",
+                    "linkTitle": "In short, each page layout name describes how the layout behaves when the page is viewed at different browser widths. "
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-first-page",
+                    "linkSummary": "A static page layout (sometimes called a “fixed” layout or “fixed width” layout) uses a preset page size and does not ch",
+                    "linkTitle": "Static Page Layout"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/adobe-third-page",
+                    "linkSummary": "This is the <strong>adobe</strong> first page. Adobe first venture.",
+                    "linkTitle": "First page"
+                },
+                {
+                    "linkUrl": "/content/engagewithadobe/en_us/events/2014/3/second-page",
+                    "linkSummary": "The horizontal width of the browser could change because the website is being viewed on different devices",
+                    "linkTitle": "In short, each page layout name describes how the layout behaves when the page is viewed at different browser widths. ",
+                    "extension": "jpg",
+                    "imageDetail": "http://lorempixel.com/300/300/food/?"
+                }
+            ],
+            "totalResults": 12,
+            "searchText": "adobe",
+            "staticConfigurations": {
+                "searchResultsHeading": "results",
+                "defaultSearchTerm": null,
+                "showMoreResultsCopy": "Show More",
+                "noResultsText": "No Results",
+                "resultsForCopy": "Results For",
+                "showingLabelCopy": "Showing",
+                "paginatingOfCopy": "of"
+            },
+            "loadMoreConfig": {
+                "loadMoreBaseUrl": "data/search-result.json",
+                "loadMoreAjaxUrl": "q=adobe.noOfResults=5.doLazyLoad=true.loadMore=2"
+            },
+            "resultSize": 5
+        },
+        "randomNumber": "422",
+        "path": "data/search-result.json",
+        "clientSideRendering": false,
+        "viewType": "defaultView",
+        "componentType": "searchResult",
+        "isContainer": false
+    }
+}

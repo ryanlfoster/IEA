@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IEA</title>
+    <meta name="description" content="">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon-iphone4.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon-ipad-retina.png" />
+
+    <!-- build:css css/iea.min.css -->
+    <link rel="stylesheet" href="js/libs/iea/core/css/iea.min.css">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <style>
+        .shaded {
+            background-color: #ddd;
+        }
+    </style>
+
+    <!-- build:js js/libs/vendor/modernizr/modernizr.js -->
+    <script src="js/libs/vendor/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/libs/vendor/jquery/dist/jquery.js -->
+    <script src="js/libs/vendor/jquery/dist/jquery.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/libs/vendor/underscore/underscore.js -->
+    <script src="js/libs/vendor/underscore/underscore.js"></script>
+    <!-- endbuild -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/libs/vendor/html5shiv/dist/html5shiv.js"></script>
+        <script src="js/libs/vendor/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!--[if IE 7 ]><body class="ie ie7 lt-ie8 lt-ie9 lt-ie10 no-mq"><![endif]-->
+<!--[if IE 8 ]><body class="ie ie8 lt-ie9 lt-ie10 no-mq"><![endif]-->
+<!--[if IE 9 ]><body class="ie ie9 lt-ie10"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<body data-config="data/config.json" class="en-hero">
+    <!--<![endif]-->
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+        <section class="row clearfix">
+             <div class="col-md-3 column no-gutter" data-region="nav" id="nav">
+                <div class="section-navigation" data-role="section-navigation" data-path="/data/sidebar.json"></div>
+
+            </div>
+
+            <div class="col-md-9 column shaded" data-region="main" id="main">
+
+                <h1 id="breadcrumb">breadcrumb</h1>
+                <div data-role="breadcrumb" data-path="/data/breadcrumb.json"></div>
+
+                <h1 id="navigation">navigation</h1>
+                <div class="navigation" data-role="navigation" data-path="/data/navigation.json"></div>
+
+                <h1 id="expand-collapse">Expand Collapse</h1>
+                <div data-role="expand-collapse" data-path="/data/expand-collapse.json"></div>
+
+                <h1 id="section-navigation">Section Navigation</h1>
+                <div class="section-navigation" data-role="section-navigation" data-path="/data/section-navigation.json"></div>
+
+                <h1 id="carousel">Carousel</h1>
+                <div class="carousel" data-role="carousel" data-path="/data/carousel3.json"></div>
+
+                <h1 id="contentResultsGrid">Content-results-grid</h1>
+                <div class="content-results-grid" data-role="content-results-grid" data-path="/data/content-results-grid.json"></div>
+
+                <h1 id="form">Form</h1>
+                <div class="form" data-role="form" data-path="/data/form.json"></div>
+
+                <h1 id="searchInput">Search Input</h1>
+                <div class="search-input" data-role="search-input" data-path="/data/search-input.json"></div>
+
+                <h1 id="hotspot">hotspot</h1>
+                <div class="hotspot" data-role="hotspot" data-path="/data/hotspot.json"></div>
+
+                <h1 id="linkList">link-list</h1>
+                <div class="list" data-role="list" data-path="/data/list.json"></div>
+
+                <h1 id="mediaGallery">media-galley</h1>
+                <div class="media-gallery" data-role="media-gallery" data-path="/data/media-gallery.json"></div>
+
+                <h1 id="plainTextImage">plain-text-image</h1>
+                <div class="plain-text-image" data-role="plain-text-image" data-path="/data/plain-text-image.json"></div>
+
+                <h1 id="rickTextImage">Rich text image</h1>
+                <div class="rich-text-image" data-role="rich-text-image" data-path="/data/rich-text-image.json"></div>
+
+                <h1 id="RelatedContentList">Related Content list</h1>
+                <div class="related-content-list" data-role="related-content-list" data-path="/data/related-content-list.json"></div>
+
+                <h1 id="searchResult">Search Result</h1>
+                <div class="search-result" data-role="search-result" data-path="/data/search-result.json"></div>
+
+                <h1 id="tabbedContent">Tabbed Content</h1>
+                <div class="tabbed-content" data-role="tabbed-content" data-path="/data/tabbed-content.json"></div>
+
+                <h1 id="video">Video</h1>
+                <div class="video" data-role="video" data-path="/data/video.json"></div>
+
+                <h1 id="instagram">Instagram Feed</h1>
+                <div class="instagram-feed" data-role="instagram-feed" data-path="/data/instagram-feed.json"></div>
+
+                <h1 id="twitter">Twitter Feed</h1>
+                <div class="twitter-feed" data-role="twitter-feed" data-path="/data/twitter-feed.json"></div>
+
+                <h1 id="pinterest">Pinterest Feed</h1>
+                <div class="pinterest" data-role="pinterest" data-path="/data/pinterest.json"></div>
+
+                <h1 id="panel">Panel</h1>
+                <div class="panel" data-role="panel" data-path="/data/panel.json"></div>
+
+             </div>
+
+        </section>
+    </div>
+    <footer>
+
+        <div class="container">
+
+        </div>
+    </footer>
+
+    <!-- build:js js/main.js -->
+    <script data-main="js/main" src="js/libs/vendor/requirejs/require.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

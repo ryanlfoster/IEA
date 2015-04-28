@@ -1,0 +1,64 @@
+<form name="{{form.formid}}"
+  id="{{form.formid}}"
+  method = "POST"
+  action="{{form.action}}"
+  data-ajax="{{#if form.isAjax}}true{{else}}false{{/if}}"
+  {{#if form.isAjax}} onsubmit="return false;"{{/if}}
+  data-fail="{{form.failureDescription}}"
+  {{#if form.redirect}} data-redirect="{{form.redirect}}"{{/if}}
+  class="form-horizontal form-validate"
+  role="form"
+  data-validation="{{form.validation}}" novalidate>
+
+    {{#if form.title}}
+    <legend class="form-title">{{form.title}}</legend>
+    {{/if}}
+
+    {{#each form.formElementsConfig}}
+      {{#ifCond formElement.viewType "text"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "search"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "password"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "email"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "url"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "color"}}
+        {{include this "form-element/text.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "select"}}
+        {{include this "form-element/dropdown.hbss"}}
+      {{/ifCond}}
+
+      {{#ifCond formElement.viewType "radio"}}
+        {{include this "form-element/radio.hbss"}}
+      {{/ifCond}}
+
+    {{/each}}
+
+    {{#if form.formEndConfig}}
+      <!-- Button (Double) -->
+      <div class="form-group">
+          <div class="col-sm-3">
+              <button id="{{form.randomNumber}}-submit" type="submit" name="{{form.randomNumber}}-submit" class="btn btn-primary btn-md col-xs-12 input-submit">{{form.formEndConfig.name}}</button>
+          </div>
+          <div class="col-sm-3">
+              <button id="{{form.randomNumber}}-reset" type="reset" name="{{form.randomNumber}}-reset" class="btn btn-inverse btn-md col-xs-12 input-reset">{{form.formEndConfig.resetName}}</button>
+          </div>
+      </div>
+    {{/if}}
+
+</form>

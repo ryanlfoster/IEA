@@ -1,0 +1,30 @@
+{
+    "data": {
+        "plainTextImage": {
+            "windowType": "No",
+            "title": "test",
+            "selectCropOption_tabP": "Default",
+            "subheading": "Cras justo odio, dapibus",
+            "imageRotate": "0",
+            "fileReference": "http://placehold.it/300x300&text=placeholder?",
+            "selectCropOption_tabL": "Default",
+            "selectCropOption_web": "Default",
+            "selectCropOption_mobL": "Default",
+            "ctacopy": "asdf",
+            "ctaurl": "/content/campaigns/geometrixx",
+            "selectCropOption_mobP": "Default",
+            "randomNumber": "627",
+            "alt": "hello",
+            "heading": "Image-Heading"
+        },
+        "randomNumber": "627",
+        "path": "/content/engagednow/en_us/contact-us/jcr:content/flexi_hero_par/plaintextimage",
+        "viewType": "defaultView",
+        "componentType": "plainTextImage",
+        "isContainer": false
+    },
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    }
+}

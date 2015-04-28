@@ -1,0 +1,38 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "295",
+        "path": "/content/falcon/en_us/_jcr_content/headerpar/columncontrol/container_par_2/navigation",
+        "viewType": "defaultView",
+        "componentType": "video",
+        "video": {
+            "randomNumber": "295",
+            "videoTitle": "Video Title",
+            "videoLink": "Link Text",
+            "videoDescription": "VideoHeadline",
+            "videoSubHeadline": "Sub headline",
+            "viewType": "html5",
+            "isNotAdaptive": true,
+            "displayOption": "Overlay",
+            "allowFullScreen": false,
+            "audio": false,
+            "loopPlayback": false,
+            "showControls": true,
+            "autoplay": true,
+            "videoFormats" : {
+                "mp4Video": "http://leanbackplayer.com/videos/360p/elephants_dream_640x360_2.30.mp4",
+                "oggVideo": "http://leanbackplayer.com/videos/360p/elephants_dream_640x360_2.30.ogv",
+                "flvVideo": "http://localhost:9000/images/video/tamil.flv"
+            },
+            "thumbnailUrl": "http://leanbackplayer.com/videos/poster/elephants_dream_640x360.jpg?",
+            "alt": "Alt text for Thumbnail",
+            "fallbackUrl": "http://leanbackplayer.com/videos/poster/elephants_dream_640x360.jpg?",
+            "fallbackAlt": "Alt text for fallback"
+        },
+        "clientSideRendering": true,
+        "isContainer": true
+    }
+}

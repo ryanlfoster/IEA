@@ -1,0 +1,21 @@
+{
+    "data": {
+        "randomNumber": "757",
+        "path": "/content/iea/en_us/surbhi/_jcr_content/flexi_hero_par/video",
+        "clientSideRendering": false,
+        "viewType": "brightcove",
+        "componentType": "video",
+        "isContainer": true,
+        "video": {
+            "loopPlayback": false,
+            "audio": true,
+            "showControls": false,
+            "videoId": "2874968075001",
+            "thumbnailUrl": "../../images/video/youtube.jpg",
+            "viewType": "brightcove",
+            "isContainer": false,
+            "autoplay": true,
+            "displayOption": "Overlay"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "responseHeader": {
+        "status": "200",
+        "messages": []
+    },
+    "data": {
+        "randomNumber": "186",
+        "navigation": {
+            "navigationLabel": [
+                {
+                    "navigationLabel": "Global Menu1",
+                    "navigationURL": "https://www.google.com",
+                    "flyOutMenuPath": "/content/iea/en_us/flyout_menu1/jcr:content/flexi_par/flyoutmenu"
+                },
+                {
+                    "navigationLabel": "Global Menu2",
+                    "navigationURL": "https://www.google.com",
+                    "flyOutMenuPath": ""
+                },
+                {
+                    "navigationLabel": "Global Menu3",
+                    "navigationURL": "https://www.google.com",
+                    "flyOutMenuPath": ""
+                }
+            ]
+        },
+        "path": "/content/iea/en_us/_jcr_content/headerpar/columncontrol/container_par_2/navigation",
+        "clientSideRendering": true,
+        "viewType": "defaultView",
+        "componentType": "navigation",
+        "isContainer": true
+    }
+}

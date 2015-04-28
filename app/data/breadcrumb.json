@@ -1,0 +1,38 @@
+{
+  "responseHeader": {
+    "status": "200",
+    "messages": []
+  },
+  "data": {
+    "randomNumber": "184",
+    "breadcrumb": {
+      "items": [
+        {
+          "pageName": "BOOKS",
+          "pageURL": " http://www.google.com"
+        },
+        {
+          "pageName": "LITERATURE",
+          "pageURL": "http://www.google.com"
+        },
+        {
+          "pageName": "HISTORY",
+          "pageURL": "http://www.google.com"
+        },
+        {
+          "pageName": "MYTHOLOGY",
+          "pageURL": "http://www.google.com"
+        },
+        {
+          "pageName": "FICTION",
+          "pageURL": ""
+        }
+      ]
+    },
+    "path": "/content/falcon/en_us/_jcr_content/headerpar/columncontrol/container_par_2/navigation",
+    "clientSideRendering": true,
+    "viewType": "defaultView",
+    "componentType": "breadcrumb",
+    "isContainer": true
+  }
+}
