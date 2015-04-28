@@ -1,7 +1,0 @@
-{{#if adaptiveImage.completeUrl}}
-	<a class= "image-link" href="{{adaptiveImage.completeUrl}}" target= "{{#ifCond adaptiveImage.windowType "Yes"}}_blank{{else}}_self{{/ifCond}}">
-		{{adaptive adaptiveImage.fileReference adaptiveImage.extension adaptiveImage.alt adaptiveImage.title adaptiveImage.fileName}}
-	</a>
-	{{else}}
-		{{adaptive adaptiveImage.fileReference adaptiveImage.extension adaptiveImage.alt adaptiveImage.title adaptiveImage.fileName}}
-{{/if}}
