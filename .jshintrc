@@ -25,21 +25,14 @@
     "devel": true,
     "maxerr": 50,
     "globals": {
-        "POC": true,
-        "poc": true,
         "IEA": true,
-        "IEAApp": true,
         "jQuery": true,
         "$": true,
         "Modernizr": true,
         "_": false,
         "Backbone": true,
-        "JST": true,
         "beforeEach": false,
         "require": true,
         "define": true,
-        "Signal": true,
-        "brightcove": true,
-        "YT": true
     }
 }

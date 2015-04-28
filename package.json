@@ -1,24 +1,12 @@
 {
   "name": "IEA",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "description": "Integrated Experience Architecture front-end frameworks for AEM projects",
   "author": "IEA Core Team <IEACoreTeam@sapient.com>",
   "contributors": [
     {
       "name": "anooj ayyappan",
       "email": "aayyappan@sapient.com"
-    },
-    {
-      "name": "Praveen Jaganathan ",
-      "email": "pjaganathan@sapient.com"
-    },
-    {
-      "name": "Surbhi Karmahe",
-      "email": "skarmahe@sapient.com"
-    },
-    {
-      "name": "Suvarna Mondal",
-      "email": "smondal2@sapient.com"
     }
   ],
   "scripts": {
@@ -26,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://tools.sapient.com/stash/projects/IEA/repos/presentation"
+    "url": "https://github.com/aanooj/IEA.git"
   },
   "bugs": {
-    "url": "https://tools.sapient.com/jira/issues/?jql=project+%3D+IEA"
+    "url": "https://github.com/aanooj/IEA/issues"
   },
   "devDependencies": {
     "connect-livereload": "~0.3.2",
